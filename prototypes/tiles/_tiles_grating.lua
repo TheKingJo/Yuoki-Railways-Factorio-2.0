@@ -19,7 +19,8 @@ data:extend(
 	{
 		type = "item",
 		name = "yir_grating_tile",
-		icon = "__yi_railway__/graphics/path_tiles/vent005_icon.png", icon_size = 32,
+		icon = "__yi_railway__/graphics/path_tiles/vent005_icon.png",
+		icon_size = 32,
 		subgroup = "yir_floor",
 		order = "b[concrete]",
 		stack_size = 500,

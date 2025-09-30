@@ -17,7 +17,8 @@ data:extend(
 	{
 		type = "item",
 		name = "y_path_labor",
-		icon = "__yi_railway__/graphics/path_tiles/floor004_icon.png", icon_size = 32,
+		icon = "__yi_railway__/graphics/path_tiles/floor004_icon.png",
+		icon_size = 32,
 		subgroup = "yir_floor",
 		order = "b[concrete]",
 		stack_size = 500,
@@ -117,7 +118,8 @@ data:extend(
 	{
 		type = "item",
 		name = "y_path_science",
-		icon = "__yi_railway__/graphics/path_tiles/vent_icon.png", icon_size = 32,
+		icon = "__yi_railway__/graphics/path_tiles/vent_icon.png",
+		icon_size = 32,
 		subgroup = "yir_floor",
 		order = "b[concrete]",
 		stack_size = 500,

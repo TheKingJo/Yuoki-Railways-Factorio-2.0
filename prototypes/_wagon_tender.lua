@@ -7,7 +7,8 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_tender_black",
-		icon = "__yi_railway__/graphics/icons/railway/rtender_black_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/rtender_black_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		inventory_size = 5,
 		minable = {mining_time = 1, result = "y_wagon_tender_black"},
@@ -89,7 +90,8 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_tender_green",
-		icon = "__yi_railway__/graphics/icons/railway/rtender_green_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/rtender_green_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		inventory_size = 5,
 		minable = {mining_time = 1, result = "y_wagon_tender_green"},

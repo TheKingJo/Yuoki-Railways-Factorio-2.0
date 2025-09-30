@@ -4,7 +4,8 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "y_loco_desw",
-		icon = "__yi_railway__/graphics/icons/railway/des_green_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/des_green_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "y_loco_desw"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -194,7 +195,8 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "y_loco_desw_orange",
-		icon = "__yi_railway__/graphics/icons/railway/des_orange_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/des_orange_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "y_loco_desw_orange"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -379,7 +381,8 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "y_loco_desw_blue",
-		icon = "__yi_railway__/graphics/icons/railway/des_blue_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/des_blue_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "y_loco_desw_blue"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -567,7 +570,8 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "y_loco_ses_std",
-		icon = "__yi_railway__/graphics/icons/railway/sea-ss-icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/sea-ss-icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "y_loco_ses_std"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -782,7 +786,8 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "y_loco_ses_red",
-		icon = "__yi_railway__/graphics/icons/railway/sea-sr-icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/sea-sr-icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "y_loco_ses_red"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -973,7 +978,8 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_trans",
-		icon = "__yi_railway__/graphics/icons/railway/cws_trans_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/cws_trans_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		inventory_size = 20,
 		minable = {mining_time = 1, result = "y_wagon_trans"},
@@ -1057,7 +1063,8 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_coal",
-		icon = "__yi_railway__/graphics/icons/railway/cws_rcoal_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/cws_rcoal_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		inventory_size = 20,
 		minable = {mining_time = 1, result = "y_wagon_coal"},
@@ -1141,7 +1148,8 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_copper",
-		icon = "__yi_railway__/graphics/icons/railway/cws_rcopper_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/cws_rcopper_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		inventory_size = 20,
 		minable = {mining_time = 1, result = "y_wagon_copper"},
@@ -1227,7 +1235,8 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_iron",
-		icon = "__yi_railway__/graphics/icons/railway/cws_riron_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/cws_riron_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		inventory_size = 20,
 		minable = {mining_time = 1, result = "y_wagon_iron"},
@@ -1312,7 +1321,8 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_stone",
-		icon = "__yi_railway__/graphics/icons/railway/cws_rstone_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/cws_rstone_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		inventory_size = 20,
 		minable = {mining_time = 1, result = "y_wagon_stone"},

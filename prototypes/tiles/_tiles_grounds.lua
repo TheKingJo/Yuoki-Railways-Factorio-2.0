@@ -19,7 +19,8 @@ data:extend(
 	{
 		type = "item",
 		name = "yir_ground1_tile",
-		icon = "__yi_railway__/graphics/path_tiles/ground_1.png", icon_size = 32,
+		icon = "__yi_railway__/graphics/path_tiles/ground_1.png",
+		icon_size = 32,
 		subgroup = "yir_floor_line2",
 		order = "ground-1",
 		stack_size = 500,
@@ -99,7 +100,8 @@ data:extend(
 	{
 		type = "item",
 		name = "yir_plates2_tile",
-		icon = "__yi_railway__/graphics/path_tiles/plates_2.png", icon_size = 32,
+		icon = "__yi_railway__/graphics/path_tiles/plates_2.png",
+		icon_size = 32,
 		subgroup = "yir_floor_line2",
 		order = "ground-2",
 		stack_size = 500,
@@ -182,7 +184,8 @@ data:extend(
 	{
 		type = "item",
 		name = "yir_muster1_tile",
-		icon = "__yi_railway__/graphics/path_tiles/muster-1.png", icon_size = 32,
+		icon = "__yi_railway__/graphics/path_tiles/muster-1.png",
+		icon_size = 32,
 		subgroup = "yir_floor_line2",
 		order = "ground-3",
 		stack_size = 500,

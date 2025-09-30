@@ -4,7 +4,8 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "y_loco_emd1500blue",
-		icon = "__yi_railway__/graphics/icons/railway/emd-1500_blue_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/emd-1500_blue_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "y_loco_emd1500blue"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -185,7 +186,8 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "y_loco_emd1500blue_v2",
-		icon = "__yi_railway__/graphics/icons/railway/emd-1500_blue_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/emd-1500_blue_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "y_loco_emd1500blue_v2"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -367,7 +369,8 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "y_loco_emd1500black",
-		icon = "__yi_railway__/graphics/icons/railway/emd-1500_black_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/emd-1500_black_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "y_loco_emd1500black"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -549,7 +552,8 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "y_loco_emd1500black_v2",
-		icon = "__yi_railway__/graphics/icons/railway/DESW90-BL-icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/DESW90-BL-icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "y_loco_emd1500black_v2"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -731,7 +735,8 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "yir_loco_fesw_op",
-		icon = "__yi_railway__/graphics/icons/railway/DESW90-OP-icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/DESW90-OP-icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "yir_loco_fesw_op"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},

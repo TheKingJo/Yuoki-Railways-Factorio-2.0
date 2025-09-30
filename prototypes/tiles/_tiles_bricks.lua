@@ -21,7 +21,8 @@ data:extend(
 	{
 		type = "item",
 		name = "yir_brick1_tile",
-		icon = "__yi_railway__/graphics/path_tiles/bricks_1.png", icon_size = 32,
+		icon = "__yi_railway__/graphics/path_tiles/bricks_1.png",
+		icon_size = 32,
 		subgroup = "yir_floor_line2",
 		order = "brick-1",
 		stack_size = 500,
@@ -110,7 +111,8 @@ data:extend(
 	{
 		type = "item",
 		name = "yir_brick2_tile",
-		icon = "__yi_railway__/graphics/path_tiles/bricks_2.png", icon_size = 32,
+		icon = "__yi_railway__/graphics/path_tiles/bricks_2.png",
+		icon_size = 32,
 		subgroup = "yir_floor_line2",
 		order = "brick-1",
 		stack_size = 500,

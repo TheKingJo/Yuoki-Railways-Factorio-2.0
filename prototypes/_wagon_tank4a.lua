@@ -5,7 +5,8 @@ data:extend(
 	{
 		type = "fluid-wagon",
 		name = "y_wagon_tank_fm1",
-		icon = "__yi_railway__/graphics/icons/railway/4atw_fm1_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/4atw_fm1_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 
 		minable = {mining_time = 1, result = "y_wagon_tank_fm1"},
@@ -137,7 +138,8 @@ data:extend(
 	{
 		type = "fluid-wagon",
 		name = "y_wagon_tank_fm2",
-		icon = "__yi_railway__/graphics/icons/railway/4atw_fm2_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/4atw_fm2_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		inventory_size = 0,
 		minable = {mining_time = 1, result = "y_wagon_tank_fm2"},
@@ -263,7 +265,8 @@ data:extend(
 	{
 		type = "fluid-wagon",
 		name = "y_wagon_tank_orange",
-		icon = "__yi_railway__/graphics/icons/railway/4a-fw-acid_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/4a-fw-acid_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "y_wagon_tank_orange"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -400,7 +403,8 @@ data:extend(
 	{
 		type = "fluid-wagon",
 		name = "y_wagon_tank_blue",
-		icon = "__yi_railway__/graphics/icons/railway/4a-fw-blue_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/4a-fw-blue_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		capacity = 30000,
 		minable = {mining_time = 1, result = "y_wagon_tank_blue"},
@@ -566,7 +570,8 @@ data:extend(
 	{
 		type = "fluid-wagon",
 		name = "yir_fw4a_tank_oil",
-		icon = "__yi_railway__/graphics/icons/railway/4afw_oil_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/4afw_oil_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 
 		minable = {mining_time = 1, result = "yir_fw4a_tank_oil"},
@@ -732,7 +737,8 @@ data:extend(
 	{
 		type = "fluid-wagon",
 		name = "yir_fw4_vc",
-		icon = "__yi_railway__/graphics/icons/railway/4aw_fw_vc_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/4aw_fw_vc_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 
 		minable = {mining_time = 1, result = "yir_fw4_vc"},

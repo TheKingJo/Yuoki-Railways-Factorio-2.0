@@ -5,7 +5,8 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "y_loco_fs_steam_green",
-		icon = "__yi_railway__/graphics/icons/railway/rsea_green_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/rsea_green_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "y_loco_fs_steam_green"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -206,7 +207,8 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "yir_loco_sel_blue",
-		icon = "__yi_railway__/graphics/icons/railway/rsea_blue_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/rsea_blue_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "yir_loco_sel_blue"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -400,7 +402,8 @@ data:extend(
 			{type = "item", name = "y_loco_steam_wt450", amount = 1.0,},
 		},
 		main_product = "y_loco_steam_wt450",
-		icon = "__yi_railway__/graphics/icons/railway/sewt_bl_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/sewt_bl_icon.png",
+		icon_size = 64,
 		order = "a6", group = "yuoki_railway", subgroup = "yir_locomotives_steam",
 	},
 
@@ -417,7 +420,8 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "y_loco_steam_wt450",
-		icon = "__yi_railway__/graphics/icons/railway/sewt_bl_icon.png",icon_size = 64,
+		icon = "__yi_railway__/graphics/icons/railway/sewt_bl_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "y_loco_steam_wt450"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},

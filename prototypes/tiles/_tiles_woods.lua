@@ -20,7 +20,8 @@ data:extend(
 	{
 		type = "item",
 		name = "yir_wood1_tile",
-		icon = "__yi_railway__/graphics/path_tiles/wood_1.png", icon_size = 32,
+		icon = "__yi_railway__/graphics/path_tiles/wood_1.png",
+		icon_size = 32,
 		subgroup = "yir_floor_line2",
 		order = "wood-1",
 		stack_size = 500,

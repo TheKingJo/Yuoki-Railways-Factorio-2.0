@@ -17,7 +17,8 @@ data:extend(
 	{
 		type = "item",
 		name = "y_path_checker",
-		icon = "__yi_railway__/graphics/path_tiles/labor_icon.png", icon_size = 32,
+		icon = "__yi_railway__/graphics/path_tiles/labor_icon.png",
+		icon_size = 32,
 		subgroup = "yir_floor",
 		order = "b[concrete]",
 		stack_size = 500,
