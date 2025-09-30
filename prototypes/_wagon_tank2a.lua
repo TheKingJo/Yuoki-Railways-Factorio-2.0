@@ -5,7 +5,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_zement_gray",
-		icon = "__yi_railway__/graphics/entity/railway/cws64_zement_gray_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/cws64_zement_gray_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 10,
 		minable = {mining_time = 1, result = "y_wagon_zement_gray"},
@@ -85,7 +85,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_zement_white",
-		icon = "__yi_railway__/graphics/entity/railway/cws64_zement_white_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/cws64_zement_white_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 10,
 		minable = {mining_time = 1, result = "y_wagon_zement_white"},

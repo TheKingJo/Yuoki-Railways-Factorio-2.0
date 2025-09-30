@@ -12,7 +12,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_closed",
-		icon = "__yi_railway__/graphics/entity/railway/wcs_closed_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/wcs_closed_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		inventory_size = 20,
 		minable = {mining_time = 1, result = "y_wagon_closed"},
@@ -91,7 +91,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_hopper_yellow",
-		icon = "__yi_railway__/graphics/entity/railway/2a_hooper_y_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/2a_hooper_y_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 10,
 		minable = {mining_time = 1, result = "y_wagon_hopper_yellow"},
@@ -170,7 +170,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_corn_green",
-		icon = "__yi_railway__/graphics/entity/railway/2a_corn_green_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/2a_corn_green_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 10,
 		minable = {mining_time = 1, result = "y_wagon_corn_green"},
@@ -249,7 +249,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_corn_blue",
-		icon = "__yi_railway__/graphics/entity/railway/2a_corn_blue_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/2a_corn_blue_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 10,
 		minable = {mining_time = 1, result = "y_wagon_corn_blue"},
@@ -328,7 +328,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_2acw_3blocks",
-		icon = "__yi_railway__/graphics/entity/railway/2a_cws_tf1-icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/2a_cws_tf1-icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 10,
 		minable = {mining_time = 1, result = "yir_2acw_3blocks"},
@@ -407,7 +407,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_2acw_wood",
-		icon = "__yi_railway__/graphics/entity/railway/2a_cws_tf1-icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/2a_cws_tf1-icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 10,
 		minable = {mining_time = 1, result = "yir_2acw_wood"},

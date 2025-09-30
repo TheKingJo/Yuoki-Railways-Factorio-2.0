@@ -13,7 +13,7 @@ data:extend(
 	  results = {
 		{ type = "item", name = "y_path_slag", amount = 4.0, },
 	  },
-	  icon = "__yi_railway__/graphics/entity/path_tiles/pslag_icon.png",icon_size = 32,
+	  icon = "__yi_railway__/graphics/path_tiles/pslag_icon.png",icon_size = 32,
 	  order = "1", group = "yuoki_railway", subgroup = "yir_floor",
 	},	
 	]]

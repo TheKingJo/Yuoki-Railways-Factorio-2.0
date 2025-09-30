@@ -6,7 +6,7 @@ data:extend(
 	{
 		type = "item",
 		name = "y_path_slag",
-		icon = "__yi_railway__/graphics/entity/path_tiles/pslag_icon.png",icon_size = 32,		
+		icon = "__yi_railway__/graphics/path_tiles/pslag_icon.png",icon_size = 32,		
 		subgroup = "yir_floor",
 		order = "b[concrete]",
 		stack_size = 500,
@@ -32,18 +32,18 @@ data:extend(
 			main =
 			{
 				{
-					picture = "__yi_railway__/graphics/entity/path_tiles/slag1.png",
+					picture = "__yi_railway__/graphics/path_tiles/slag1.png",
 					count = 16,
 					size = 1
 				},
 				{
-					picture = "__yi_railway__/graphics/entity/path_tiles/slag2.png",
+					picture = "__yi_railway__/graphics/path_tiles/slag2.png",
 					count = 4,
 					size = 2,
 					probability = 0.39,
 				},
 				{
-					picture = "__yi_railway__/graphics/entity/path_tiles/slag4.png",
+					picture = "__yi_railway__/graphics/path_tiles/slag4.png",
 					count = 4,
 					size = 4,
 					probability = 1,
@@ -51,27 +51,27 @@ data:extend(
 			},
 			inner_corner =
 			{
-				picture = "__yi_railway__/graphics/entity/path_tiles/concrete-inner-corner.png",
+				picture = "__yi_railway__/graphics/path_tiles/concrete-inner-corner.png",
 				count = 8
 			},
 			outer_corner =
 			{
-				picture = "__yi_railway__/graphics/entity/path_tiles/concrete-outer-corner.png",
+				picture = "__yi_railway__/graphics/path_tiles/concrete-outer-corner.png",
 				count = 8
 			},
 			side =
 			{
-				picture = "__yi_railway__/graphics/entity/path_tiles/concrete-side.png",
+				picture = "__yi_railway__/graphics/path_tiles/concrete-side.png",
 				count = 8
 			},
 			u_transition =
 			{
-				picture = "__yi_railway__/graphics/entity/path_tiles/concrete-u.png",
+				picture = "__yi_railway__/graphics/path_tiles/concrete-u.png",
 				count = 8
 			},
 			o_transition =
 			{
-				picture = "__yi_railway__/graphics/entity/path_tiles/concrete-o.png",
+				picture = "__yi_railway__/graphics/path_tiles/concrete-o.png",
 				count = 1
 			}
 		},

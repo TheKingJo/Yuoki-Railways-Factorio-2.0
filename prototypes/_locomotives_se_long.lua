@@ -5,7 +5,7 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "y_loco_fs_steam_green",
-		icon = "__yi_railway__/graphics/entity/railway/rsea_green_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/rsea_green_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		minable = {mining_time = 1, result = "y_loco_fs_steam_green"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -206,7 +206,7 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "yir_loco_sel_blue",
-		icon = "__yi_railway__/graphics/entity/railway/rsea_blue_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/rsea_blue_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		minable = {mining_time = 1, result = "yir_loco_sel_blue"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -400,16 +400,16 @@ data:extend(
 			{ type = "item", name = "y_loco_steam_wt450", amount = 1.0, },
 		},
 		main_product = "y_loco_steam_wt450",
-		icon = "__yi_railway__/graphics/entity/railway/sewt_bl_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/sewt_bl_icon.png",icon_size = 64,
 		order = "a6", group = "yuoki_railway", subgroup = "yir_locomotives_steam",
 	},
 	
 	
 	
 	{
-		type="item", name="y_loco_steam_wt450", icon="__yi_railway__/graphics/entity/railway/sewt_bl_icon.png", 
+		type = "item", name = "y_loco_steam_wt450", icon = "__yi_railway__/graphics/icons/railway/sewt_bl_icon.png", 
 		group="yuoki_railway", subgroup="yir_locomotives_steam", order="a6",  
-		stack_size = 10, default_request_amount = 5, icon_size = 32,
+		stack_size = 10, default_request_amount = 5, icon_size = 64,
 		place_result="y_loco_steam_wt450", 
 	},
 	
@@ -417,7 +417,7 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "y_loco_steam_wt450",
-		icon = "__yi_railway__/graphics/entity/railway/sewt_bl_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/sewt_bl_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		minable = {mining_time = 1, result = "y_loco_steam_wt450"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},

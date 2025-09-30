@@ -4,8 +4,8 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "yir_factory_loco",
-		icon = "__yi_railway__/graphics/entity/factorys/yir_fac_loco_icon.png",
-		icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/factories/yir_fac_loco_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_factory_loco"},
 		max_health = 750,
@@ -22,7 +22,7 @@ data:extend(
 			layers = 
 			{
 				{
-			filename = "__yi_railway__/graphics/entity/factorys/yir_fac_loco.png",			
+			filename = "__yi_railway__/graphics/entity/factories/yir_fac_loco.png",			
 			width = 224,
 			height = 224,
 			shift = {0.5, -0.375},
@@ -68,8 +68,8 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "yir_factory_wagon",
-		icon = "__yi_railway__/graphics/entity/factorys/yir_fac_waggon_icon.png",
-		icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/factories/yir_fac_waggon_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_factory_wagon"},
 		max_health = 750,
@@ -85,7 +85,7 @@ data:extend(
 			layers = 
 			{
 				{
-			filename = "__yi_railway__/graphics/entity/factorys/cw_ws_sheet.png",			
+			filename = "__yi_railway__/graphics/entity/factories/cw_ws_sheet.png",			
 			width = 224,
 			height = 224,
 			shift = {0.5, -0.375},
@@ -124,8 +124,8 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "yir_factory_tiles",
-		icon = "__yi_railway__/graphics/entity/factorys/yir_fac_tiles_icon.png",
-		icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/factories/yir_fac_tiles_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_factory_tiles"},
 		max_health = 250,
@@ -141,7 +141,7 @@ data:extend(
 			layers = 
 			{
 				{
-			filename = "__yi_railway__/graphics/entity/factorys/yir_fac_tiles2_sheet.png",			
+			filename = "__yi_railway__/graphics/entity/factories/yir_fac_tiles2_sheet.png",			
 			width = 160,
 			height = 160,
 			shift = {0.15, -0.0},
@@ -184,8 +184,8 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "yir_factory_material",
-		icon = "__yi_railway__/graphics/entity/factorys/yir_fac_parts_icon.png",
-		icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/factories/yir_fac_parts_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_factory_material"},
 		max_health = 250,
@@ -202,7 +202,7 @@ data:extend(
 			layers = 
 			{
 				{
-			filename = "__yi_railway__/graphics/entity/factorys/yir_fac_parts_sheet.png",			
+			filename = "__yi_railway__/graphics/entity/factories/yir_fac_parts_sheet.png",			
 			width = 128,
 			height = 128,
 			shift = {0.5, -0.5},
@@ -246,8 +246,8 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "yir_factory_stuff",
-		icon = "__yi_railway__/graphics/entity/factorys/yir_fab_coins_icon.png",
-		icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/factories/yir_fab_coins_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_factory_stuff"},
 		max_health = 500,
@@ -263,7 +263,7 @@ data:extend(
 			layers = 
 			{
 				{
-			filename = "__yi_railway__/graphics/entity/factorys/yir_fab_coins_sheet.png",			
+			filename = "__yi_railway__/graphics/entity/factories/yir_fab_coins_sheet.png",			
 			width = 192,
 			height = 192,
 			shift = {0.5, -0.375},
@@ -316,7 +316,7 @@ data:extend(
 		type = "assembling-machine",
 		name = "yir_diesel_monument",
 		icon = "__yi_railway__/graphics/icons/yir_diesel_monument_icon.png",
-		icon_size = 32,
+		icon_size = 64,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_diesel_monument"},
 		max_health = 500,
@@ -344,7 +344,7 @@ data:extend(
 					layers = 
 						{
 							{
-								filename = "__yi_railway__/graphics/entity/factorys/diesel_monument_sheet.png",			
+								filename = "__yi_railway__/graphics/entity/factories/diesel_monument_sheet.png",			
 								width = 384,
 								height = 384,
 								shift = {0.5, 0.375},
@@ -401,12 +401,12 @@ data:extend(
 		type = "recipe",
 		name = "yir_future_monument",
 		ingredients = {
-			{type="item", name="steel-plate", amount=34},
-			{type="item", name="logistic-science-pack", amount=20},
-			{type="item", name="production-science-pack", amount=10},
-			{type="item", name="utility-science-pack", amount=8},
+			{type = "item", name = "steel-plate", amount=34},
+			{type = "item", name = "logistic-science-pack", amount=20},
+			{type = "item", name = "production-science-pack", amount=10},
+			{type = "item", name = "utility-science-pack", amount=8},
 		},
-		results = {{type="item", name="yir_future_monument", amount=1},},
+		results = {{type = "item", name = "yir_future_monument", amount=1},},
 		main_product = "yir_future_monument",
 		enabled = true,		
 		group = "yuoki_railway",
@@ -414,8 +414,8 @@ data:extend(
 	},		
 		
 	{
-		type="item", name="yir_future_monument", icon = "__yi_railway__/graphics/entity/factorys/yir_future_monument_icon.png", 
-		icon_size = 32,
+		type = "item", name = "yir_future_monument", icon = "__yi_railway__/graphics/icons/factories/yir_future_monument_icon.png", 
+		icon_size = 64,
 		group="yuoki_railway", subgroup="yir_railyardliquid", 
 		stack_size=10, 
 		place_result="yir_future_monument", 
@@ -424,8 +424,8 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "yir_future_monument",
-		icon = "__yi_railway__/graphics/entity/factorys/yir_future_monument_icon.png",
-		icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/factories/yir_future_monument_icon.png",
+		icon_size = 64,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_future_monument"},
 		max_health = 500,
@@ -454,7 +454,7 @@ data:extend(
 			layers = 
 			{
 				{
-			filename = "__yi_railway__/graphics/entity/factorys/yir_future_monument.png",			
+			filename = "__yi_railway__/graphics/entity/factories/yir_future_monument.png",			
 			width = 384,
 			height = 384,
 			shift = {0.5, 0.375},
@@ -511,12 +511,12 @@ data:extend(
 		type = "recipe",
 		name = "yir_factory_chemical",
 		ingredients = {
-			{type="item", name="iron-plate", amount=8},
-			{type="item", name="steel-plate", amount=2},
-			{type="item", name="iron-gear-wheel", amount=2},
-			{type="item", name="yir_brick1_tile", amount=34}
+			{type = "item", name = "iron-plate", amount=8},
+			{type = "item", name = "steel-plate", amount=2},
+			{type = "item", name = "iron-gear-wheel", amount=2},
+			{type = "item", name = "yir_brick1_tile", amount=34}
 		},
-		results = {{type="item", name="yir_factory_chemical", amount=1},},
+		results = {{type = "item", name = "yir_factory_chemical", amount=1},},
 		main_product = "yir_factory_chemical",
 		enabled = true,
 		group = "yuoki_railway",
@@ -524,9 +524,9 @@ data:extend(
 	},
 
 	{
-		type="item", name="yir_factory_chemical", icon = "__yi_railway__/graphics/entity/factorys/chemie_32.png",
+		type = "item", name = "yir_factory_chemical", icon = "__yi_railway__/graphics/icons/factories/chemie_32.png",
 		group="yuoki_railway", subgroup="yir_railyardliquid", 
-		icon_size = 32,
+		icon_size = 64,
 		stack_size=10, 
 		place_result="yir_factory_chemical", 
 	},
@@ -534,8 +534,8 @@ data:extend(
 	{
 		type = "assembling-machine",
 		name = "yir_factory_chemical",
-		icon = "__yi_railway__/graphics/entity/factorys/chemie_32.png",
-		icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/factories/chemie_32.png",
+		icon_size = 64,
 		flags = {"placeable-neutral","placeable-player", "player-creation"},
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_factory_chemical"},
 		max_health = 500,
@@ -561,7 +561,7 @@ data:extend(
 		{	
 			layers = {		
 				{
-			filename = "__yi_railway__/graphics/entity/factorys/chemie_256.png",			
+			filename = "__yi_railway__/graphics/entity/factories/chemie_256.png",			
 			width = 256, height = 256, scale = 0.5, 
 			shift = {0.5, -0.375},
 			frame_count = 1,

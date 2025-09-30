@@ -6,7 +6,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_purple",
-		icon = "__yi_railway__/graphics/entity/railway/4a-kw-s1-icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4a-kw-s1-icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 5,
 		minable = {mining_time = 1, result = "yir_4acw_purple"},
@@ -86,7 +86,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_oceanblue",
-		icon = "__yi_railway__/graphics/entity/railway/4a-bw-s2-icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4a-bw-s2-icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 30,
 		minable = {mining_time = 1, result = "yir_4acw_oceanblue"},
@@ -166,7 +166,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_grey",
-		icon = "__yi_railway__/graphics/entity/railway/4a-tw-s3-icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4a-tw-s3-icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 40,
 		minable = {mining_time = 1, result = "yir_4acw_grey"},
@@ -247,7 +247,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_coal",
-		icon = "__yi_railway__/graphics/entity/railway/4aw_cw_coal_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4aw_cw_coal_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 30,
 		minable = {mining_time = 1, result = "yir_4acw_coal"},
@@ -311,7 +311,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_iron",
-		icon = "__yi_railway__/graphics/entity/railway/4aw_cw_iron_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4aw_cw_iron_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 30,
 		minable = {mining_time = 1, result = "yir_4acw_iron"},
@@ -369,7 +369,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_copper",
-		icon = "__yi_railway__/graphics/entity/railway/4aw_cw_copper_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4aw_cw_copper_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 30,
 		minable = {mining_time = 1, result = "yir_4acw_copper"},
@@ -427,7 +427,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_stone",
-		icon = "__yi_railway__/graphics/entity/railway/4aw_cw_stone_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4aw_cw_stone_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 30,
 		minable = {mining_time = 1, result = "yir_4acw_stone"},
@@ -485,7 +485,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_wood",
-		icon = "__yi_railway__/graphics/entity/railway/4aw_cargo_wood_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4aw_cargo_wood_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 30,
 		minable = {mining_time = 1, result = "yir_4acw_wood"},
@@ -543,7 +543,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_closed",
-		icon = "__yi_railway__/graphics/entity/railway/4aw_cargo_closed_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4aw_cargo_closed_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 30,
 		minable = {mining_time = 1, result = "yir_4acw_closed"},
@@ -601,7 +601,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_gold",
-		icon = "__yi_railway__/graphics/entity/railway/4aw_cargo_gold_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4aw_cargo_gold_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 30,
 		minable = {mining_time = 1, result = "yir_4acw_gold"},
@@ -659,7 +659,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_mun",
-		icon = "__yi_railway__/graphics/entity/railway/4aw_cargo_mun_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4aw_cargo_mun_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 30,
 		minable = {mining_time = 1, result = "yir_4acw_mun"},
@@ -717,7 +717,7 @@ data:extend(
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_tf",
-		icon = "__yi_railway__/graphics/entity/railway/4aw_cargo_tf_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4aw_cargo_tf_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 30,
 		minable = {mining_time = 1, result = "yir_4acw_tf"},
@@ -791,19 +791,19 @@ data:extend(
 		{ type = "item", name = "yir_4acw_vc", amount = 1.0, },
 	  },
 	  main_product = "yir_4acw_vc",
-	  icon = "__yi_railway__/graphics/entity/railway/4a-cw_vc_icon.png",icon_size = 32,
+	  icon = "__yi_railway__/graphics/icons/railway/4a-cw_vc_icon.png",icon_size = 64,
 	  order = "0", group = "yuoki_railway", subgroup = "yir_cargowagons_4A",
 	},
 	{
-		type="item-with-entity-data", name="yir_4acw_vc", icon="__yi_railway__/graphics/entity/railway/4a-cw_vc_icon.png", 
+		type = "item-with-entity-data", name = "yir_4acw_vc", icon = "__yi_railway__/graphics/icons/railway/4a-cw_vc_icon.png", 
 		group="yuoki_railway", subgroup="yir_cargowagons_4A", order="a",  
-		stack_size = 10, default_request_amount = 5, icon_size = 32,
+		stack_size = 10, default_request_amount = 5, icon_size = 64,
 		place_result="yir_4acw_vc", 
 	},		
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_vc",
-		icon = "__yi_railway__/graphics/entity/railway/4a-cw_vc_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4a-cw_vc_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 30,
 		minable = {mining_time = 1, result = "yir_4acw_vc"},

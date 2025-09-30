@@ -17,7 +17,7 @@ data:extend(
 	{
 		type = "item",
 		name = "y_path_checker",
-		icon = "__yi_railway__/graphics/entity/path_tiles/labor_icon.png", icon_size = 32,		
+		icon = "__yi_railway__/graphics/path_tiles/labor_icon.png", icon_size = 32,		
 		subgroup = "yir_floor",		
 		order = "b[concrete]",
 		stack_size = 500,
@@ -43,7 +43,7 @@ data:extend(
 			main =
 			{
 				{
-					picture = "__yi_railway__/graphics/entity/path_tiles/floor004a-32.png",
+					picture = "__yi_railway__/graphics/path_tiles/floor004a-32.png",
 					count = 1,
 					size = 1
 				},
@@ -54,27 +54,27 @@ data:extend(
 				{
 					inner_corner =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-inner-corner.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-inner-corner.png",
 						count = 8
 					},
 					outer_corner =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-outer-corner.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-outer-corner.png",
 						count = 8
 					},
 					side =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-side.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-side.png",
 						count = 8
 					},
 					u_transition =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-u.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-u.png",
 						count = 8
 					},
 					o_transition =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-o.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-o.png",
 						count = 1
 					}
 				},

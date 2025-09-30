@@ -26,7 +26,7 @@ no_wheels =
       direction_count = 1,
       filenames =
       {
-        "__yi_railway__/graphics/entity/railway/empty.png",
+        "__yi_railway__/graphics/empty.png",
       },
       line_length = 1,
       lines_per_file = 1,
@@ -43,7 +43,7 @@ standard_wagon_wheels =
       direction_count = 1,
       filenames =
       {
-        "__yi_railway__/graphics/entity/railway/empty.png",
+        "__yi_railway__/graphics/empty.png",
       },
       line_length = 1,
       lines_per_file = 1,

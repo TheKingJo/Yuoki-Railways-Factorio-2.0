@@ -22,21 +22,21 @@ data:extend(
 		{ type = "item", name = "yir_loco_fut_red", amount = 1.0, },
 	  },
 	  main_product = "yir_loco_fut_red",
-	  icon = "__yi_railway__/graphics/entity/railway/future_red_icon.png",icon_size = 32,
+	  icon = "__yi_railway__/graphics/icons/railway/future_red_icon.png",icon_size = 64,
 	  order = "0", group = "yuoki_railway", subgroup = "yir_locomotives_nslong",
 	},
 	
 	{
-		type="item", name="yir_loco_fut_red", icon="__yi_railway__/graphics/entity/railway/future_red_icon.png", 
+		type = "item", name = "yir_loco_fut_red", icon = "__yi_railway__/graphics/icons/railway/future_red_icon.png", 
 		group="yuoki_railway", subgroup="yir_locomotives_nslong", order="a",  
-		stack_size = 10, default_request_amount = 5, icon_size = 32,
+		stack_size = 10, default_request_amount = 5, icon_size = 64,
 		place_result="yir_loco_fut_red", 
 	},
 
 	{
 		type = "locomotive",
 		name = "yir_loco_fut_red",
-		icon = "__yi_railway__/graphics/entity/railway/future_red_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/future_red_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		minable = {mining_time = 1, result = "yir_loco_fut_red"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -225,7 +225,7 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "yir_loco_del_KR",
-		icon = "__yi_railway__/graphics/entity/railway/kurts_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/kurts_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		minable = {mining_time = 1, result = "yir_loco_del_KR"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -409,7 +409,7 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "y_loco_emd3000_white",
-		icon = "__yi_railway__/graphics/entity/railway/emd_gp_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/emd_gp_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		minable = {mining_time = 1, result = "y_loco_emd3000_white"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -589,7 +589,7 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "yir_loco_del_bluegray",
-		icon = "__yi_railway__/graphics/entity/railway/emd-gp_bluegray_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/emd-gp_bluegray_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		minable = {mining_time = 1, result = "yir_loco_del_bluegray"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -771,7 +771,7 @@ data:extend(
 	{
 		type = "locomotive",
 		name = "yir_loco_del_mk1400",
-		icon = "__yi_railway__/graphics/entity/railway/emd-gp_orange_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/emd-gp_orange_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		minable = {mining_time = 1, result = "yir_loco_del_mk1400"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},

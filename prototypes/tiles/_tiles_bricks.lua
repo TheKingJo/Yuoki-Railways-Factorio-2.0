@@ -9,10 +9,10 @@ data:extend(
 		energy_required = 2,
 		enabled = true,		
 		ingredients = {
-			{type="item", name="stone-brick",  amount=4},
-			{type="item", name="yir_color_red",  amount=1},
+			{type = "item", name = "stone-brick",  amount=4},
+			{type = "item", name = "yir_color_red",  amount=1},
 		},
-		results = {{type="item", name="yir_brick1_tile", amount=12},},
+		results = {{type = "item", name = "yir_brick1_tile", amount=12},},
 		main_product = "yir_brick1_tile",
 		category = "yir_rc_tiles",
 		order = "brick-1",
@@ -21,7 +21,7 @@ data:extend(
 	{
 		type = "item",
 		name = "yir_brick1_tile",
-		icon = "__yi_railway__/graphics/entity/path_tiles/bricks_1.png", icon_size = 32,		
+		icon = "__yi_railway__/graphics/path_tiles/bricks_1.png", icon_size = 32,		
 		subgroup = "yir_floor_line2",		
 		order = "brick-1",
 		stack_size = 500,
@@ -47,7 +47,7 @@ data:extend(
 			main =
 			{
 				{
-					picture = "__yi_railway__/graphics/entity/path_tiles/bricks_1.png",
+					picture = "__yi_railway__/graphics/path_tiles/bricks_1.png",
 					count = 1,
 					size = 1
 				},
@@ -58,27 +58,27 @@ data:extend(
 				{
 					inner_corner =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-inner-corner.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-inner-corner.png",
 						count = 8
 					},
 					outer_corner =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-outer-corner.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-outer-corner.png",
 						count = 8
 					},
 					side =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-side.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-side.png",
 						count = 8
 					},
 					u_transition =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-u.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-u.png",
 						count = 8
 					},
 					o_transition =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-o.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-o.png",
 						count = 1
 					}
 				},
@@ -98,10 +98,10 @@ data:extend(
 		energy_required = 2,
 		enabled = true,		
 		ingredients = {
-			{type="item", name="stone-brick",  amount=4},
-			{type="item", name="yir_color_red",  amount=1},
+			{type = "item", name = "stone-brick",  amount=4},
+			{type = "item", name = "yir_color_red",  amount=1},
 		},
-		results = {{type="item", name="yir_brick2_tile", amount=12},},
+		results = {{type = "item", name = "yir_brick2_tile", amount=12},},
 		main_product = "yir_brick2_tile",
 		category = "yir_rc_tiles",
 		order = "brick-2",
@@ -110,7 +110,7 @@ data:extend(
 	{
 		type = "item",
 		name = "yir_brick2_tile",
-		icon = "__yi_railway__/graphics/entity/path_tiles/bricks_2.png", icon_size = 32,		
+		icon = "__yi_railway__/graphics/path_tiles/bricks_2.png", icon_size = 32,		
 		subgroup = "yir_floor_line2",		
 		order = "brick-1",
 		stack_size = 500,
@@ -136,7 +136,7 @@ data:extend(
 			main =
 			{
 				{
-					picture = "__yi_railway__/graphics/entity/path_tiles/bricks_2.png",
+					picture = "__yi_railway__/graphics/path_tiles/bricks_2.png",
 					count = 1,
 					size = 1
 				},
@@ -147,27 +147,27 @@ data:extend(
 				{
 					inner_corner =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-inner-corner.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-inner-corner.png",
 						count = 8
 					},
 					outer_corner =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-outer-corner.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-outer-corner.png",
 						count = 8
 					},
 					side =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-side.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-side.png",
 						count = 8
 					},
 					u_transition =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-u.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-u.png",
 						count = 8
 					},
 					o_transition =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-o.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-o.png",
 						count = 1
 					}
 				},

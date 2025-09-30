@@ -5,7 +5,7 @@ data:extend(
 	{
 		type = "fluid-wagon",
 		name = "y_wagon_tank_fm1",
-		icon = "__yi_railway__/graphics/entity/railway/4atw_fm1_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4atw_fm1_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		
 		minable = {mining_time = 1, result = "y_wagon_tank_fm1"},
@@ -137,7 +137,7 @@ data:extend(
 	{
 		type = "fluid-wagon",
 		name = "y_wagon_tank_fm2",
-		icon = "__yi_railway__/graphics/entity/railway/4atw_fm2_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4atw_fm2_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		inventory_size = 0,
 		minable = {mining_time = 1, result = "y_wagon_tank_fm2"},
@@ -263,7 +263,7 @@ data:extend(
 	{
 		type = "fluid-wagon",
 		name = "y_wagon_tank_orange",
-		icon = "__yi_railway__/graphics/entity/railway/4a-fw-acid_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4a-fw-acid_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },		
 		minable = {mining_time = 1, result = "y_wagon_tank_orange"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -400,7 +400,7 @@ data:extend(
 	{
 		type = "fluid-wagon",
 		name = "y_wagon_tank_blue",
-		icon = "__yi_railway__/graphics/entity/railway/4a-fw-blue_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4a-fw-blue_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		capacity = 30000,
 		minable = {mining_time = 1, result = "y_wagon_tank_blue"},
@@ -552,21 +552,21 @@ data:extend(
 		{ type = "item", name = "yir_fw4a_tank_oil", amount = 1.0, },
 	  },
 	  main_product = "yir_fw4a_tank_oil",
-	  icon = "__yi_railway__/graphics/entity/railway/4afw_oil_icon.png",icon_size = 32,
+	  icon = "__yi_railway__/graphics/icons/railway/4afw_oil_icon.png",icon_size = 64,
 	  order = "0", group = "yuoki_railway", subgroup = "yir_fluidwagons_4A",
 	},
 	
 	{
-		type="item", name="yir_fw4a_tank_oil", icon="__yi_railway__/graphics/entity/railway/4afw_oil_icon.png",
+		type = "item", name = "yir_fw4a_tank_oil", icon = "__yi_railway__/graphics/icons/railway/4afw_oil_icon.png",
 		group="yuoki_railway", subgroup="yir_fluidwagons_4A", order="a",  
-		stack_size = 10, default_request_amount = 5, icon_size = 32,
+		stack_size = 10, default_request_amount = 5, icon_size = 64,
 		place_result="yir_fw4a_tank_oil", 
 	},
 	
 	{
 		type = "fluid-wagon",
 		name = "yir_fw4a_tank_oil",
-		icon = "__yi_railway__/graphics/entity/railway/4afw_oil_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4afw_oil_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		
 		minable = {mining_time = 1, result = "yir_fw4a_tank_oil"},
@@ -718,21 +718,21 @@ data:extend(
 		{ type = "item", name = "yir_fw4_vc", amount = 1.0, },
 	  },
 	  main_product = "yir_fw4_vc",
-	  icon = "__yi_railway__/graphics/entity/railway/4aw_fw_vc_icon.png",icon_size = 32,
+	  icon = "__yi_railway__/graphics/icons/railway/4aw_fw_vc_icon.png",icon_size = 64,
 	  order = "0", group = "yuoki_railway", subgroup = "yir_fluidwagons_4A",
 	},
 	
 	{
-		type="item", name="yir_fw4_vc", icon="__yi_railway__/graphics/entity/railway/4aw_fw_vc_icon.png", 
+		type = "item", name = "yir_fw4_vc", icon = "__yi_railway__/graphics/icons/railway/4aw_fw_vc_icon.png", 
 		group="yuoki_railway", subgroup="yir_fluidwagons_4A", order="a",  
 		stack_size = 10, default_request_amount = 5,
-		place_result="yir_fw4_vc", icon_size = 32,
+		place_result="yir_fw4_vc", icon_size = 64,
 	},
 	
 	{
 		type = "fluid-wagon",
 		name = "yir_fw4_vc",
-		icon = "__yi_railway__/graphics/entity/railway/4aw_fw_vc_icon.png",icon_size = 32,
+		icon = "__yi_railway__/graphics/icons/railway/4aw_fw_vc_icon.png",icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
 		
 		minable = {mining_time = 1, result = "yir_fw4_vc"},

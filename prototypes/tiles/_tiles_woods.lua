@@ -9,9 +9,9 @@ data:extend(
 		energy_required = 2,
 		enabled = true,		
 		ingredients = {
-			{type="item", name="wood",  amount=4},
+			{type = "item", name = "wood",  amount=4},
 		},
-		results = {{type="item", name="yir_wood1_tile", amount=4},},
+		results = {{type = "item", name = "yir_wood1_tile", amount=4},},
 		main_product = "yir_wood1_tile",
 		category = "yir_rc_tiles",
 		order = "wood-1",
@@ -20,7 +20,7 @@ data:extend(
 	{
 		type = "item",
 		name = "yir_wood1_tile",
-		icon = "__yi_railway__/graphics/entity/path_tiles/wood_1.png", icon_size = 32,		
+		icon = "__yi_railway__/graphics/path_tiles/wood_1.png", icon_size = 32,		
 		subgroup = "yir_floor_line2",		
 		order = "wood-1",
 		stack_size = 500,
@@ -46,7 +46,7 @@ data:extend(
 			main =
 			{
 				{
-					picture = "__yi_railway__/graphics/entity/path_tiles/wood_1.png",
+					picture = "__yi_railway__/graphics/path_tiles/wood_1.png",
 					count = 1,
 					size = 1
 				},
@@ -57,27 +57,27 @@ data:extend(
 				{
 					inner_corner =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-inner-corner.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-inner-corner.png",
 						count = 8
 					},
 					outer_corner =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-outer-corner.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-outer-corner.png",
 						count = 8
 					},
 					side =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-side.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-side.png",
 						count = 8
 					},
 					u_transition =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-u.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-u.png",
 						count = 8
 					},
 					o_transition =
 					{
-						spritesheet = "__yi_railway__/graphics/entity/path_tiles/concrete-o.png",
+						spritesheet = "__yi_railway__/graphics/path_tiles/concrete-o.png",
 						count = 1
 					}
 				},
