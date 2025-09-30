@@ -2,28 +2,25 @@ drive_over_tie = require("lib.functions")
 
 data:extend(
 {
-
-
 	-- Future Red
-
 	{
-	  type = "recipe",
-	  name = "yir_loco_fut_red",
-	  category = "yir_rc_wsl", -- Workshop for Cargo Wagons
-	  enabled = true,
-	  energy_required = 5.00,
-	  ingredients = {
+		type = "recipe",
+		name = "yir_loco_fut_red",
+		category = "yir_rc_wsl", -- Workshop for Cargo Wagons
+		enabled = true,
+		energy_required = 5.00,
+		ingredients = {
   		{type = "item", name = "yir_future_coin" , amount = 5,},
 		{type = "item", name = "yir_frame_loco_future" , amount = 2.0,},
 		{type = "item", name = "yir_radsatz_locos" , amount = 6.0,},
 		{type = "item", name = "yir_color_red" , amount = 6.0,},
-	 },
-	  results = {
+	},
+		results = {
 		{type = "item", name = "yir_loco_fut_red", amount = 1.0,},
-	 },
-	  main_product = "yir_loco_fut_red",
-	  icon = "__yi_railway__/graphics/icons/railway/future_red_icon.png",icon_size = 64,
-	  order = "0", group = "yuoki_railway", subgroup = "yir_locomotives_nslong",
+	},
+		main_product = "yir_loco_fut_red",
+		icon = "__yi_railway__/graphics/icons/railway/future_red_icon.png",icon_size = 64,
+		order = "0", group = "yuoki_railway", subgroup = "yir_locomotives_nslong",
 	},
 
 	{
@@ -150,17 +147,17 @@ data:extend(
 		},
 		minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		selected_minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 
 		wheels = standard_train_wheels,
@@ -335,17 +332,17 @@ data:extend(
 		},
 		minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		selected_minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 
 		wheels = standard_train_wheels,
@@ -519,17 +516,17 @@ data:extend(
 		},
 		minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		selected_minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 
 		wheels = standard_train_wheels,
@@ -702,17 +699,17 @@ data:extend(
 		},
 		minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		selected_minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 
 		wheels = standard_train_wheels,
@@ -885,17 +882,17 @@ data:extend(
 		},
 		minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		selected_minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 
 		wheels = standard_train_wheels,

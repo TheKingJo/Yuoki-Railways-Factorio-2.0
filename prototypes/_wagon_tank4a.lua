@@ -105,17 +105,17 @@ data:extend(
 		},
 		minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		selected_minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		wheels = standard_train_wheels,
 		rail_category = "regular",
@@ -232,17 +232,17 @@ data:extend(
 		},
 		minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		selected_minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		wheels = standard_train_wheels,
 		rail_category = "regular",
@@ -370,17 +370,17 @@ data:extend(
 		},
 		minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		selected_minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		wheels = standard_train_wheels,
 		rail_category = "regular",
@@ -506,17 +506,17 @@ data:extend(
 		},
 		minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		selected_minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		wheels = standard_train_wheels,
 		rail_category = "regular",
@@ -540,24 +540,24 @@ data:extend(
 	--
 	-- Tankwagen Oil - 21706-12
 	{
-	  type = "recipe",
-	  name = "yir_fw4a_tank_oil",
-	  category = "yir_rc_wsw", -- Workshop for Cargo Wagons
-	  enabled = true,
-	  energy_required = 3.00,
-	  ingredients = {
+		type = "recipe",
+		name = "yir_fw4a_tank_oil",
+		category = "yir_rc_wsw", -- Workshop for Cargo Wagons
+		enabled = true,
+		energy_required = 3.00,
+		ingredients = {
 		{type = "item", name = "yir_frame_waggon" , amount = 1,},
 		{type = "item", name = "yir_radsatz_waggon" , amount = 2,},
 		{type = "item", name = "yir_color_red" , amount = 2.0,},
 		{type = "item", name = "yir_color_green" , amount = 1.0,},
 		{type = "item", name = "yir_diesel_coin" , amount = 5.0,},
-	 },
-	  results = {
+	},
+		results = {
 		{type = "item", name = "yir_fw4a_tank_oil", amount = 1.0,},
-	 },
-	  main_product = "yir_fw4a_tank_oil",
-	  icon = "__yi_railway__/graphics/icons/railway/4afw_oil_icon.png",icon_size = 64,
-	  order = "0", group = "yuoki_railway", subgroup = "yir_fluidwagons_4A",
+	},
+		main_product = "yir_fw4a_tank_oil",
+		icon = "__yi_railway__/graphics/icons/railway/4afw_oil_icon.png",icon_size = 64,
+		order = "0", group = "yuoki_railway", subgroup = "yir_fluidwagons_4A",
 	},
 
 	{
@@ -674,17 +674,17 @@ data:extend(
 		},
 		minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		selected_minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		wheels = standard_train_wheels,
 		rail_category = "regular",
@@ -708,23 +708,23 @@ data:extend(
 	--
 	-- Special Green Tank - 21706-16
 	{
-	  type = "recipe",
-	  name = "yir_fw4_vc",
-	  category = "yir_rc_wsw", -- Workshop for Cargo Wagons
-	  enabled = true,
-	  energy_required = 3.00,
-	  ingredients = {
+		type = "recipe",
+		name = "yir_fw4_vc",
+		category = "yir_rc_wsw", -- Workshop for Cargo Wagons
+		enabled = true,
+		energy_required = 3.00,
+		ingredients = {
 		{type = "item", name = "yir_frame_waggon" , amount = 1,},
 		{type = "item", name = "yir_radsatz_waggon" , amount = 2,},
 		{type = "item", name = "yir_color_green" , amount = 4.0,},
 		{type = "item", name = "yir_diesel_coin" , amount = 3.0,},
-	 },
-	  results = {
+	},
+		results = {
 		{type = "item", name = "yir_fw4_vc", amount = 1.0,},
-	 },
-	  main_product = "yir_fw4_vc",
-	  icon = "__yi_railway__/graphics/icons/railway/4aw_fw_vc_icon.png",icon_size = 64,
-	  order = "0", group = "yuoki_railway", subgroup = "yir_fluidwagons_4A",
+	},
+		main_product = "yir_fw4_vc",
+		icon = "__yi_railway__/graphics/icons/railway/4aw_fw_vc_icon.png",icon_size = 64,
+		order = "0", group = "yuoki_railway", subgroup = "yir_fluidwagons_4A",
 	},
 
 	{
@@ -838,17 +838,17 @@ data:extend(
 		},
 		minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		selected_minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		wheels = standard_train_wheels,
 		rail_category = "regular",

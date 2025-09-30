@@ -51,17 +51,17 @@ data:extend(
 		},
 		minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		selected_minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		wheels = standard_train_wheels,
 		rail_category = "regular",
@@ -132,17 +132,17 @@ data:extend(
 		},
 		minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		selected_minimap_representation =
 		{
-		  filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
-		  flags = {"icon"},
-		  size = {20, 40},
-		  scale = 0.5
+			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
+			flags = {"icon"},
+			size = {20, 40},
+			scale = 0.5
 		},
 		wheels = standard_train_wheels,
 		rail_category = "regular",

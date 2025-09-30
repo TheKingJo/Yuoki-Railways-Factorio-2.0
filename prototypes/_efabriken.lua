@@ -1,6 +1,5 @@
 data:extend(
 {
-	--
 	{
 		type = "assembling-machine",
 		name = "yir_factory_loco",
@@ -334,8 +333,7 @@ data:extend(
 			pipe_covers = pipecoverspictures(),
 			volume = 1000,
 			pipe_connections = {{flow_direction="input", direction = defines.direction.south, position = {0, 2}}},
-
-		 },
+			},
 		},
 		graphics_set =
 		{
