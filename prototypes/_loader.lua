@@ -27,10 +27,10 @@ no_wheels =
       filenames =
       {
         "__yi_railway__/graphics/empty.png",
-      },
+     },
       line_length = 1,
       lines_per_file = 1,
-    },
+   },
 }
 
 standard_wagon_wheels =
@@ -44,8 +44,8 @@ standard_wagon_wheels =
       filenames =
       {
         "__yi_railway__/graphics/empty.png",
-      },
+     },
       line_length = 1,
       lines_per_file = 1,
-    },
+   },
 }

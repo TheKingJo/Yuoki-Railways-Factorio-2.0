@@ -6,7 +6,7 @@ data:extend(
 		type = "cargo-wagon",
 		name = "y_wagon_zement_gray",
 		icon = "__yi_railway__/graphics/icons/railway/cws64_zement_gray_icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		inventory_size = 10,
 		minable = {mining_time = 1, result = "y_wagon_zement_gray"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -22,11 +22,11 @@ data:extend(
 		air_resistance = 0.04,
 		connection_distance = 3.6,
 		joint_distance = 1.8,
-		energy_per_hit_point = 5,    
+		energy_per_hit_point = 5,
 		resistances =
 		{
-			{type = "fire", decrease = 15, percent = 50 },
-			{type = "physical", decrease = 15, percent = 30 },
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
@@ -42,7 +42,7 @@ data:extend(
 			height = 256,
 			back_equals_front = true,
 			direction_count = 64,
-			filename = "__yi_railway__/graphics/entity/railway/csw_zement_gray_sheet.png",      			
+			filename = "__yi_railway__/graphics/entity/railway/csw_zement_gray_sheet.png",
 			line_length = 8,
 			lines_per_file = 8,
 			shift = {0.42, -1.125}
@@ -76,17 +76,17 @@ data:extend(
 			match_volume_to_activity = true,
 		},
 		crash_trigger = crash_trigger(),
-		open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
-		close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
+		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 		sound_minimum_speed = 0.5;
-		vehicle_impact_sound =  { filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0 },
-	},  
-	
+		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
+	},
+
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_zement_white",
 		icon = "__yi_railway__/graphics/icons/railway/cws64_zement_white_icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		inventory_size = 10,
 		minable = {mining_time = 1, result = "y_wagon_zement_white"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -102,11 +102,11 @@ data:extend(
 		air_resistance = 0.04,
 		connection_distance = 3.6,
 		joint_distance = 1.8,
-		energy_per_hit_point = 5,    
+		energy_per_hit_point = 5,
 		resistances =
 		{
-			{type = "fire", decrease = 15, percent = 50 },
-			{type = "physical", decrease = 15, percent = 30 },
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
@@ -122,7 +122,7 @@ data:extend(
 			height = 256,
 			back_equals_front = true,
 			direction_count = 64,
-			filename = "__yi_railway__/graphics/entity/railway/csw_zement_white_sheet.png",      			
+			filename = "__yi_railway__/graphics/entity/railway/csw_zement_white_sheet.png",
 			line_length = 8,
 			lines_per_file = 8,
 			shift = {0.42, -1.125}
@@ -156,11 +156,11 @@ data:extend(
 			match_volume_to_activity = true,
 		},
 		crash_trigger = crash_trigger(),
-		open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
-		close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
+		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 		sound_minimum_speed = 0.5;
-		vehicle_impact_sound =  { filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0 },
-	},  
-	
-	
+		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
+	},
+
+
 })

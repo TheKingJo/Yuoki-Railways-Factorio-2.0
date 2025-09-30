@@ -2,41 +2,41 @@ local tile_collision_masks = require("__base__/prototypes/tile/tile-collision-ma
 
 data:extend(
 {
-	
+
 	--[[
 	{
 		type = "recipe",
 		name = "yir_ground1_tile",
 		energy_required = 2,
-		enabled = true,		
+		enabled = true,
 		ingredients = {{"stone", 4},},
 		result= "yir_ground1_tile",
 		category = "yir_rc_tiles",
 		order = "ground-1",
 		result_count = 4
 	},
-	
+
 	{
 		type = "item",
 		name = "yir_ground1_tile",
-		icon = "__yi_railway__/graphics/path_tiles/ground_1.png", icon_size = 32,		
-		subgroup = "yir_floor_line2",		
+		icon = "__yi_railway__/graphics/path_tiles/ground_1.png", icon_size = 32,
+		subgroup = "yir_floor_line2",
 		order = "ground-1",
 		stack_size = 500,
 		place_as_tile =
 		{
 			result = "yir_ground1_tile",
 			condition_size = 2,
-			condition = { "water-tile" }
+			condition = {"water-tile"}
 		}
 	},
-	
+
 	{
 		type = "tile",
 		name = "yir_ground1_tile",
 		needs_correction = false,
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_ground1_tile"},
-		mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
+		mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"},
 		collision_mask = tile_collision_masks.ground(),
 		walking_speed_modifier = 1.3,
 		layer = 59, decorative_removal_probability = 1.0,
@@ -83,40 +83,40 @@ data:extend(
 		ageing=0,
 		vehicle_friction_modifier = stone_path_vehicle_speed_modifier
 	},
-	
+
 	{
 		type = "recipe",
 		name = "yir_plates2_tile",
 		energy_required = 2,
-		enabled = true,		
+		enabled = true,
 		ingredients = {{"stone", 4},},
 		result= "yir_plates2_tile",
 		category = "yir_rc_tiles",
 		order = "ground-2",
 		result_count = 4
 	},
-	
+
 	{
 		type = "item",
 		name = "yir_plates2_tile",
-		icon = "__yi_railway__/graphics/path_tiles/plates_2.png", icon_size = 32,		
-		subgroup = "yir_floor_line2",		
+		icon = "__yi_railway__/graphics/path_tiles/plates_2.png", icon_size = 32,
+		subgroup = "yir_floor_line2",
 		order = "ground-2",
 		stack_size = 500,
 		place_as_tile =
 		{
 			result = "yir_plates2_tile",
 			condition_size = 2,
-			condition = { "water-tile" }
+			condition = {"water-tile"}
 		}
 	},
-	
+
 	{
 		type = "tile",
 		name = "yir_plates2_tile",
 		needs_correction = false,
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_plates2_tile"},
-		mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
+		mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"},
 		collision_mask = tile_collision_masks.ground(),
 		walking_speed_modifier = 1.3,
 		layer = 59, decorative_removal_probability = 1.0,
@@ -163,12 +163,12 @@ data:extend(
 		vehicle_friction_modifier = stone_path_vehicle_speed_modifier
 	},
 	]]
-	
+
 	{
 		type = "recipe",
 		name = "yir_muster1_tile",
 		energy_required = 2,
-		enabled = true,		
+		enabled = true,
 		ingredients = {
 			{type = "item", name = "stone",  amount=4},
 			{type = "item", name = "coal",  amount=1},
@@ -178,12 +178,12 @@ data:extend(
 		category = "yir_rc_tiles",
 		order = "ground-3",
 	},
-	
+
 	{
 		type = "item",
 		name = "yir_muster1_tile",
-		icon = "__yi_railway__/graphics/path_tiles/muster-1.png", icon_size = 32,		
-		subgroup = "yir_floor_line2",		
+		icon = "__yi_railway__/graphics/path_tiles/muster-1.png", icon_size = 32,
+		subgroup = "yir_floor_line2",
 		order = "ground-3",
 		stack_size = 500,
 		place_as_tile =
@@ -193,13 +193,13 @@ data:extend(
 			condition = {layers={water_tile=true}}
 		}
 	},
-	
+
 	{
 		type = "tile",
 		name = "yir_muster1_tile",
 		needs_correction = false,
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_muster1_tile"},
-		mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
+		mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"},
 		collision_mask = tile_collision_masks.ground(),
 		walking_speed_modifier = 1.3,
 		layer = 59, decorative_removal_probability = 1.0,
@@ -251,5 +251,5 @@ data:extend(
 		ageing=0,
 		vehicle_friction_modifier = stone_path_vehicle_speed_modifier
 	},
-	
+
 })

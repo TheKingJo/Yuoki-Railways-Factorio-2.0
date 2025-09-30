@@ -13,31 +13,31 @@ data:extend(
 	  enabled = true,
 	  energy_required = 5.00,
 	  ingredients = {
-  		{ type = "item", name = "yir_future_coin" , amount = 5, },
-		{ type = "item", name = "yir_frame_loco_future" , amount = 2.0, },
-		{ type = "item", name = "yir_radsatz_locos" , amount = 6.0, },
-		{ type = "item", name = "yir_color_red" , amount = 6.0, },		
-	  },
+  		{type = "item", name = "yir_future_coin" , amount = 5,},
+		{type = "item", name = "yir_frame_loco_future" , amount = 2.0,},
+		{type = "item", name = "yir_radsatz_locos" , amount = 6.0,},
+		{type = "item", name = "yir_color_red" , amount = 6.0,},
+	 },
 	  results = {
-		{ type = "item", name = "yir_loco_fut_red", amount = 1.0, },
-	  },
+		{type = "item", name = "yir_loco_fut_red", amount = 1.0,},
+	 },
 	  main_product = "yir_loco_fut_red",
 	  icon = "__yi_railway__/graphics/icons/railway/future_red_icon.png",icon_size = 64,
 	  order = "0", group = "yuoki_railway", subgroup = "yir_locomotives_nslong",
 	},
-	
+
 	{
-		type = "item", name = "yir_loco_fut_red", icon = "__yi_railway__/graphics/icons/railway/future_red_icon.png", 
-		group="yuoki_railway", subgroup="yir_locomotives_nslong", order="a",  
+		type = "item", name = "yir_loco_fut_red", icon = "__yi_railway__/graphics/icons/railway/future_red_icon.png",
+		group="yuoki_railway", subgroup="yir_locomotives_nslong", order="a",
 		stack_size = 10, default_request_amount = 5, icon_size = 64,
-		place_result="yir_loco_fut_red", 
+		place_result="yir_loco_fut_red",
 	},
 
 	{
 		type = "locomotive",
 		name = "yir_loco_fut_red",
 		icon = "__yi_railway__/graphics/icons/railway/future_red_icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "yir_loco_fut_red"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1200,
@@ -47,9 +47,9 @@ data:extend(
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
-		connection_distance = 3, joint_distance = 4,		
-		
-			
+		connection_distance = 3, joint_distance = 4,
+
+
 		--collision_box = {{-0.6, -2.0}, {0.6, 2.0}},
 		--selection_box = {{-0.85, -1.5}, {0.9, 1.5}},
 		--drawing_box = {{-1, -1}, {1, 1}},
@@ -67,8 +67,8 @@ data:extend(
 		--joint_distance = 3.2,
 		energy_per_hit_point = 25,
 		resistances = {{type = "impact",decrease = 50,percent = 60},},
-		
-		energy_source = 
+
+		energy_source =
 		{
 			type = "burner",
 			fuel_categories = {"yr_future"},
@@ -161,7 +161,7 @@ data:extend(
 		  size = {20, 40},
 		  scale = 0.5
 		},
-  
+
 		wheels = standard_train_wheels,
 		rail_category = "regular",
 
@@ -204,7 +204,7 @@ data:extend(
 		},
 		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
-		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		working_sound =
 		{
 			sound =
@@ -214,8 +214,8 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
-		close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.3;
 	},
 
@@ -226,7 +226,7 @@ data:extend(
 		type = "locomotive",
 		name = "yir_loco_del_KR",
 		icon = "__yi_railway__/graphics/icons/railway/kurts_icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "yir_loco_del_KR"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1600,
@@ -236,9 +236,9 @@ data:extend(
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
-		connection_distance = 3, joint_distance = 4,		
-		
-			
+		connection_distance = 3, joint_distance = 4,
+
+
 		--collision_box = {{-0.6, -2.0}, {0.6, 2.0}},
 		--selection_box = {{-0.85, -1.5}, {0.9, 1.5}},
 		--drawing_box = {{-1, -1}, {1, 1}},
@@ -256,7 +256,7 @@ data:extend(
 		--joint_distance = 3.2,
 		energy_per_hit_point = 5,
 		resistances = {{type = "impact",decrease = 50,percent = 60},},
-		
+
 		energy_source =
 		{
 			type = "burner",
@@ -345,7 +345,7 @@ data:extend(
 		  size = {20, 40},
 		  scale = 0.5
 		},
-  
+
 		wheels = standard_train_wheels,
 		rail_category = "regular",
 
@@ -388,7 +388,7 @@ data:extend(
 		},
 		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
-		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		working_sound =
 		{
 			sound =
@@ -398,8 +398,8 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
-		close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.3;
 	},
 
@@ -410,17 +410,17 @@ data:extend(
 		type = "locomotive",
 		name = "y_loco_emd3000_white",
 		icon = "__yi_railway__/graphics/icons/railway/emd_gp_icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "y_loco_emd3000_white"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1500,
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
-		
+
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
-		connection_distance = 3, joint_distance = 4,		
+		connection_distance = 3, joint_distance = 4,
 
 		weight = 2200,
 		max_speed = 0.9,
@@ -434,8 +434,8 @@ data:extend(
 		energy_per_hit_point = 5,
 		resistances =
 		{
-			{type = "fire", decrease = 15, percent = 50 },
-			{type = "physical", decrease = 15, percent = 30 },
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
@@ -461,7 +461,7 @@ data:extend(
 					starting_vertical_speed_deviation = 0.1,
 				}
 			}
-		},	
+		},
 		front_light =
 		{
 			{
@@ -528,7 +528,7 @@ data:extend(
 		  size = {20, 40},
 		  scale = 0.5
 		},
-  
+
 		wheels = standard_train_wheels,
 		rail_category = "regular",
 
@@ -571,7 +571,7 @@ data:extend(
 		},
 		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
-		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		working_sound =
 		{
 			sound =
@@ -581,8 +581,8 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
-		close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.2;
 	},
 
@@ -590,7 +590,7 @@ data:extend(
 		type = "locomotive",
 		name = "yir_loco_del_bluegray",
 		icon = "__yi_railway__/graphics/icons/railway/emd-gp_bluegray_icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "yir_loco_del_bluegray"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1600,
@@ -600,7 +600,7 @@ data:extend(
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
-		connection_distance = 3, joint_distance = 4,		
+		connection_distance = 3, joint_distance = 4,
 
 		weight = 2000,
 		max_speed = 0.8,
@@ -614,13 +614,13 @@ data:extend(
 		energy_per_hit_point = 5,
 		resistances =
 		{
-			{type = "fire", decrease = 15, percent = 50 },
-			{type = "physical", decrease = 15, percent = 30 },
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
 		},
-		
+
 		energy_source =
 		{
 			type = "burner",
@@ -642,7 +642,7 @@ data:extend(
 					starting_vertical_speed_deviation = 0.1,
 				}
 			}
-		},	
+		},
 		front_light =
 		{
 			{
@@ -710,7 +710,7 @@ data:extend(
 		  size = {20, 40},
 		  scale = 0.5
 		},
-  
+
 		wheels = standard_train_wheels,
 		rail_category = "regular",
 
@@ -753,7 +753,7 @@ data:extend(
 		},
 		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
-		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		working_sound =
 		{
 			sound =
@@ -763,8 +763,8 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
-		close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.3;
 	},
 
@@ -772,7 +772,7 @@ data:extend(
 		type = "locomotive",
 		name = "yir_loco_del_mk1400",
 		icon = "__yi_railway__/graphics/icons/railway/emd-gp_orange_icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "yir_loco_del_mk1400"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1600,
@@ -781,7 +781,7 @@ data:extend(
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
-		connection_distance = 3, joint_distance = 4,		
+		connection_distance = 3, joint_distance = 4,
 
 		weight = 1800,
 		max_speed = 0.75,
@@ -795,13 +795,13 @@ data:extend(
 		energy_per_hit_point = 5,
 		resistances =
 		{
-			{type = "fire", decrease = 15, percent = 50 },
-			{type = "physical", decrease = 15, percent = 30 },
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
 		},
-		
+
 		energy_source =
 		{
 			type = "burner",
@@ -876,7 +876,7 @@ data:extend(
 			lines_per_file = 8,
 			shift = {0.42, -1.125}
 		}
-	
+
 		},
 		minimap_representation =
 		{
@@ -892,7 +892,7 @@ data:extend(
 		  size = {20, 40},
 		  scale = 0.5
 		},
-  
+
 		wheels = standard_train_wheels,
 		rail_category = "regular",
 
@@ -935,7 +935,7 @@ data:extend(
 		},
 		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
-		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		working_sound =
 		{
 			sound =
@@ -945,8 +945,8 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
-		close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.3;
 	},
 

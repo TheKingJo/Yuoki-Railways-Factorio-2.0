@@ -6,7 +6,7 @@ data:extend(
 	{
 		type = "item",
 		name = "y_path_slag",
-		icon = "__yi_railway__/graphics/path_tiles/pslag_icon.png",icon_size = 32,		
+		icon = "__yi_railway__/graphics/path_tiles/pslag_icon.png",icon_size = 32,
 		subgroup = "yir_floor",
 		order = "b[concrete]",
 		stack_size = 500,
@@ -14,16 +14,16 @@ data:extend(
 		{
 			result = "y_path_slag",
 			condition_size = 2,
-			condition = { "water-tile" }
+			condition = {"water-tile"}
 		}
 	},
-	
+
 	{
 		type = "tile",
 		name = "y_path_slag",
 		needs_correction = false,
 		minable = {hardness = 0.2, mining_time = 0.5, result = "y_path_slag"},
-		mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
+		mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"},
 		collision_mask = tile_collision_masks.ground(),
 		walking_speed_modifier = 1.2,
 		layer = 59, decorative_removal_probability = 1.0,

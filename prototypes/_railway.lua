@@ -1,11 +1,11 @@
 drive_over_tie = require("lib.functions")
 data:extend(
-{	
+{
 	{
 		type = "locomotive",
 		name = "y_loco_desw",
 		icon = "__yi_railway__/graphics/icons/railway/des_green_icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "y_loco_desw"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 700,
@@ -25,14 +25,14 @@ data:extend(
 		vertical_selection_shift = -0.5,
 		connection_distance = 3.6,
 		joint_distance = 1.8,
-		
+
 		--    connection_distance = 3.5,
 		--    joint_distance = 1.3,
 		energy_per_hit_point = 5,
 		resistances =
 		{
-			{type = "fire", decrease = 15, percent = 50 },
-			{type = "physical", decrease = 15, percent = 30 },
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
@@ -58,8 +58,8 @@ data:extend(
 					starting_vertical_speed_deviation = 0.1,
 				}
 			}
-		},		
-		
+		},
+
 		front_light =
 		{
 			{
@@ -111,7 +111,7 @@ data:extend(
 				"__yi_railway__/graphics/entity/railway/des_gs5.png",
 				"__yi_railway__/graphics/entity/railway/des_gs6.png",
 				"__yi_railway__/graphics/entity/railway/des_gs7.png",
-				"__yi_railway__/graphics/entity/railway/des_gs8.png",		
+				"__yi_railway__/graphics/entity/railway/des_gs8.png",
 			},
 			line_length = 4,
 			lines_per_file = 4,
@@ -132,7 +132,7 @@ data:extend(
 		  size = {20, 40},
 		  scale = 0.5
 		},
-  
+
 		wheels = no_wheels,
 		rail_category = "regular",
 
@@ -175,7 +175,7 @@ data:extend(
 		},
 		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
-		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		working_sound =
 		{
 			sound =
@@ -185,8 +185,8 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
-		close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.2;
 	},
 
@@ -195,7 +195,7 @@ data:extend(
 		type = "locomotive",
 		name = "y_loco_desw_orange",
 		icon = "__yi_railway__/graphics/icons/railway/des_orange_icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "y_loco_desw_orange"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 800,
@@ -218,13 +218,13 @@ data:extend(
 		energy_per_hit_point = 5,
 		resistances =
 		{
-			{type = "fire", decrease = 15, percent = 50 },
-			{type = "physical", decrease = 15, percent = 30 },
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
 		},
-		
+
 		energy_source =
 		{
 			type = "burner",
@@ -246,7 +246,7 @@ data:extend(
 					starting_vertical_speed_deviation = 0.1,
 				}
 			}
-		},		
+		},
 		front_light =
 		{
 			{
@@ -298,7 +298,7 @@ data:extend(
 				"__yi_railway__/graphics/entity/railway/des_os5.png",
 				"__yi_railway__/graphics/entity/railway/des_os6.png",
 				"__yi_railway__/graphics/entity/railway/des_os7.png",
-				"__yi_railway__/graphics/entity/railway/des_os8.png",		
+				"__yi_railway__/graphics/entity/railway/des_os8.png",
 			},
 			line_length = 4,
 			lines_per_file = 4,
@@ -319,7 +319,7 @@ data:extend(
 		  size = {20, 40},
 		  scale = 0.5
 		},
-  
+
 		wheels = no_wheels,
 		rail_category = "regular",
 
@@ -362,7 +362,7 @@ data:extend(
 		},
 		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
-		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		working_sound =
 		{
 			sound =
@@ -372,15 +372,15 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
-		close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.2;
 	},
 	{
 		type = "locomotive",
 		name = "y_loco_desw_blue",
 		icon = "__yi_railway__/graphics/icons/railway/des_blue_icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "y_loco_desw_blue"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 900,
@@ -403,13 +403,13 @@ data:extend(
 		energy_per_hit_point = 5,
 		resistances =
 		{
-			{type = "fire", decrease = 15, percent = 50 },
-			{type = "physical", decrease = 15, percent = 30 },
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
 		},
-		
+
 		energy_source =
 		{
 			type = "burner",
@@ -431,7 +431,7 @@ data:extend(
 					starting_vertical_speed_deviation = 0.1,
 				}
 			}
-		},		
+		},
 		front_light =
 		{
 			{
@@ -483,7 +483,7 @@ data:extend(
 				"__yi_railway__/graphics/entity/railway/des_bs5.png",
 				"__yi_railway__/graphics/entity/railway/des_bs6.png",
 				"__yi_railway__/graphics/entity/railway/des_bs7.png",
-				"__yi_railway__/graphics/entity/railway/des_bs8.png",		
+				"__yi_railway__/graphics/entity/railway/des_bs8.png",
 			},
 			line_length = 4,
 			lines_per_file = 4,
@@ -504,7 +504,7 @@ data:extend(
 		  size = {20, 40},
 		  scale = 0.5
 		},
-  
+
 		wheels = no_wheels,
 		rail_category = "regular",
 
@@ -547,7 +547,7 @@ data:extend(
 		},
 		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 30,
-		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		working_sound =
 		{
 			sound =
@@ -557,8 +557,8 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
-		close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.2;
 	},
 
@@ -568,7 +568,7 @@ data:extend(
 		type = "locomotive",
 		name = "y_loco_ses_std",
 		icon = "__yi_railway__/graphics/icons/railway/sea-ss-icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "y_loco_ses_std"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 700,
@@ -588,19 +588,19 @@ data:extend(
 		vertical_selection_shift = -0.5,
 		connection_distance = 3.6,
 		joint_distance = 1.8,
-		
+
 		--    connection_distance = 3.5,
 		--    joint_distance = 1.3,
 		energy_per_hit_point = 5,
 		resistances =
 		{
-			{type = "fire", decrease = 15, percent = 50 },
-			{type = "physical", decrease = 15, percent = 30 },
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
 		},
-		
+
 		energy_source =
 		{
 			type = "burner",
@@ -622,7 +622,7 @@ data:extend(
 					starting_vertical_speed_deviation = 0.1,
 				}
 			}
-		},		
+		},
 		front_light =
 		{
 			{
@@ -659,7 +659,7 @@ data:extend(
 		--back_light = rolling_stock_back_light(),
 		--stand_by_light = rolling_stock_stand_by_light(),
 		pictures =
-		{		
+		{
 			rotated = {
 			priority = "very-low",
 			width = 256,
@@ -675,12 +675,12 @@ data:extend(
 				"__yi_railway__/graphics/entity/railway/ses_sa5.png",
 				"__yi_railway__/graphics/entity/railway/ses_sa6.png",
 				"__yi_railway__/graphics/entity/railway/ses_sa7.png",
-				"__yi_railway__/graphics/entity/railway/ses_sa8.png",		
+				"__yi_railway__/graphics/entity/railway/ses_sa8.png",
 			},
 			line_length = 4,
 			lines_per_file = 4,
 			]]
-			
+
 			filenames =
 			{
 				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-0.png",
@@ -698,11 +698,11 @@ data:extend(
 				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-12.png",
 				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-13.png",
 				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-14.png",
-				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-15.png",				
+				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-15.png",
 			},
 			frame_count = 5,
 			line_length = 1,
-			lines_per_file = 8,						
+			lines_per_file = 8,
 			shift = {0.42, -1.125}
 		}
 		},
@@ -720,7 +720,7 @@ data:extend(
 		  size = {20, 40},
 		  scale = 0.5
 		},
-  
+
 		wheels = no_wheels,
 		rail_category = "regular",
 
@@ -763,7 +763,7 @@ data:extend(
 		},
 		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
-		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		working_sound =
 		{
 			sound =
@@ -774,8 +774,8 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
-		close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.2;
 	},
 
@@ -783,7 +783,7 @@ data:extend(
 		type = "locomotive",
 		name = "y_loco_ses_red",
 		icon = "__yi_railway__/graphics/icons/railway/sea-sr-icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		minable = {mining_time = 1, result = "y_loco_ses_red"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 800,
@@ -803,19 +803,19 @@ data:extend(
 		vertical_selection_shift = -0.5,
 		connection_distance = 3.6,
 		joint_distance = 1.8,
-		
+
 		--    connection_distance = 3.5,
 		--    joint_distance = 1.3,
 		energy_per_hit_point = 5,
 		resistances =
 		{
-			{type = "fire", decrease = 15, percent = 50 },
-			{type = "physical", decrease = 15, percent = 30 },
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
 		},
-		
+
 		energy_source =
 		{
 			type = "burner",
@@ -837,7 +837,7 @@ data:extend(
 					starting_vertical_speed_deviation = 0.1,
 				}
 			}
-		},		
+		},
 		front_light =
 		{
 			{
@@ -889,7 +889,7 @@ data:extend(
 				"__yi_railway__/graphics/entity/railway/ses_ared5.png",
 				"__yi_railway__/graphics/entity/railway/ses_ared6.png",
 				"__yi_railway__/graphics/entity/railway/ses_ared7.png",
-				"__yi_railway__/graphics/entity/railway/ses_ared8.png",		
+				"__yi_railway__/graphics/entity/railway/ses_ared8.png",
 			},
 			line_length = 4,
 			lines_per_file = 4,
@@ -910,7 +910,7 @@ data:extend(
 		  size = {20, 40},
 		  scale = 0.5
 		},
-  
+
 		wheels = no_wheels,
 		rail_category = "regular",
 
@@ -953,7 +953,7 @@ data:extend(
 		},
 		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
-		vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
+		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		working_sound =
 		{
 			sound =
@@ -964,8 +964,8 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = { filename = "__base__/sound/car-door-open.ogg", volume=0.7 },
-		close_sound = { filename = "__base__/sound/car-door-close.ogg", volume = 0.7 },
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.2;
 	},
 
@@ -974,7 +974,7 @@ data:extend(
 		type = "cargo-wagon",
 		name = "y_wagon_trans",
 		icon = "__yi_railway__/graphics/icons/railway/cws_trans_icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		inventory_size = 20,
 		minable = {mining_time = 1, result = "y_wagon_trans"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -990,16 +990,16 @@ data:extend(
 		air_resistance = 0.002,
 		connection_distance = 3.6,
 		joint_distance = 1.8,
-		energy_per_hit_point = 5,    
+		energy_per_hit_point = 5,
 		resistances =
 		{
-			{type = "fire", decrease = 15, percent = 50 },
-			{type = "physical", decrease = 15, percent = 30 },
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
 		},
-		vertical_selection_shift = -0.5,	
+		vertical_selection_shift = -0.5,
 		--back_light = rolling_stock_back_light(),
 		--stand_by_light = rolling_stock_stand_by_light(),
 		pictures =
@@ -1036,7 +1036,7 @@ data:extend(
 		},
 
 		wheels = no_wheels,
-		rail_category = "regular", 
+		rail_category = "regular",
 		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
 		working_sound =
@@ -1049,16 +1049,16 @@ data:extend(
 			match_volume_to_activity = true,
 		},
 		crash_trigger = crash_trigger(),
-		open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
-		close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
+		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 		sound_minimum_speed = 0.5;
-		vehicle_impact_sound =  { filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0 },
-	},  
+		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
+	},
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_coal",
 		icon = "__yi_railway__/graphics/icons/railway/cws_rcoal_icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		inventory_size = 20,
 		minable = {mining_time = 1, result = "y_wagon_coal"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -1074,11 +1074,11 @@ data:extend(
 		air_resistance = 0.002,
 		connection_distance = 3.6,
 		joint_distance = 1.8,
-		energy_per_hit_point = 5,    
+		energy_per_hit_point = 5,
 		resistances =
 		{
-			{type = "fire", decrease = 15, percent = 50 },
-			{type = "physical", decrease = 15, percent = 30 },
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
@@ -1133,16 +1133,16 @@ data:extend(
 			match_volume_to_activity = true,
 		},
 		crash_trigger = crash_trigger(),
-		open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
-		close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
+		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 		sound_minimum_speed = 0.5;
-		vehicle_impact_sound =  { filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0 },
-	},  
+		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
+	},
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_copper",
 		icon = "__yi_railway__/graphics/icons/railway/cws_rcopper_icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		inventory_size = 20,
 		minable = {mining_time = 1, result = "y_wagon_copper"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -1158,11 +1158,11 @@ data:extend(
 		air_resistance = 0.002,
 		connection_distance = 3.6,
 		joint_distance = 1.8,
-		energy_per_hit_point = 5,    
+		energy_per_hit_point = 5,
 		resistances =
 		{
-			{type = "fire", decrease = 15, percent = 50 },
-			{type = "physical", decrease = 15, percent = 30 },
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
@@ -1218,17 +1218,17 @@ data:extend(
 			match_volume_to_activity = true,
 		},
 		crash_trigger = crash_trigger(),
-		open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
-		close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
+		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 		sound_minimum_speed = 0.5;
-		vehicle_impact_sound =  { filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0 },
-	},  
+		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
+	},
 
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_iron",
 		icon = "__yi_railway__/graphics/icons/railway/cws_riron_icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		inventory_size = 20,
 		minable = {mining_time = 1, result = "y_wagon_iron"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -1244,11 +1244,11 @@ data:extend(
 		air_resistance = 0.002,
 		connection_distance = 3.6,
 		joint_distance = 1.8,
-		energy_per_hit_point = 5,    
+		energy_per_hit_point = 5,
 		resistances =
 		{
-			{type = "fire", decrease = 15, percent = 50 },
-			{type = "physical", decrease = 15, percent = 30 },
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
@@ -1303,17 +1303,17 @@ data:extend(
 			match_volume_to_activity = true,
 		},
 		crash_trigger = crash_trigger(),
-		open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
-		close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
+		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 		sound_minimum_speed = 0.5;
-		vehicle_impact_sound =  { filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0 },
-	},  
+		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
+	},
 
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_stone",
 		icon = "__yi_railway__/graphics/icons/railway/cws_rstone_icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		inventory_size = 20,
 		minable = {mining_time = 1, result = "y_wagon_stone"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -1329,11 +1329,11 @@ data:extend(
 		air_resistance = 0.002,
 		connection_distance = 3.6,
 		joint_distance = 1.8,
-		energy_per_hit_point = 5,    
+		energy_per_hit_point = 5,
 		resistances =
 		{
-			{type = "fire", decrease = 15, percent = 50 },
-			{type = "physical", decrease = 15, percent = 30 },
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
@@ -1388,10 +1388,10 @@ data:extend(
 			match_volume_to_activity = true,
 		},
 		crash_trigger = crash_trigger(),
-		open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
-		close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
+		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 		sound_minimum_speed = 0.5;
-		vehicle_impact_sound =  { filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0 },
-	},  
-	
+		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
+	},
+
 })

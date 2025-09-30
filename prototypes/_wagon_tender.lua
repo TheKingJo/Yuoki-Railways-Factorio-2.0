@@ -8,7 +8,7 @@ data:extend(
 		type = "cargo-wagon",
 		name = "y_wagon_tender_black",
 		icon = "__yi_railway__/graphics/icons/railway/rtender_black_icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		inventory_size = 5,
 		minable = {mining_time = 1, result = "y_wagon_tender_black"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -24,11 +24,11 @@ data:extend(
 		air_resistance = 0.002,
 		connection_distance = 3,
 		joint_distance = 2.5,
-		energy_per_hit_point = 5,    
+		energy_per_hit_point = 5,
 		resistances =
 		{
-			{type = "fire", decrease = 15, percent = 50 },
-			{type = "physical", decrease = 15, percent = 30 },
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
@@ -45,14 +45,14 @@ data:extend(
 			back_equals_front = false,
 			direction_count = 128,
 			filenames = {
-				"__yi_railway__/graphics/entity/railway/tender_black_sheet-0.png",      
-				"__yi_railway__/graphics/entity/railway/tender_black_sheet-1.png",      
+				"__yi_railway__/graphics/entity/railway/tender_black_sheet-0.png",
+				"__yi_railway__/graphics/entity/railway/tender_black_sheet-1.png",
 			},
 			line_length = 8,
 			lines_per_file = 8,
 			shift = {0.42, -1.125}
 		}
-		},		
+		},
 		minimap_representation = {
 			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
 			flags = {"icon"},
@@ -80,17 +80,17 @@ data:extend(
 			match_volume_to_activity = true,
 		},
 		crash_trigger = crash_trigger(),
-		open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
-		close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
+		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 		sound_minimum_speed = 0.5;
-		vehicle_impact_sound =  { filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0 },
-	},  
+		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
+	},
 
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_tender_green",
 		icon = "__yi_railway__/graphics/icons/railway/rtender_green_icon.png",icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid", },
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
 		inventory_size = 5,
 		minable = {mining_time = 1, result = "y_wagon_tender_green"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -107,12 +107,12 @@ data:extend(
 		vertical_selection_shift = -0.5,
 		connection_distance = 3,
 		joint_distance = 2.5,
-		
-		energy_per_hit_point = 5,    
+
+		energy_per_hit_point = 5,
 		resistances =
 		{
-			{type = "fire", decrease = 15, percent = 50 },
-			{type = "physical", decrease = 15, percent = 30 },
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
@@ -129,8 +129,8 @@ data:extend(
 			back_equals_front = false,
 			direction_count = 128,
 			filenames = {
-				"__yi_railway__/graphics/entity/railway/tender_green_sheet-0.png",      
-				"__yi_railway__/graphics/entity/railway/tender_green_sheet-1.png",      
+				"__yi_railway__/graphics/entity/railway/tender_green_sheet-0.png",
+				"__yi_railway__/graphics/entity/railway/tender_green_sheet-1.png",
 			},
 			line_length = 8,
 			lines_per_file = 8,
@@ -163,12 +163,12 @@ data:extend(
 			match_volume_to_activity = true,
 		},
 		crash_trigger = crash_trigger(),
-		open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
-		close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
+		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
+		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 		sound_minimum_speed = 0.5;
-		vehicle_impact_sound =  { filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0 },
-	},  
-	
-	
-	
+		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
+	},
+
+
+
 })

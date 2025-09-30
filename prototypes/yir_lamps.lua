@@ -1,6 +1,6 @@
 data:extend(
 {
-		
+
 	-- entity
 	{
 		type = "lamp",
@@ -25,7 +25,7 @@ data:extend(
 			filename = "__yi_railway__/graphics/entity/yir_lamp_modern_off.png",
 			priority = "high",
 			width = 256,
-			height = 256, scale = 1,			
+			height = 256, scale = 1,
 			shift = {0, -3.5}
 		},
 		picture_on =
@@ -33,11 +33,11 @@ data:extend(
 			filename = "__yi_railway__/graphics/entity/yir_lamp_modern_on.png",
 			priority = "high",
 			width = 256,
-			height = 256, scale = 1,			
+			height = 256, scale = 1,
 			shift = {0, -3.5}
 		},
 		circuit_wire_max_distance = 20,
-		
+
 	},
 
 	{
@@ -64,7 +64,7 @@ data:extend(
 			filename = "__yi_railway__/graphics/entity/yir_lamp_old1_off.png",
 			priority = "high",
 			width = 256,
-			height = 256, scale = 0.5,			
+			height = 256, scale = 0.5,
 			shift = {0.5, -1.5}
 		},
 		picture_on =
@@ -72,7 +72,7 @@ data:extend(
 			filename = "__yi_railway__/graphics/entity/yir_lamp_old1_on.png",
 			priority = "high",
 			width = 256,
-			height = 256, scale = 0.5,			
+			height = 256, scale = 0.5,
 			shift = {0.5, -1.5}
 		},
 		circuit_wire_max_distance = 20,
@@ -94,14 +94,14 @@ data:extend(
 			usage_priority = "secondary-input"
 		},
 		energy_usage_per_tick = "20kW",
-		light = {intensity = 0.9, size = 70, },
+		light = {intensity = 0.9, size = 70,},
 		tint = {r=1.0, g=1.0, b=0.6, a=0.8},
 		picture_off =
 		{
 			filename = "__yi_railway__/graphics/entity/yir_clock_off.png",
 			priority = "high",
 			width = 256,
-			height = 256, scale = 0.5,			
+			height = 256, scale = 0.5,
 			shift = {1.5, -1.5}
 		},
 		picture_on =
@@ -109,10 +109,10 @@ data:extend(
 			filename = "__yi_railway__/graphics/entity/yir_clock_on.png",
 			priority = "high",
 			width = 256,
-			height = 256, scale = 0.5,			
+			height = 256, scale = 0.5,
 			shift = {1.5, -1.5}
 		},
 		circuit_wire_max_distance = 20,
 	},
-		
+
 })

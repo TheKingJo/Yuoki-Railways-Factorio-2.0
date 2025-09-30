@@ -7,17 +7,17 @@ data:extend(
 		type = "recipe",
 		name = "y_tring",
 		energy_required = 2,
-		enabled = true,		
+		enabled = true,
 		ingredients = {{"iron-plate", 2}, {"iron-stick", 4},},
 		result= "y_tring",
 		result_count = 10
-	},	
+	},
 	]]
 	{
 		type = "item",
 		name = "y_tring",
-		icon = "__yi_railway__/graphics/path_tiles/stripes.png", icon_size = 32,		
-		subgroup = "yir_floor",		
+		icon = "__yi_railway__/graphics/path_tiles/stripes.png", icon_size = 32,
+		subgroup = "yir_floor",
 		order = "b[concrete]",
 		stack_size = 500,
 		place_as_tile =
@@ -27,13 +27,13 @@ data:extend(
 			condition = {layers={water_tile=true}}
 		}
 	},
-	
+
 	{
 		type = "tile",
 		name = "y_tring",
 		needs_correction = false,
 		minable = {hardness = 0.2, mining_time = 0.5, result = "y_tring"},
-		mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
+		mined_sound = {filename = "__base__/sound/deconstruct-bricks.ogg"},
 		collision_mask = tile_collision_masks.ground(),
 		walking_speed_modifier = 1.2,
 		layer = 59, decorative_removal_probability = 1.0,
@@ -85,5 +85,5 @@ data:extend(
 		ageing=0,
 		vehicle_friction_modifier = stone_path_vehicle_speed_modifier
 	},
-	
+
 })
