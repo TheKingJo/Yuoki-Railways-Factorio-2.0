@@ -1,3 +1,21 @@
+local modname = "__yi_railway__"
+
+local function filenameGen(name, count, shadow)
+	local names = {}
+	local sh =""
+	if shadow ~= nil and shadow == true then
+		sh = "_shadow"
+	end
+	if count == 1 then
+			table.insert(names, modname.."/graphics/entity/railway/"..name..sh..".png")
+	else
+		for i = 0, count - 1, 1 do
+			table.insert(names, modname.."/graphics/entity/railway/"..name..(i+1)..sh..".png")
+		end
+	end
+	return names
+end
+
 drive_over_tie = require("lib.functions")
 data:extend(
 {
@@ -98,26 +116,33 @@ data:extend(
 		--stand_by_light = rolling_stock_stand_by_light(),
 		pictures =
 		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			direction_count = 128,
-			filenames =
+			rotated =
 			{
-				"__yi_railway__/graphics/entity/railway/des_gs1.png",
-				"__yi_railway__/graphics/entity/railway/des_gs2.png",
-				"__yi_railway__/graphics/entity/railway/des_gs3.png",
-				"__yi_railway__/graphics/entity/railway/des_gs4.png",
-				"__yi_railway__/graphics/entity/railway/des_gs5.png",
-				"__yi_railway__/graphics/entity/railway/des_gs6.png",
-				"__yi_railway__/graphics/entity/railway/des_gs7.png",
-				"__yi_railway__/graphics/entity/railway/des_gs8.png",
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0.42, -1.125}
-		}
+				layers =
+				{
+					{
+						priority = "very-low",
+						width = 256,
+						height = 256,
+						direction_count = 128,
+						filenames = filenameGen("des_gs", 8),
+						line_length = 4,
+						lines_per_file = 4,
+						shift = {0.42, -1.125},
+					},
+					{
+						priority = "very-low",
+						width = 256,
+						height = 256,
+						direction_count = 128,
+						filenames = filenameGen("des_gs", 8, true),
+						line_length = 4,
+						lines_per_file = 4,
+						shift = {0.42, -1.125},
+						draw_as_shadow = true,
+					}
+				}
+			}
 		},
 		minimap_representation =
 		{
@@ -186,12 +211,11 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.2;
 	},
 
-	--
 	{
 		type = "locomotive",
 		name = "y_loco_desw_orange",
@@ -374,7 +398,7 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.2;
 	},
@@ -408,9 +432,9 @@ data:extend(
 		{
 			{type = "fire", decrease = 15, percent = 50},
 			{type = "physical", decrease = 15, percent = 30},
-			{type = "impact",decrease = 50,percent = 60},
-			{type = "explosion",decrease = 15,percent = 30},
-			{type = "acid",decrease = 10,percent = 20}
+			{type = "impact", decrease = 50, percent = 60},
+			{type = "explosion", decrease = 15, percent = 30},
+			{type = "acid", decrease = 10, percent = 20}
 		},
 
 		energy_source =
@@ -474,22 +498,13 @@ data:extend(
 		{
 			rotated = {
 			priority = "very-low",
-			width = 256,
-			height = 256,
+			width = 412,
+			height = 356,
 			direction_count = 128,
-			filenames =
-			{
-				"__yi_railway__/graphics/entity/railway/des_bs1.png",
-				"__yi_railway__/graphics/entity/railway/des_bs2.png",
-				"__yi_railway__/graphics/entity/railway/des_bs3.png",
-				"__yi_railway__/graphics/entity/railway/des_bs4.png",
-				"__yi_railway__/graphics/entity/railway/des_bs5.png",
-				"__yi_railway__/graphics/entity/railway/des_bs6.png",
-				"__yi_railway__/graphics/entity/railway/des_bs7.png",
-				"__yi_railway__/graphics/entity/railway/des_bs8.png",
-			},
-			line_length = 4,
-			lines_per_file = 4,
+			filenames = filenameGen("des_bs", 1),
+			line_length = 8,
+			scale = 0.5,
+			lines_per_file = 16,
 			shift = {0.42, -1.125}
 		}
 		},
@@ -560,7 +575,7 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.2;
 	},
@@ -778,7 +793,7 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.2;
 	},
@@ -969,7 +984,7 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.2;
 	},
