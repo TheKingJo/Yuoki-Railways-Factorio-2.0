@@ -1,7 +1,6 @@
 drive_over_tie = require("lib.functions")
 data:extend(
 {
-
 	{
 		type = "fluid-wagon",
 		name = "y_wagon_tank_fm1",

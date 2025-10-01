@@ -212,13 +212,10 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.3;
 	},
-
-
-
 	-- KR
 	{
 		type = "locomotive",
@@ -397,13 +394,10 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.3;
 	},
-
-	--
-
 
 	{
 		type = "locomotive",
@@ -581,7 +575,7 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.2;
 	},
@@ -764,7 +758,7 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.3;
 	},
@@ -947,10 +941,8 @@ data:extend(
 			},
 			match_speed_to_activity = true,
 		},
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume=0.7},
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.3;
 	},
-
-
 })
