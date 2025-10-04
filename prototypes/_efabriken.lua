@@ -431,34 +431,6 @@ data:extend(
 	},
 
 	{
-		type = "recipe",
-		name = "yir_future_monument",
-		ingredients = {
-			{type = "item", name = "steel-plate", amount=34},
-			{type = "item", name = "logistic-science-pack", amount=20},
-			{type = "item", name = "production-science-pack", amount=10},
-			{type = "item", name = "utility-science-pack", amount=8},
-		},
-		results = {{type = "item",name = "yir_future_monument", amount=1},},
-		main_product = "yir_future_monument",
-		enabled = true,
-		group = "yuoki_railway",
-		subgroup = "yir_railyardliquid",
-		order = "X3",
-	},
-
-	{
-		type = "item",
-		name = "yir_future_monument",
-		icon = "__yi_railway__/graphics/icons/factories/yir_future_monument_icon.png",
-		icon_size = 64,
-		group = "yuoki_railway",
-		subgroup = "yir_railyardliquid",
-		stack_size = 10,
-		place_result = "yir_future_monument",
-	},
-
-	{
 		type = "assembling-machine",
 		name = "yir_future_monument",
 		icon = "__yi_railway__/graphics/icons/factories/yir_future_monument_icon.png",
@@ -548,33 +520,6 @@ data:extend(
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 		order = "b",
 		subgroup = "yir_railyardliquid",
-	},
-
-	{
-		type = "recipe",
-		name = "yir_factory_chemical",
-		ingredients = {
-			{type = "item", name = "iron-plate", amount=8},
-			{type = "item", name = "steel-plate", amount=2},
-			{type = "item", name = "iron-gear-wheel", amount=2},
-			{type = "item", name = "yir_brick1_tile", amount=34}
-		},
-		results = {{type = "item", name = "yir_factory_chemical", amount=1},},
-		main_product = "yir_factory_chemical",
-		enabled = true,
-		group = "yuoki_railway",
-		subgroup = "yir_railyardliquid",
-	},
-
-	{
-		type = "item",
-		name = "yir_factory_chemical",
-		icon = "__yi_railway__/graphics/icons/factories/chemie_32.png",
-		icon_size = 64,
-		group = "yuoki_railway",
-		subgroup = "yir_railyardliquid",
-		stack_size = 10,
-		place_result = "yir_factory_chemical",
 	},
 
 	{

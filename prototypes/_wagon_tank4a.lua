@@ -399,40 +399,6 @@ data:extend(
 	},
 
 	{
-		type = "recipe",
-		name = "yir_fw4a_tank_oil",
-		category = "yir_rc_wsw",
-		enabled = true,
-		energy_required = 3.00,
-		ingredients = {
-		{type = "item", name = "yir_frame_waggon" , amount = 1,},
-		{type = "item", name = "yir_radsatz_waggon" , amount = 2,},
-		{type = "item", name = "yir_color_red" , amount = 2.0,},
-		{type = "item", name = "yir_color_green" , amount = 1.0,},
-		{type = "item", name = "yir_diesel_coin" , amount = 5.0,},
-		},
-			results = {
-			{type = "item", name = "yir_fw4a_tank_oil", amount = 1.0,},
-		},
-		main_product = "yir_fw4a_tank_oil",
-		icon = "__yi_railway__/graphics/icons/railway/4afw_oil_icon.png",icon_size = 64,
-		order = "0", group = "yuoki_railway", subgroup = "yir_fluidwagons_4A",
-	},
-
-	{
-		type = "item",
-		name = "yir_fw4a_tank_oil",
-		icon = "__yi_railway__/graphics/icons/railway/4afw_oil_icon.png",
-		group = "yuoki_railway",
-		subgroup = "yir_fluidwagons_4A",
-		order = "a",
-		stack_size = 10,
-		default_request_amount = 5,
-		icon_size = 64,
-		place_result = "yir_fw4a_tank_oil",
-	},
-
-	{
 		type = "fluid-wagon",
 		name = "yir_fw4a_tank_oil",
 		icon = "__yi_railway__/graphics/icons/railway/4afw_oil_icon.png",
@@ -529,38 +495,6 @@ data:extend(
 		crash_trigger = crash_trigger(),
 		sound_minimum_speed = 0.5;
 		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
-	},
-
-	{
-		type = "recipe",
-		name = "yir_fw4_vc",
-		category = "yir_rc_wsw",
-		enabled = true,
-		energy_required = 3.00,
-		ingredients = {
-		{type = "item", name = "yir_frame_waggon" , amount = 1,},
-		{type = "item", name = "yir_radsatz_waggon" , amount = 2,},
-		{type = "item", name = "yir_color_green" , amount = 4.0,},
-		{type = "item", name = "yir_diesel_coin" , amount = 3.0,},
-		},
-			results = {
-			{type = "item", name = "yir_fw4_vc", amount = 1.0,},
-		},
-		main_product = "yir_fw4_vc",
-		icon = "__yi_railway__/graphics/icons/railway/4aw_fw_vc_icon.png",icon_size = 64,
-		order = "0", group = "yuoki_railway", subgroup = "yir_fluidwagons_4A",
-	},
-
-	{
-		type = "item",
-		name = "yir_fw4_vc",
-		icon = "__yi_railway__/graphics/icons/railway/4aw_fw_vc_icon.png",
-		group = "yuoki_railway",
-		subgroup = "yir_fluidwagons_4A",
-		order = "a",
-		stack_size = 10,
-		default_request_amount = 5,
-		place_result = "yir_fw4_vc", icon_size = 64,
 	},
 
 	{

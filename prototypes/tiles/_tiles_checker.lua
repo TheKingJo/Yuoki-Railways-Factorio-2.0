@@ -2,33 +2,6 @@ local tile_collision_masks = require("__base__/prototypes/tile/tile-collision-ma
 
 data:extend(
 {
-	--[[
-	{
-		type = "recipe",
-		name = "y_path_checker",
-		energy_required = 2,
-		enabled = true,
-		ingredients = {{"iron-plate", 4}, {"y-slag", 4},},
-		result= "y_path_checker",
-		result_count = 8
-	},
-	]]
-
-	{
-		type = "item",
-		name = "y_path_checker",
-		icon = "__yi_railway__/graphics/path_tiles/labor_icon.png",
-		icon_size = 32,
-		subgroup = "yir_floor",
-		order = "b[concrete]",
-		stack_size = 500,
-		place_as_tile =
-		{
-			result = "y_path_checker",
-			condition_size = 2,
-			condition = {layers={water_tile=true}}
-		}
-	},
 
 	{
 		type = "tile",
@@ -82,10 +55,8 @@ data:extend(
 			},
 		},
 		walking_sound = concrete_sounds,
-		-- pollution_absorption_per_second = 0,
 		map_color={r=90, g=70, b=50},
 		ageing=0,
 		vehicle_friction_modifier = stone_path_vehicle_speed_modifier
 	},
-
 })

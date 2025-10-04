@@ -1,4 +1,5 @@
 local modname = "__yi_railway__"
+local item_sounds = require("__base__.prototypes.item_sounds")
 
 local entityData = {
 	locomotive = {
@@ -18,7 +19,7 @@ local entityData = {
 		y_loco_desw = 			{filename = "des_gs", 					double = true, 	doublesided = false, size = {3248, 5568}, sizeSh = {3264, 6144}, shift = {0.42,-1.125}},
 		y_loco_desw_blue = 		{filename = "des_bs", 					double = true, 	doublesided = false, size = {3248, 5568}, sizeSh = {3248, 6144}, shift = {0.42,-1.125}},
 		y_loco_desw_orange = 	{filename = "des_os", 					double = true, 	doublesided = false, size = {3248, 5600}, sizeSh = {3248, 6144}, shift = {0.42,-1.125}},
-		--y_loco_ses_std = 		{filename = "ses_std-x_sheet", 			double = true, 	doublesided = false, size = { 100,  100}, sizeSh = { 100,  100}, shift = {0.42,-1.125}},
+		y_loco_ses_std = 		{filename = "ses_std-x_sheet", 			double = true, 	doublesided = false, size = {3264, 5568}, sizeSh = {3296, 6016}, shift = {0.42,-1.125}},
 		y_loco_ses_red = 		{filename = "ses_ared", 				double = true, 	doublesided = false, size = {3200, 5472}, sizeSh = {3232, 5888}, shift = {0.42,-1.125}},
 	},
 	["cargo-wagon"] = {
@@ -60,6 +61,79 @@ local entityData = {
 		yir_fw4_vc = 			{filename = "4aw_fw_vc_sheet", 		double = false,	doublesided = true,	size = {4080, 4000}, sizeSh = {4080, 4096}, shift = {0.42,-0.875}},
 	},
 }
+
+local itemData = {
+	large = {
+		"yir_factory_loco",
+		"yir_factory_wagon",
+		"yir_factory_material",
+		"yir_factory_wagon",
+		"yir_factory_tiles",
+		"yir_factory_chemical",
+
+		"yir_factory_stuff",
+		"yir_diesel_monument",
+		"yir_future_monument",
+
+		"yir_frame_loco_steam",
+		"yir_frame_loco_diesel",
+		"yir_frame_loco_future",
+
+		"yir_frame_waggon",
+
+		"yir_radsatz_locos",
+		"yir_radsatz_waggon",
+	},
+	coin = {
+		"yir_coin",
+		"yir_diesel_coin",
+		"yir_future_coin",
+	},
+	resource = {
+		"yir_color_black",
+		"yir_color_blue",
+		"yir_color_green",
+		"yir_color_red",
+		"yir_color_white",
+
+		"yir_fuel_coks",
+		"yir_fuel_energy_u1",
+	},
+	electrical = {
+		"yir_lamp_modern",
+		"yir_lamp_old1",
+		"yir_lamp_clock",
+
+		"yir_fuel_energy",
+	},
+	tile = {
+		"y_tgb",
+		"y_tring",
+		"y_path_checker",
+		"y_path_science",
+		"y_path_labor",
+		"y_path_slag",
+		"yir_brick1_tile",
+		"yir_muster1_tile",
+		"yir_metal2_tile",
+		"yir_metal3_tile",
+		"yir_metal4_tile",
+		"yir_stony_tile",
+		"yir_brick2_tile",
+		"yir_grating_tile",
+	},
+	metal = {
+		"yir_fuel_diesel",
+	},
+	fluid = {
+		"yir_fuel_fluid_u1",
+		"yir_fuel_fluid_u2",
+		"yir_fuel_fluid_u3",
+	}
+}
+--[[
+
+]]
 
 local function filenameGen(name, count, shadow)
 	local names = {}
@@ -120,21 +194,43 @@ local function makePictures(data)
 	return pictures
 end
 
-for typeName, typeData in pairs(entityData) do
+local types = {
+	large = "metal_large",
+	coin = "coin",
+	resource = "resource",
+	electrical = "electric_small",
+	tile = "concrete",
+	metal = "metal_chest",
+	fluid = "fluid",
+}
+
+for type, items in pairs(itemData) do
+	for _, name in pairs(items) do
+		local item = data.raw["item"][name]
+
+		if item ~= nil then
+			item.inventory_move_sound = item_sounds[types[type].."_inventory_move"]
+			item.pick_sound = 			item_sounds[types[type].."_inventory_pickup"]
+			item.drop_sound = 			item_sounds[types[type].."_inventory_move"]
+		end
+	end
+end
+
+for type, typeData in pairs(entityData) do
 	for name, datas in pairs(typeData) do
-		local vehicle = data.raw[typeName][name]
+		local vehicle = data.raw[type][name]
 		local item = data.raw["item"][name]
 
 		if vehicle ~= nil then
 			vehicle.pictures = makePictures(datas)
-			vehicle.minimap_representation = data.raw[typeName][typeName].minimap_representation
-			vehicle.selected_minimap_representation = data.raw[typeName][typeName].selected_minimap_representation
+			vehicle.minimap_representation = data.raw[type][type].minimap_representation
+			vehicle.selected_minimap_representation = data.raw[type][type].selected_minimap_representation
 		end
 
 		if item ~= nil then
-			item.inventory_move_sound = data.raw["item-with-entity-data"][typeName].inventory_move_sound
-			item.pick_sound = data.raw["item-with-entity-data"][typeName].pick_sound
-			item.drop_sound = data.raw["item-with-entity-data"][typeName].drop_sound
+			item.inventory_move_sound = data.raw["item-with-entity-data"][type].inventory_move_sound
+			item.pick_sound = data.raw["item-with-entity-data"][type].pick_sound
+			item.drop_sound = data.raw["item-with-entity-data"][type].drop_sound
 		end
 
 		log(name.." changed")
@@ -142,6 +238,21 @@ for typeName, typeData in pairs(entityData) do
 end
 
 --[[
+Umsortierung:
+- Factories
+- Tiles
+- Coins, colors
+- parts, lamps
+- loks (steam, diesel, fut)
+- cargo (steam, diesel, fut)
+- fluid (steam, diesel, fut)
+
+steam era	oil-processing, railway erforschen oder herstellen
+diesel era	advanced-oil-processing erforschen bzw leichtöl herstellen
+future era	gelbe tränke erforscht
+
+lamps	lamp
+
 for name, _ in pairs(data.raw["locomotive"]) do
 	log(name)
 end

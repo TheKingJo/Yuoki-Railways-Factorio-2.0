@@ -424,39 +424,6 @@ data:extend(
 	},
 
 	{
-		type = "recipe",
-		name = "yir_4acw_vc",
-		category = "yir_rc_wsw",
-		enabled = true,
-		energy_required = 3.00,
-		ingredients = {
-		{type = "item", name = "yir_frame_waggon" , amount = 1,},
-		{type = "item", name = "yir_radsatz_waggon" , amount = 2,},
-		{type = "item", name = "yir_color_green" , amount = 4.0,},
-		{type = "item", name = "yir_diesel_coin" , amount = 8.0,},
-		},
-			results = {
-			{type = "item", name = "yir_4acw_vc", amount = 1.0,},
-		},
-		main_product = "yir_4acw_vc",
-		icon = "__yi_railway__/graphics/icons/railway/4a-cw_vc_icon.png",icon_size = 64,
-		order = "0", group = "yuoki_railway", subgroup = "yir_cargowagons_4A",
-	},
-
-	{
-		type = "item-with-entity-data",
-		name = "yir_4acw_vc",
-		icon = "__yi_railway__/graphics/icons/railway/4a-cw_vc_icon.png",
-		group = "yuoki_railway",
-		subgroup = "yir_cargowagons_4A",
-		order = "a",
-		stack_size = 10,
-		default_request_amount = 5,
-		icon_size = 64,
-		place_result = "yir_4acw_vc",
-	},
-
-	{
 		type = "cargo-wagon",
 		name = "yir_4acw_vc",
 		icon = "__yi_railway__/graphics/icons/railway/4a-cw_vc_icon.png",

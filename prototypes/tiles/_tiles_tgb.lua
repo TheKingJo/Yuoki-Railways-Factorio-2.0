@@ -2,36 +2,6 @@ local tile_collision_masks = require("__base__/prototypes/tile/tile-collision-ma
 
 data:extend(
 {
-	--
-	--[[
-	{
-		type = "recipe",
-		name = "y_tgb",
-		energy_required = 2,
-		enabled = true,
-		ingredients = {{"steel-plate", 2},},
-		result= "y_tgb",
-		result_count = 10
-	},
-	]]
-
-
-	{
-		type = "item",
-		name = "y_tgb",
-		icon = "__yi_railway__/graphics/path_tiles/floor_tplate.png",
-		icon_size = 32,
-		subgroup = "yir_floor",
-		order = "b[concrete]",
-		stack_size = 500,
-		place_as_tile =
-		{
-			result = "y_tgb",
-			condition_size = 3,
-			condition = {layers={water_tile=true}}
-		}
-	},
-
 	{
 		type = "tile",
 		name = "y_tgb",
@@ -89,5 +59,4 @@ data:extend(
 		ageing=0,
 		vehicle_friction_modifier = stone_path_vehicle_speed_modifier
 	},
-
 })

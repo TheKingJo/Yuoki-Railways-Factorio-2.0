@@ -2,7 +2,6 @@ local tile_collision_masks = require("__base__/prototypes/tile/tile-collision-ma
 
 data:extend(
 {
-
 	{
 		type = "recipe",
 		name = "yir_brick1_tile",
@@ -16,22 +15,6 @@ data:extend(
 		main_product = "yir_brick1_tile",
 		category = "yir_rc_tiles",
 		order = "brick-1",
-	},
-
-	{
-		type = "item",
-		name = "yir_brick1_tile",
-		icon = "__yi_railway__/graphics/path_tiles/bricks_1.png",
-		icon_size = 32,
-		subgroup = "yir_floor_line2",
-		order = "brick-1",
-		stack_size = 500,
-		place_as_tile =
-		{
-			result = "yir_brick1_tile",
-			condition_size = 2,
-			condition = {layers={water_tile=true}}
-		}
 	},
 
 	{
@@ -89,7 +72,6 @@ data:extend(
 		map_color={r=90, g=70, b=50},
 		ageing=0,
 		walking_sound = concrete_sounds,
-		-- pollution_absorption_per_second = 0,
 		vehicle_friction_modifier = stone_path_vehicle_speed_modifier
 	},
 
@@ -106,22 +88,6 @@ data:extend(
 		main_product = "yir_brick2_tile",
 		category = "yir_rc_tiles",
 		order = "brick-2",
-	},
-
-	{
-		type = "item",
-		name = "yir_brick2_tile",
-		icon = "__yi_railway__/graphics/path_tiles/bricks_2.png",
-		icon_size = 32,
-		subgroup = "yir_floor_line2",
-		order = "brick-1",
-		stack_size = 500,
-		place_as_tile =
-		{
-			result = "yir_brick2_tile",
-			condition_size = 2,
-			condition = {layers={water_tile=true}}
-		}
 	},
 
 	{
@@ -176,10 +142,8 @@ data:extend(
 			},
 		},
 		walking_sound = concrete_sounds,
-		-- pollution_absorption_per_second = 0,
 		map_color={r=90, g=70, b=50},
 		ageing=0,
 		vehicle_friction_modifier = stone_path_vehicle_speed_modifier
 	},
-
 })

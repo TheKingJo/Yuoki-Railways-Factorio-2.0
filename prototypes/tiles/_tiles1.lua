@@ -2,36 +2,6 @@ local tile_collision_masks = require("__base__/prototypes/tile/tile-collision-ma
 
 data:extend(
 {
-
-	--[[
-	{
-		type = "recipe",
-		name = "y_path_labor",
-		energy_required = 2,
-		enabled = true,
-		ingredients = {{"iron-plate", 4},{"y-refined-yres2", 2}, {"y-crystal2", 1},},
-		result= "y_path_labor",
-		result_count = 12
-	},
-	]]
-	{
-		type = "item",
-		name = "y_path_labor",
-		icon = "__yi_railway__/graphics/path_tiles/floor004_icon.png",
-		icon_size = 32,
-		subgroup = "yir_floor",
-		order = "b[concrete]",
-		stack_size = 500,
-		place_as_tile =
-		{
-			result = "y_path_labor",
-			condition_size = 2,
-			condition = {layers={water_tile=true}}
-		}
-	},
-
-
-
 	{
 		type = "tile",
 		name = "y_path_labor",
@@ -97,40 +67,10 @@ data:extend(
 			},
 		},
 		walking_sound = concrete_sounds,
-		-- pollution_absorption_per_second = 0,
 		map_color={r=90, g=70, b=50},
 		ageing=0,
 		vehicle_friction_modifier = stone_path_vehicle_speed_modifier
 	},
-
-	-- vents-path
-	--[[
-	{
-		type = "recipe",
-		name = "y_path_science",
-		energy_required = 2,
-		enabled = true,
-		ingredients = {{"iron-plate", 4}, {"y-refined-yres1", 1},},
-		result= "y_path_science",
-		result_count = 8
-	},
-	]]
-	{
-		type = "item",
-		name = "y_path_science",
-		icon = "__yi_railway__/graphics/path_tiles/vent_icon.png",
-		icon_size = 32,
-		subgroup = "yir_floor",
-		order = "b[concrete]",
-		stack_size = 500,
-		place_as_tile =
-		{
-			result = "y_path_science",
-			condition_size = 2,
-			condition = {layers={water_tile=true}}
-		}
-	},
-
 
 	{
 		type = "tile",
@@ -196,24 +136,8 @@ data:extend(
 			},
 		},
 		walking_sound = concrete_sounds,
-		-- pollution_absorption_per_second = 0,
 		map_color={r=90, g=70, b=50},
 		ageing=0,
 		vehicle_friction_modifier = stone_path_vehicle_speed_modifier
 	},
-
-	-- slag-path
-	--[[
-	{
-		type = "recipe",
-		name = "y_path_slag",
-		energy_required = 2,
-		enabled = true,
-		ingredients = {{"stone", 2}, {"y-slag", 6},},
-		result= "y_path_slag",
-		result_count = 4
-	},
-	]]
-
-
 })

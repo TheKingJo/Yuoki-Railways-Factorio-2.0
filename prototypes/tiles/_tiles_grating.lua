@@ -2,7 +2,6 @@ local tile_collision_masks = require("__base__/prototypes/tile/tile-collision-ma
 
 data:extend(
 {
-
 	{
 		type = "recipe",
 		name = "yir_grating_tile",
@@ -14,22 +13,6 @@ data:extend(
 		results = {{type = "item", name = "yir_grating_tile", amount=3},},
 		main_product = "yir_grating_tile",
 		category = "yir_rc_tiles",
-	},
-
-	{
-		type = "item",
-		name = "yir_grating_tile",
-		icon = "__yi_railway__/graphics/path_tiles/vent005_icon.png",
-		icon_size = 32,
-		subgroup = "yir_floor",
-		order = "b[concrete]",
-		stack_size = 500,
-		place_as_tile =
-		{
-			result = "yir_grating_tile",
-			condition_size = 2,
-			condition = {layers={water_tile=true}}
-		}
 	},
 
 	{
@@ -84,10 +67,8 @@ data:extend(
 			},
 		},
 		walking_sound = concrete_sounds,
-		-- pollution_absorption_per_second = 0,
 		map_color={r=90, g=70, b=50},
 		ageing=0,
 		vehicle_friction_modifier = stone_path_vehicle_speed_modifier
 	},
-
 })

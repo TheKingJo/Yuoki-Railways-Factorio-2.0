@@ -1,5 +1,4 @@
-data:extend(
-{
+data:extend({
 	{
 		type = "lamp",
 		name = "yir_lamp_modern",
@@ -60,7 +59,6 @@ data:extend(
 		},
 		circuit_wire_max_distance = 20,
 	},
-
 	{
 		type = "lamp",
 		name = "yir_lamp_old1",
