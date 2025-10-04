@@ -1,7 +1,7 @@
 local modname = "__yi_railway__"
 
 local entityData = {
-	trains = {
+	locomotive = {
 		y_loco_emd1500blue = 	{filename = "emd_1500blue_sheet_old", 	double = true, 	doublesided = false, size = {3296, 5760}, sizeSh = {3424, 6976}, shift = {0.42,-1.125}},
 		y_loco_emd1500blue_v2 = {filename = "emd_1500blue_sheet", 		double = true, 	doublesided = false, size = {3296, 5760}, sizeSh = {3424, 6976}, shift = {0.42,-1.125}},
 		y_loco_emd1500black = 	{filename = "emd_1500black_sheet_old",	double = true, 	doublesided = false, size = {3296, 5824}, sizeSh = {3424, 6976}, shift = {0.42,-1.125}},
@@ -21,7 +21,7 @@ local entityData = {
 		--y_loco_ses_std = 		{filename = "ses_std-x_sheet", 			double = true, 	doublesided = false, size = { 100,  100}, sizeSh = { 100,  100}, shift = {0.42,-1.125}},
 		y_loco_ses_red = 		{filename = "ses_ared", 				double = true, 	doublesided = false, size = {3200, 5472}, sizeSh = {3232, 5888}, shift = {0.42,-1.125}},
 	},
-	wagon = {
+	["cargo-wagon"] = {
 		y_wagon_closed = 		{filename = "wcs_closed_sheet", 		double = false, doublesided = true,	size = {3216, 2736}, sizeSh = {3296, 3056}, shift = {0.42,-1.125}},
 		y_wagon_hopper_yellow = {filename = "2a_hopper_y_sheet", 		double = false, doublesided = true,	size = {3344, 2832}, sizeSh = {3360, 3136}, shift = {0.42,-1.125}},
 		y_wagon_corn_green = 	{filename = "2a_corn_green_sheet", 		double = false, doublesided = true,	size = {3344, 2848}, sizeSh = {3360, 3136}, shift = {0.42,-1.125}},
@@ -51,7 +51,7 @@ local entityData = {
 		y_wagon_iron = 			{filename = "wcs_iron_s", 				double = false,	doublesided = true,	size = {3216, 2784}, sizeSh = {3216, 3056}, shift = {0.42,-1.125}},
 		y_wagon_stone = 		{filename = "wcs_stone_s", 				double = false,	doublesided = true,	size = {3216, 2752}, sizeSh = {3232, 3056}, shift = {0.42,-1.125}},
 	},
-	fwagon = {
+	["fluid-wagon"] = {
 		y_wagon_tank_fm1 = 		{filename = "4atw_fm1_sheet", 		double = false,	doublesided = true,	size = {4096, 3360}, sizeSh = {4096, 3648}, shift = {0.42,-1.125}},
 		y_wagon_tank_fm2 = 		{filename = "4atw_fm2_sheet", 		double = false,	doublesided = true,	size = {4096, 3376}, sizeSh = {4096, 3648}, shift = {0.42,-1.125}},
 		y_wagon_tank_orange =	{filename = "4aw_fw_acid_sheet", 	double = false,	doublesided = true,	size = {4080, 4000}, sizeSh = {4080, 4096}, shift = {0.42,-1}},
@@ -120,41 +120,25 @@ local function makePictures(data)
 	return pictures
 end
 
-for name, datas in pairs(entityData.trains) do
-	local train = data.raw["locomotive"][name]
+for typeName, typeData in pairs(entityData) do
+	for name, datas in pairs(typeData) do
+		local vehicle = data.raw[typeName][name]
+		local item = data.raw["item"][name]
 
-	if train ~= nil then
-		train.pictures = makePictures(datas)
+		if vehicle ~= nil then
+			vehicle.pictures = makePictures(datas)
+			vehicle.minimap_representation = data.raw[typeName][typeName].minimap_representation
+			vehicle.selected_minimap_representation = data.raw[typeName][typeName].selected_minimap_representation
+		end
+
+		if item ~= nil then
+			item.inventory_move_sound = data.raw["item-with-entity-data"][typeName].inventory_move_sound
+			item.pick_sound = data.raw["item-with-entity-data"][typeName].pick_sound
+			item.drop_sound = data.raw["item-with-entity-data"][typeName].drop_sound
+		end
+
+		log(name.." changed")
 	end
-
-	train.minimap_representation = data.raw["locomotive"]["locomotive"].minimap_representation
-	train.selected_minimap_representation = data.raw["locomotive"]["locomotive"].selected_minimap_representation
-
-	log(name.." changed")
-end
-for name, datas in pairs(entityData.wagon) do
-	local wagon = data.raw["cargo-wagon"][name]
-
-	if wagon ~= nil then
-		wagon.pictures = makePictures(datas)
-	end
-
-	wagon.minimap_representation = data.raw["cargo-wagon"]["cargo-wagon"].minimap_representation
-	wagon.selected_minimap_representation = data.raw["cargo-wagon"]["cargo-wagon"].selected_minimap_representation
-
-	log(name.." changed")
-end
-for name, datas in pairs(entityData.fwagon) do
-	local wagon = data.raw["fluid-wagon"][name]
-
-	if wagon ~= nil then
-		wagon.pictures = makePictures(datas)
-	end
-
-	wagon.minimap_representation = data.raw["fluid-wagon"]["fluid-wagon"].minimap_representation
-	wagon.selected_minimap_representation = data.raw["fluid-wagon"]["fluid-wagon"].selected_minimap_representation
-
-	log(name.." changed")
 end
 
 --[[

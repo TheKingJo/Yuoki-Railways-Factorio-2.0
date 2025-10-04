@@ -1,6 +1,7 @@
 data:extend({
 {
-   type = "item", name = "yir_diesel_monument",
+   type = "item",
+   name = "yir_diesel_monument",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/yir_diesel_monument_icon.png",
    group = "yuoki_railway",
@@ -11,7 +12,8 @@ data:extend({
    place_result = "yir_diesel_monument",
 },
 {
-   type = "item", name = "yir_fuel_fluid_u3",
+   type = "item",
+   name = "yir_fuel_fluid_u3",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/fuel_gas.png",
    group = "yuoki_railway",
@@ -23,7 +25,8 @@ data:extend({
    fuel_category = "yr_diesel",
 },
 {
-   type = "item", name = "yir_fuel_fluid_u2",
+   type = "item",
+   name = "yir_fuel_fluid_u2",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/fuel_light.png",
    group = "yuoki_railway",
@@ -35,7 +38,8 @@ data:extend({
    fuel_category = "yr_diesel",
 },
 {
-   type = "item", name = "yir_fuel_fluid_u1",
+   type = "item",
+   name = "yir_fuel_fluid_u1",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/fuel_diesel.png",
    group = "yuoki_railway",
@@ -47,7 +51,8 @@ data:extend({
    fuel_category = "yr_diesel",
 },
 {
-   type = "item", name = "yir_fuel_energy_u1",
+   type = "item",
+   name = "yir_fuel_energy_u1",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/fuel_energy.png",
    group = "yuoki_railway",
@@ -59,7 +64,8 @@ data:extend({
    fuel_category = "yr_future",
 },
 {
-   type = "item", name = "yir_lamp_clock",
+   type = "item",
+   name = "yir_lamp_clock",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/yir_clock_icon.png",
    group = "yuoki_railway",
@@ -70,7 +76,8 @@ data:extend({
    place_result = "yir_lamp_clock",
 },
 {
-   type = "item", name = "yir_lamp_old1",
+   type = "item",
+   name = "yir_lamp_old1",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/yir_lamp_old1_icon.png",
    group = "yuoki_railway",
@@ -81,7 +88,8 @@ data:extend({
    place_result = "yir_lamp_old1",
 },
 {
-   type = "item", name = "yir_lamp_modern",
+   type = "item",
+   name = "yir_lamp_modern",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/yir_lamp_modern_icon.png",
    group = "yuoki_railway",
@@ -92,7 +100,8 @@ data:extend({
    place_result = "yir_lamp_modern",
 },
 {
-   type = "item", name = "yir_future_coin",
+   type = "item",
+   name = "yir_future_coin",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/future_coin_icon.png",
    group = "yuoki_railway",
@@ -102,7 +111,8 @@ data:extend({
    default_request_amount = 50,
 },
 {
-   type = "item", name = "yir_diesel_coin",
+   type = "item",
+   name = "yir_diesel_coin",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/diesel_coin_icon.png",
    group = "yuoki_railway",
@@ -112,7 +122,8 @@ data:extend({
    default_request_amount = 50,
 },
 {
-   type = "item", name = "yir_loco_del_KR",
+   type = "item",
+   name = "yir_loco_del_KR",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/kurts_icon.png",
    group = "yuoki_railway",
@@ -123,7 +134,8 @@ data:extend({
    place_result = "yir_loco_del_KR",
 },
 {
-   type = "item", name = "yir_4acw_tf",
+   type = "item",
+   name = "yir_4acw_tf",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/4aw_cargo_tf_icon.png",
    group = "yuoki_railway",
@@ -134,7 +146,8 @@ data:extend({
    place_result = "yir_4acw_tf",
 },
 {
-   type = "item", name = "yir_4acw_mun",
+   type = "item",
+   name = "yir_4acw_mun",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/4aw_cargo_mun_icon.png",
    group = "yuoki_railway",
@@ -145,7 +158,8 @@ data:extend({
    place_result = "yir_4acw_mun",
 },
 {
-   type = "item", name = "yir_4acw_gold",
+   type = "item",
+   name = "yir_4acw_gold",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/4aw_cargo_gold_icon.png",
    group = "yuoki_railway",
@@ -156,7 +170,8 @@ data:extend({
    place_result = "yir_4acw_gold",
 },
 {
-   type = "item", name = "yir_4acw_closed",
+   type = "item",
+   name = "yir_4acw_closed",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/4aw_cargo_closed_icon.png",
    group = "yuoki_railway",
@@ -167,7 +182,8 @@ data:extend({
    place_result = "yir_4acw_closed",
 },
 {
-   type = "item", name = "yir_4acw_wood",
+   type = "item",
+   name = "yir_4acw_wood",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/4aw_cargo_wood_icon.png",
    group = "yuoki_railway",
@@ -178,7 +194,8 @@ data:extend({
    place_result = "yir_4acw_wood",
 },
 {
-   type = "item", name = "yir_4acw_stone",
+   type = "item",
+   name = "yir_4acw_stone",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/4aw_cw_stone_icon.png",
    group = "yuoki_railway",
@@ -189,7 +206,8 @@ data:extend({
    place_result = "yir_4acw_stone",
 },
 {
-   type = "item", name = "yir_4acw_copper",
+   type = "item",
+   name = "yir_4acw_copper",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/4aw_cw_copper_icon.png",
    group = "yuoki_railway",
@@ -200,7 +218,8 @@ data:extend({
    place_result = "yir_4acw_copper",
 },
 {
-   type = "item", name = "yir_4acw_iron",
+   type = "item",
+   name = "yir_4acw_iron",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/4aw_cw_iron_icon.png",
    group = "yuoki_railway",
@@ -211,7 +230,8 @@ data:extend({
    place_result = "yir_4acw_iron",
 },
 {
-   type = "item", name = "yir_4acw_coal",
+   type = "item",
+   name = "yir_4acw_coal",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/4aw_cw_coal_icon.png",
    group = "yuoki_railway",
@@ -222,7 +242,8 @@ data:extend({
    place_result = "yir_4acw_coal",
 },
 {
-   type = "item", name = "yir_fuel_energy",
+   type = "item",
+   name = "yir_fuel_energy",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/fuel_cell_e.png",
    group = "yuoki_railway",
@@ -234,7 +255,8 @@ data:extend({
    fuel_category = "chemical",
 },
 {
-   type = "item", name = "yir_fuel_diesel",
+   type = "item",
+   name = "yir_fuel_diesel",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/diesel.png",
    group = "yuoki_railway",
@@ -246,7 +268,8 @@ data:extend({
    fuel_category = "yr_diesel",
 },
 {
-   type = "item", name = "yir_fuel_coks",
+   type = "item",
+   name = "yir_fuel_coks",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/coks.png",
    group = "yuoki_railway",
@@ -258,7 +281,8 @@ data:extend({
    fuel_category = "chemical",
 },
 {
-   type = "item", name = "yir_frame_loco_future",
+   type = "item",
+   name = "yir_frame_loco_future",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/frame_future.png",
    group = "yuoki_railway",
@@ -268,7 +292,8 @@ data:extend({
    default_request_amount = 5,
 },
 {
-   type = "item", name = "yir_frame_loco_diesel",
+   type = "item",
+   name = "yir_frame_loco_diesel",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/frame_diesel.png",
    group = "yuoki_railway",
@@ -278,7 +303,8 @@ data:extend({
    default_request_amount = 5,
 },
 {
-   type = "item", name = "yir_frame_loco_steam",
+   type = "item",
+   name = "yir_frame_loco_steam",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/frame_steam.png",
    group = "yuoki_railway",
@@ -288,7 +314,8 @@ data:extend({
    default_request_amount = 5,
 },
 {
-   type = "item", name = "yir_frame_waggon",
+   type = "item",
+   name = "yir_frame_waggon",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/frame_wagon.png",
    group = "yuoki_railway",
@@ -298,7 +325,8 @@ data:extend({
    default_request_amount = 5,
 },
 {
-   type = "item", name = "yir_radsatz_locos",
+   type = "item",
+   name = "yir_radsatz_locos",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/radsatz_locomotive.png",
    group = "yuoki_railway",
@@ -308,7 +336,8 @@ data:extend({
    default_request_amount = 5,
 },
 {
-   type = "item", name = "yir_radsatz_waggon",
+   type = "item",
+   name = "yir_radsatz_waggon",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/radsatz_waggon.png",
    group = "yuoki_railway",
@@ -318,7 +347,8 @@ data:extend({
    default_request_amount = 5,
 },
 {
-   type = "item", name = "yir_color_white",
+   type = "item",
+   name = "yir_color_white",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/paint_white.png",
    group = "yuoki_railway",
@@ -328,7 +358,8 @@ data:extend({
    default_request_amount = 5,
 },
 {
-   type = "item", name = "yir_color_green",
+   type = "item",
+   name = "yir_color_green",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/paint_green.png",
    group = "yuoki_railway",
@@ -338,7 +369,8 @@ data:extend({
    default_request_amount = 5,
 },
 {
-   type = "item", name = "yir_color_black",
+   type = "item",
+   name = "yir_color_black",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/paint_black.png",
    group = "yuoki_railway",
@@ -348,7 +380,8 @@ data:extend({
    default_request_amount = 5,
 },
 {
-   type = "item", name = "yir_color_blue",
+   type = "item",
+   name = "yir_color_blue",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/paint_blue.png",
    group = "yuoki_railway",
@@ -358,7 +391,8 @@ data:extend({
    default_request_amount = 5,
 },
 {
-   type = "item", name = "yir_color_red",
+   type = "item",
+   name = "yir_color_red",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/paint_red.png",
    group = "yuoki_railway",
@@ -368,7 +402,8 @@ data:extend({
    default_request_amount = 5,
 },
 {
-   type = "item", name = "yir_loco_fesw_op",
+   type = "item",
+   name = "yir_loco_fesw_op",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/DESW90-OP-icon.png",
    group = "yuoki_railway",
@@ -379,7 +414,8 @@ data:extend({
    place_result = "yir_loco_fesw_op",
 },
 {
-   type = "item", name = "yir_2acw_wood",
+   type = "item",
+   name = "yir_2acw_wood",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/cws_wood-icon.png",
    group = "yuoki_railway",
@@ -390,7 +426,8 @@ data:extend({
    place_result = "yir_2acw_wood",
 },
 {
-   type = "item", name = "yir_2acw_3blocks",
+   type = "item",
+   name = "yir_2acw_3blocks",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/2a_cws_tf1-icon.png",
    group = "yuoki_railway",
@@ -401,7 +438,8 @@ data:extend({
    place_result = "yir_2acw_3blocks",
 },
 {
-   type = "item", name = "yir_coin",
+   type = "item",
+   name = "yir_coin",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/yir-coin-icon.png",
    group = "yuoki_railway",
@@ -411,7 +449,8 @@ data:extend({
    default_request_amount = 150,
 },
 {
-   type = "item", name = "yir_factory_loco",
+   type = "item",
+   name = "yir_factory_loco",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/factories/yir_fac_loco_icon.png",
    group = "yuoki_railway",
@@ -422,7 +461,8 @@ data:extend({
    place_result = "yir_factory_loco",
 },
 {
-   type = "item", name = "yir_factory_wagon",
+   type = "item",
+   name = "yir_factory_wagon",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/factories/yir_fac_waggon_icon.png",
    group = "yuoki_railway",
@@ -433,7 +473,8 @@ data:extend({
    place_result = "yir_factory_wagon",
 },
 {
-   type = "item", name = "yir_factory_tiles",
+   type = "item",
+   name = "yir_factory_tiles",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/factories/yir_fac_tiles_icon.png",
    group = "yuoki_railway",
@@ -444,7 +485,8 @@ data:extend({
    place_result = "yir_factory_tiles",
 },
 {
-   type = "item", name = "yir_factory_material",
+   type = "item",
+   name = "yir_factory_material",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/factories/yir_fac_parts_icon.png",
    group = "yuoki_railway",
@@ -455,7 +497,8 @@ data:extend({
    place_result = "yir_factory_material",
 },
 {
-   type = "item", name = "yir_factory_stuff",
+   type = "item",
+   name = "yir_factory_stuff",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/factories/yir_fab_coins_icon.png",
    group = "yuoki_railway",
@@ -466,7 +509,8 @@ data:extend({
    place_result = "yir_factory_stuff",
 },
 {
-   type = "item", name = "y_tgb",
+   type = "item",
+   name = "y_tgb",
    icon_size = 32,
    icon = "__yi_railway__/graphics/path_tiles/floor_tplate.png",
    group = "yuoki_railway",
@@ -476,7 +520,8 @@ data:extend({
    default_request_amount = 5,
 },
 {
-   type = "item", name = "y_tring",
+   type = "item",
+   name = "y_tring",
    icon_size = 32,
    icon = "__yi_railway__/graphics/path_tiles/stripes.png",
    group = "yuoki_railway",
@@ -486,7 +531,8 @@ data:extend({
    default_request_amount = 5,
 },
 {
-   type = "item", name = "y_path_checker",
+   type = "item",
+   name = "y_path_checker",
    icon_size = 32,
    icon = "__yi_railway__/graphics/path_tiles/labor_icon.png",
    group = "yuoki_railway",
@@ -496,7 +542,8 @@ data:extend({
    default_request_amount = 5,
 },
 {
-   type = "item", name = "y_loco_emd1500black_v2",
+   type = "item",
+   name = "y_loco_emd1500black_v2",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/DESW90-BL-icon.png",
    group = "yuoki_railway",
@@ -507,7 +554,8 @@ data:extend({
    place_result = "y_loco_emd1500black_v2",
 },
 {
-   type = "item", name = "y_loco_emd1500blue_v2",
+   type = "item",
+   name = "y_loco_emd1500blue_v2",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/emd-1500_blue2_icon.png",
    group = "yuoki_railway",
@@ -518,7 +566,8 @@ data:extend({
    place_result = "y_loco_emd1500blue_v2",
 },
 {
-   type = "item", name = "yir_loco_del_mk1400",
+   type = "item",
+   name = "yir_loco_del_mk1400",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/emd-gp_orange_icon.png",
    group = "yuoki_railway",
@@ -529,7 +578,8 @@ data:extend({
    place_result = "yir_loco_del_mk1400",
 },
 {
-   type = "item", name = "yir_loco_del_bluegray",
+   type = "item",
+   name = "yir_loco_del_bluegray",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/emd-gp_bluegray_icon.png",
    group = "yuoki_railway",
@@ -540,7 +590,8 @@ data:extend({
    place_result = "yir_loco_del_bluegray",
 },
 {
-   type = "item", name = "yir_loco_sel_blue",
+   type = "item",
+   name = "yir_loco_sel_blue",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/rsea_blue_icon.png",
    group = "yuoki_railway",
@@ -551,7 +602,8 @@ data:extend({
    place_result = "yir_loco_sel_blue",
 },
 {
-   type = "item", name = "yir_4acw_grey",
+   type = "item",
+   name = "yir_4acw_grey",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/4a-tw-s3-icon.png",
    group = "yuoki_railway",
@@ -562,7 +614,8 @@ data:extend({
    place_result = "yir_4acw_grey",
 },
 {
-   type = "item", name = "yir_4acw_oceanblue",
+   type = "item",
+   name = "yir_4acw_oceanblue",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/4a-bw-s2-icon.png",
    group = "yuoki_railway",
@@ -573,7 +626,8 @@ data:extend({
    place_result = "yir_4acw_oceanblue",
 },
 {
-   type = "item", name = "yir_4acw_purple",
+   type = "item",
+   name = "yir_4acw_purple",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/4a-kw-s1-icon.png",
    group = "yuoki_railway",
@@ -584,7 +638,8 @@ data:extend({
    place_result = "yir_4acw_purple",
 },
 {
-   type = "item", name = "y_wagon_tank_fm2",
+   type = "item",
+   name = "y_wagon_tank_fm2",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/4atw_fm2_icon.png",
    group = "yuoki_railway",
@@ -595,7 +650,8 @@ data:extend({
    place_result = "y_wagon_tank_fm2",
 },
 {
-   type = "item", name = "y_wagon_tank_fm1",
+   type = "item",
+   name = "y_wagon_tank_fm1",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/4atw_fm1_icon.png",
    group = "yuoki_railway",
@@ -606,7 +662,8 @@ data:extend({
    place_result = "y_wagon_tank_fm1",
 },
 {
-   type = "item", name = "y_wagon_tender_green",
+   type = "item",
+   name = "y_wagon_tender_green",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/rtender_green_icon.png",
    group = "yuoki_railway",
@@ -617,7 +674,8 @@ data:extend({
    place_result = "y_wagon_tender_green",
 },
 {
-   type = "item", name = "y_wagon_tender_black",
+   type = "item",
+   name = "y_wagon_tender_black",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/rtender_black_icon.png",
    group = "yuoki_railway",
@@ -628,7 +686,8 @@ data:extend({
    place_result = "y_wagon_tender_black",
 },
 {
-   type = "item", name = "y_loco_fs_steam_green",
+   type = "item",
+   name = "y_loco_fs_steam_green",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/rsea_green_icon.png",
    group = "yuoki_railway",
@@ -639,7 +698,8 @@ data:extend({
    place_result = "y_loco_fs_steam_green",
 },
 {
-   type = "item", name = "y_loco_emd3000_white",
+   type = "item",
+   name = "y_loco_emd3000_white",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/emd_gp_icon.png",
    group = "yuoki_railway",
@@ -650,7 +710,8 @@ data:extend({
    place_result = "y_loco_emd3000_white",
 },
 {
-   type = "item", name = "y_wagon_corn_blue",
+   type = "item",
+   name = "y_wagon_corn_blue",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/2a_corn_blue_icon.png",
    group = "yuoki_railway",
@@ -661,7 +722,8 @@ data:extend({
    place_result = "y_wagon_corn_blue",
 },
 {
-   type = "item", name = "y_wagon_corn_green",
+   type = "item",
+   name = "y_wagon_corn_green",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/2a_corn_green_icon.png",
    group = "yuoki_railway",
@@ -672,7 +734,8 @@ data:extend({
    place_result = "y_wagon_corn_green",
 },
 {
-   type = "item", name = "y_wagon_hopper_yellow",
+   type = "item",
+   name = "y_wagon_hopper_yellow",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/2a_hooper_y_icon.png",
    group = "yuoki_railway",
@@ -683,7 +746,8 @@ data:extend({
    place_result = "y_wagon_hopper_yellow",
 },
 {
-   type = "item", name = "y_wagon_zement_white",
+   type = "item",
+   name = "y_wagon_zement_white",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/cws64_zement_white_icon.png",
    group = "yuoki_railway",
@@ -694,7 +758,8 @@ data:extend({
    place_result = "y_wagon_zement_white",
 },
 {
-   type = "item", name = "y_wagon_zement_gray",
+   type = "item",
+   name = "y_wagon_zement_gray",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/cws64_zement_gray_icon.png",
    group = "yuoki_railway",
@@ -705,7 +770,8 @@ data:extend({
    place_result = "y_wagon_zement_gray",
 },
 {
-   type = "item", name = "y_loco_emd1500black",
+   type = "item",
+   name = "y_loco_emd1500black",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/emd-1500_black_icon.png",
    group = "yuoki_railway",
@@ -716,7 +782,8 @@ data:extend({
    place_result = "y_loco_emd1500black",
 },
 {
-   type = "item", name = "y_loco_emd1500blue",
+   type = "item",
+   name = "y_loco_emd1500blue",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/emd-1500_blue_icon.png",
    group = "yuoki_railway",
@@ -727,7 +794,8 @@ data:extend({
    place_result = "y_loco_emd1500blue",
 },
 {
-   type = "item", name = "y_wagon_closed",
+   type = "item",
+   name = "y_wagon_closed",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/wcs_closed_icon.png",
    group = "yuoki_railway",
@@ -738,7 +806,8 @@ data:extend({
    place_result = "y_wagon_closed",
 },
 {
-   type = "item", name = "y_wagon_tank_orange",
+   type = "item",
+   name = "y_wagon_tank_orange",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/wcs_tank_orange_icon.png",
    group = "yuoki_railway",
@@ -749,7 +818,8 @@ data:extend({
    place_result = "y_wagon_tank_orange",
 },
 {
-   type = "item", name = "y_wagon_tank_blue",
+   type = "item",
+   name = "y_wagon_tank_blue",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/wcs_tank_blue_icon.png",
    group = "yuoki_railway",
@@ -760,7 +830,8 @@ data:extend({
    place_result = "y_wagon_tank_blue",
 },
 {
-   type = "item", name = "y_wagon_copper",
+   type = "item",
+   name = "y_wagon_copper",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/cws_rcopper_icon.png",
    group = "yuoki_railway",
@@ -771,7 +842,8 @@ data:extend({
    place_result = "y_wagon_copper",
 },
 {
-   type = "item", name = "y_wagon_iron",
+   type = "item",
+   name = "y_wagon_iron",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/cws_riron_icon.png",
    group = "yuoki_railway",
@@ -782,7 +854,8 @@ data:extend({
    place_result = "y_wagon_iron",
 },
 {
-   type = "item", name = "y_wagon_stone",
+   type = "item",
+   name = "y_wagon_stone",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/cws_rstone_icon.png",
    group = "yuoki_railway",
@@ -793,7 +866,8 @@ data:extend({
    place_result = "y_wagon_stone",
 },
 {
-   type = "item", name = "y_loco_desw_orange",
+   type = "item",
+   name = "y_loco_desw_orange",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/des_orange_icon.png",
    group = "yuoki_railway",
@@ -804,7 +878,8 @@ data:extend({
    place_result = "y_loco_desw_orange",
 },
 {
-   type = "item", name = "y_loco_desw_blue",
+   type = "item",
+   name = "y_loco_desw_blue",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/des_blue_icon.png",
    group = "yuoki_railway",
@@ -815,7 +890,8 @@ data:extend({
    place_result = "y_loco_desw_blue",
 },
 {
-   type = "item", name = "y_loco_ses_std",
+   type = "item",
+   name = "y_loco_ses_std",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/sea-ss-icon.png",
    group = "yuoki_railway",
@@ -826,7 +902,8 @@ data:extend({
    place_result = "y_loco_ses_std",
 },
 {
-   type = "item", name = "y_loco_ses_red",
+   type = "item",
+   name = "y_loco_ses_red",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/sea-sr-icon.png",
    group = "yuoki_railway",
@@ -837,7 +914,8 @@ data:extend({
    place_result = "y_loco_ses_red",
 },
 {
-   type = "item", name = "y_wagon_trans",
+   type = "item",
+   name = "y_wagon_trans",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/cws_trans_icon.png",
    group = "yuoki_railway",
@@ -848,7 +926,8 @@ data:extend({
    place_result = "y_wagon_trans",
 },
 {
-   type = "item", name = "y_wagon_coal",
+   type = "item",
+   name = "y_wagon_coal",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/cws_rcoal_icon.png",
    group = "yuoki_railway",
@@ -859,7 +938,8 @@ data:extend({
    place_result = "y_wagon_coal",
 },
 {
-   type = "item", name = "y_path_science",
+   type = "item",
+   name = "y_path_science",
    icon_size = 32,
    icon = "__yi_railway__/graphics/path_tiles/vent_icon.png",
    group = "yuoki_railway",
@@ -869,7 +949,8 @@ data:extend({
    default_request_amount = 5,
 },
 {
-   type = "item", name = "y_path_labor",
+   type = "item",
+   name = "y_path_labor",
    icon_size = 32,
    icon = "__yi_railway__/graphics/path_tiles/floor004_icon.png",
    group = "yuoki_railway",
@@ -879,7 +960,8 @@ data:extend({
    default_request_amount = 5,
 },
 {
-   type = "item", name = "y_path_slag",
+   type = "item",
+   name = "y_path_slag",
    icon_size = 32,
    icon = "__yi_railway__/graphics/path_tiles/pslag_icon.png",
    group = "yuoki_railway",
@@ -889,7 +971,8 @@ data:extend({
    default_request_amount = 5,
 },
 {
-   type = "item", name = "y_loco_desw",
+   type = "item",
+   name = "y_loco_desw",
    icon_size = 64,
    icon = "__yi_railway__/graphics/icons/railway/des_green_icon.png",
    group = "yuoki_railway",
