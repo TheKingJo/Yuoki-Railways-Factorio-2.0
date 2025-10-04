@@ -12,32 +12,29 @@ data:extend(
 		resistances = {{type = "physical",percent = 60},},
 		collision_box = {{-2.7, -2.7}, {2.7, 2.7}},
 		selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
-		--fast_replaceable_group = "assembling-machine",
-
 		graphics_set =
 		{
-		animation =
-		{
-			layers =
+			animation =
 			{
+				layers =
 				{
-			filename = "__yi_railway__/graphics/entity/factories/yir_fac_loco.png",
-			width = 224,
-			height = 224,
-			shift = {0.5, -0.375},
-			frame_count = 1,
-			line_length = 1,
-			--animation_speed = 0.25
+					{
+						filename = "__yi_railway__/graphics/entity/factories/yir_fac_loco.png",
+						width = 448,
+						height = 448,
+						shift = {0.5, -0.375},
+						frame_count = 1,
+						scale = 0.5,
+						line_length = 1,
+						--animation_speed = 0.25
+					},
 				},
 			},
 		},
-	},
 		crafting_categories = {"yir_rc_wsl"},
 		crafting_speed = 0.5,
 		energy_source =
 		{
-			--type = "electric",
-			--usage_priority = "secondary-input",
 			type = "burner",
 			fuel_categories = {"chemical"},
 			effectivity = 1,
@@ -54,13 +51,12 @@ data:extend(
 		},
 		energy_usage = "2500kW",
 		ingredient_count = 6,
-		module_specification =
-		{
+		module_specification = {
 			module_slots = 1,
 		},
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 
-		order="a[atomics]",
+		order = "a[atomics]",
 		subgroup = "yir_workshop",
 	},
 
@@ -76,25 +72,38 @@ data:extend(
 		resistances = {{type = "physical",percent = 60},},
 		collision_box = {{-2.7, -2.7}, {2.7, 2.7}},
 		selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
-		--fast_replaceable_group = "assembling-machine",
 		graphics_set =
 		{
-		animation =
-		{
-			layers =
+			animation =
 			{
+				layers =
 				{
-			filename = "__yi_railway__/graphics/entity/factories/cw_ws_sheet.png",
-			width = 224,
-			height = 224,
-			shift = {0.5, -0.375},
-			frame_count = 4,
-			line_length = 4,
-			animation_speed = 0.25
+					{
+						filename = "__yi_railway__/graphics/entity/factories/cw_ws_sheet.png",
+						width = 448,
+						height = 448,
+						shift = {0.5, -0.375},
+						frame_count = 4,
+						line_length = 4,
+						scale = 0.5,
+						animation_speed = 0.25,
+						run_mode = "forward-then-backward",
+					},
+					{
+						filename = "__yi_railway__/graphics/entity/factories/cw_ws_sheet_shadow.png",
+						width = 448,
+						height = 448,
+						shift = {0.5, -0.375},
+						frame_count = 4,
+						line_length = 4,
+						scale = 0.5,
+						animation_speed = 0.25,
+						draw_as_shadow = true,
+						run_mode = "forward-then-backward",
+					},
 				},
 			},
 		},
-	},
 		crafting_categories = {"yir_rc_wsw"},
 		crafting_speed = 0.5,
 		energy_source =
@@ -110,13 +119,12 @@ data:extend(
 		},
 		energy_usage = "2000kW",
 		ingredient_count = 6,
-		module_specification =
-		{
+		module_specification = {
 			module_slots = 1,
 		},
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
 
-		order="a[atomics]",
+		order = "a[atomics]",
 		subgroup = "yir_workshop",
 	},
 
@@ -135,29 +143,36 @@ data:extend(
 		fast_replaceable_group = "assembling-machine",
 		graphics_set =
 		{
-		animation =
-		{
-			layers =
+			animation =
 			{
+				layers =
 				{
-			filename = "__yi_railway__/graphics/entity/factories/yir_fac_tiles2_sheet.png",
-			width = 160,
-			height = 160,
-			shift = {0.15, -0.0},
-			frame_count = 16,
-			line_length = 4,
-			animation_speed = 1,
+					{
+						filename = "__yi_railway__/graphics/entity/factories/yir_fac_tiles2_sheet.png",
+						width = 320,
+						height = 320,
+						shift = {0.15, -0.0},
+						frame_count = 16,
+						line_length = 4,
+						scale = 0.5,
+					},
+					{
+						filename = "__yi_railway__/graphics/entity/factories/yir_fac_tiles2_sheet_shadow.png",
+						width = 320,
+						height = 320,
+						shift = {0.15, -0.0},
+						frame_count = 16,
+						line_length = 4,
+						scale = 0.5,
+						draw_as_shadow = true,
+					},
 				},
 			},
 		},
-	},
 		crafting_categories = {"yir_rc_tiles"},
 		crafting_speed = 0.5,
 		energy_source =
 		{
-			--type = "electric",
-			--usage_priority = "secondary-input",
-			--emissions = 0.04 / 2.5
 			type = "burner",
 			fuel_categories = {"chemical"},
 			effectivity = 0.8,
@@ -170,13 +185,11 @@ data:extend(
 		},
 		energy_usage = "800kW",
 		ingredient_count = 6,
-		module_specification =
-		{
+		module_specification = {
 			module_slots = 1,
 		},
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-
-		order="a[atomics]",
+		order = "a[atomics]",
 		subgroup = "yir_workshop",
 	},
 
@@ -193,32 +206,39 @@ data:extend(
 		collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
-
 		graphics_set =
 		{
-		animation =
-		{
-			layers =
+			animation =
 			{
+				layers =
 				{
-			filename = "__yi_railway__/graphics/entity/factories/yir_fac_parts_sheet.png",
-			width = 128,
-			height = 128,
-			shift = {0.5, -0.5},
-			frame_count = 16,
-			line_length = 4,
-			animation_speed = 1,
+					{
+						filename = "__yi_railway__/graphics/entity/factories/yir_fac_parts_sheet.png",
+						width = 256,
+						height = 256,
+						shift = {0.5, -0.5},
+						frame_count = 16,
+						scale = 0.5,
+						line_length = 4,
+						animation_speed = 1,
+					},
+					{
+						filename = "__yi_railway__/graphics/entity/factories/yir_fac_parts_sheet_shadow.png",
+						width = 256,
+						height = 256,
+						shift = {0.5, -0.5},
+						frame_count = 16,
+						scale = 0.5,
+						line_length = 4,
+						animation_speed = 1,
+						draw_as_shadow = true,
+					},
 				},
 			},
 		},
-	},
 		crafting_categories = {"yir_rc_material"},
 		crafting_speed = 1,
-		energy_source =
-		{
-			--type = "electric",
-			--usage_priority = "secondary-input",
-			--emissions = 0.04 / 2.5
+		energy_source = {
 			type = "burner",
 			fuel_categories = {"chemical"},
 			effectivity = 0.8,
@@ -235,13 +255,10 @@ data:extend(
 			module_slots = 1,
 		},
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-
-		order="a[atomics]",
+		order = "a[atomics]",
 		subgroup = "yir_workshop",
 	},
 
-
-	-- Steam Era Monument
 	{
 		type = "assembling-machine",
 		name = "yir_factory_stuff",
@@ -257,22 +274,34 @@ data:extend(
 		fast_replaceable_group = "assembling-machine",
 		graphics_set =
 		{
-		animation =
-		{
-			layers =
+			animation =
 			{
+				layers =
 				{
-			filename = "__yi_railway__/graphics/entity/factories/yir_fab_coins_sheet.png",
-			width = 192,
-			height = 192,
-			shift = {0.5, -0.375},
-			frame_count = 16,
-			line_length = 4,
-			animation_speed = 1,
+					{
+						filename = "__yi_railway__/graphics/entity/factories/yir_fab_coins_sheet.png",
+						width = 384,
+						height = 384,
+						shift = {0.5, -0.375},
+						frame_count = 16,
+						scale = 0.5,
+						line_length = 4,
+						animation_speed = 1,
+					},
+					{
+						filename = "__yi_railway__/graphics/entity/factories/yir_fab_coins_sheet_shadow.png",
+						width = 384,
+						height = 384,
+						shift = {0.5, -0.375},
+						frame_count = 16,
+						scale = 0.5,
+						line_length = 4,
+						animation_speed = 1,
+						draw_as_shadow = true,
+					},
 				},
 			},
 		},
-	},
 		crafting_categories = {"yir_rc_stuff"},
 		crafting_speed = 0.5,
 		energy_source =
@@ -307,7 +336,7 @@ data:extend(
 		ingredient_count = 3,
 		module_specification = {module_slots = 0,	},
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-		order="a[atomics]",
+		order = "a[atomics]",
 		subgroup = "yir_workshop",
 	},
 
@@ -324,7 +353,6 @@ data:extend(
 		collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
 		selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
 		fast_replaceable_group = "assembling-machine",
-
 		fluid_boxes =
 		{
 			{
@@ -338,29 +366,37 @@ data:extend(
 		graphics_set =
 		{
 			animation =
+			{
+				layers =
 				{
-					layers =
-						{
-							{
-								filename = "__yi_railway__/graphics/entity/factories/diesel_monument_sheet.png",
-								width = 384,
-								height = 384,
-								shift = {0.5, 0.375},
-								frame_count = 16,
-								line_length = 4,
-								animation_speed = 1,
-								scale=0.5,
-							},
-						},
+					{
+						filename = "__yi_railway__/graphics/entity/factories/diesel_monument_sheet.png",
+						width = 384,
+						height = 384,
+						shift = {0.5, 0.375},
+						frame_count = 16,
+						line_length = 4,
+						animation_speed = 1,
+						scale = 0.5,
+					},
+					{
+						filename = "__yi_railway__/graphics/entity/factories/diesel_monument_sheet_shadow.png",
+						width = 384,
+						height = 384,
+						shift = {0.5, 0.375},
+						frame_count = 16,
+						line_length = 4,
+						animation_speed = 1,
+						scale = 0.5,
+						draw_as_shadow = true,
+					},
 				},
+			},
 		},
 		crafting_categories = {"yir_rc_diesel_monument"},
 		crafting_speed = 0.5,
 		energy_source =
 		{
-
-			--type = "electric",
-			--usage_priority = "secondary-input",
 			type = "burner",
 			fuel_categories = {"yr_diesel"},
 			effectivity = 1,
@@ -386,12 +422,11 @@ data:extend(
 		},
 		energy_usage = "2500kW",
 		ingredient_count = 3,
-		module_specification =
-		{
+		module_specification = {
 			module_slots = 0,
 		},
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-		order="b",
+		order = "b",
 		subgroup = "yir_railyardliquid",
 	},
 
@@ -404,19 +439,23 @@ data:extend(
 			{type = "item", name = "production-science-pack", amount=10},
 			{type = "item", name = "utility-science-pack", amount=8},
 		},
-		results = {{type = "item", name = "yir_future_monument", amount=1},},
+		results = {{type = "item",name = "yir_future_monument", amount=1},},
 		main_product = "yir_future_monument",
 		enabled = true,
 		group = "yuoki_railway",
-		subgroup = "yir_railyardliquid", order="X3",
+		subgroup = "yir_railyardliquid",
+		order = "X3",
 	},
 
 	{
-		type = "item", name = "yir_future_monument", icon = "__yi_railway__/graphics/icons/factories/yir_future_monument_icon.png",
+		type = "item",
+		name = "yir_future_monument",
+		icon = "__yi_railway__/graphics/icons/factories/yir_future_monument_icon.png",
 		icon_size = 64,
-		group="yuoki_railway", subgroup="yir_railyardliquid",
-		stack_size=10,
-		place_result="yir_future_monument",
+		group = "yuoki_railway",
+		subgroup = "yir_railyardliquid",
+		stack_size = 10,
+		place_result = "yir_future_monument",
 	},
 
 	{
@@ -432,7 +471,6 @@ data:extend(
 		collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
 		selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
 		fast_replaceable_group = "assembling-machine",
-
 		fluid_box =
 		{
 			volume = 200,
@@ -446,31 +484,39 @@ data:extend(
 
 		},
 		graphics_set =
-			{
-		animation =
 		{
-			layers =
+			animation =
 			{
+				layers =
 				{
-			filename = "__yi_railway__/graphics/entity/factories/yir_future_monument.png",
-			width = 384,
-			height = 384,
-			shift = {0.5, 0.375},
-			frame_count = 1,
-			line_length = 1,
-			animation_speed = 1,
-			scale=0.5,
+					{
+						filename = "__yi_railway__/graphics/entity/factories/yir_future_monument.png",
+						width = 384,
+						height = 384,
+						shift = {0.5, 0.375},
+						frame_count = 1,
+						line_length = 1,
+						animation_speed = 1,
+						scale = 0.5,
+					},
+					{
+						filename = "__yi_railway__/graphics/entity/factories/yir_future_monument_shadow.png",
+						width = 384,
+						height = 384,
+						shift = {0.5, 0.375},
+						frame_count = 1,
+						line_length = 1,
+						animation_speed = 1,
+						scale = 0.5,
+						draw_as_shadow = true,
+					},
 				},
 			},
 		},
-	},
 		crafting_categories = {"yir_rc_future_monument"},
 		crafting_speed = 0.5,
 		energy_source =
 		{
-
-			--type = "electric",
-			--usage_priority = "secondary-input",
 			type = "burner",
 			fuel_categories = {"yr_future"},
 			effectivity = 1,
@@ -496,12 +542,11 @@ data:extend(
 		},
 		energy_usage = "4000kW",
 		ingredient_count = 4,
-		module_specification =
-		{
+		module_specification = {
 			module_slots = 0,
 		},
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-		order="b",
+		order = "b",
 		subgroup = "yir_railyardliquid",
 	},
 
@@ -522,11 +567,14 @@ data:extend(
 	},
 
 	{
-		type = "item", name = "yir_factory_chemical", icon = "__yi_railway__/graphics/icons/factories/chemie_32.png",
-		group="yuoki_railway", subgroup="yir_railyardliquid",
+		type = "item",
+		name = "yir_factory_chemical",
+		icon = "__yi_railway__/graphics/icons/factories/chemie_32.png",
 		icon_size = 64,
-		stack_size=10,
-		place_result="yir_factory_chemical",
+		group = "yuoki_railway",
+		subgroup = "yir_railyardliquid",
+		stack_size = 10,
+		place_result = "yir_factory_chemical",
 	},
 
 	{
@@ -545,30 +593,45 @@ data:extend(
 		fluid_boxes =
 		{
 			{
-			volume = 200,
-			production_type = "input",
-			pipe_picture = assembler2pipepictures(),
-			pipe_covers = pipecoverspictures(),
-			base_area = 10,
-			base_level = -1,
-			pipe_connections = {{flow_direction="input", direction = defines.direction.south, position = {0, 1}}},
+				volume = 200,
+				production_type = "input",
+				pipe_picture = assembler2pipepictures(),
+				pipe_covers = pipecoverspictures(),
+				base_area = 10,
+				base_level = -1,
+				pipe_connections = {{flow_direction="input", direction = defines.direction.south, position = {0, 1}}},
 			},
 		},
-		graphics_set = {
-		animation =
+		graphics_set =
 		{
-			layers = {
+			animation =
+			{
+				layers =
 				{
-			filename = "__yi_railway__/graphics/entity/factories/chemie_256.png",
-			width = 256, height = 256, scale = 0.5,
-			shift = {0.5, -0.375},
-			frame_count = 1,
-			line_length = 1,
-			animation_speed = 1,
+					{
+						filename = "__yi_railway__/graphics/entity/factories/chemie_256.png",
+						width = 256,
+						height = 256,
+						scale = 0.5,
+						shift = {0.5, -0.375},
+						frame_count = 1,
+						line_length = 1,
+						animation_speed = 1,
+					},
+					{
+						filename = "__yi_railway__/graphics/entity/factories/chemie_256_shadow.png",
+						width = 256,
+						height = 256,
+						scale = 0.5,
+						shift = {0.5, -0.375},
+						frame_count = 1,
+						line_length = 1,
+						animation_speed = 1,
+						draw_as_shadow = true,
+					},
 				},
 			},
 		},
-	},
 		crafting_categories = {"yir_fuel", "advanced-crafting"},
 		crafting_speed = 0.5,
 		energy_source = {type = "electric", usage_priority = "secondary-input",},
@@ -576,8 +639,7 @@ data:extend(
 		ingredient_count = 3,
 		module_specification = {module_slots = 0,},
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-		order="a[atomics]",
+		order = "a[atomics]",
 		subgroup = "yir_railyardliquid",
 	},
-
 })

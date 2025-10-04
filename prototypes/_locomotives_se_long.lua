@@ -1,7 +1,7 @@
 drive_over_tie = require("lib.functions")
+
 data:extend(
 {
-
 	{
 		type = "locomotive",
 		name = "y_loco_fs_steam_green",
@@ -13,19 +13,16 @@ data:extend(
 		max_health = 1000,
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
-
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
 		connection_distance = 3, joint_distance = 4,
-
 		weight = 2000,
 		max_speed = 0.9,
 		max_power = "1000kW",
 		reversing_power_modifier = 0.6,
 		braking_force = 12,
 		friction_force = 0.003,
-		-- this is a percentage of current speed that will be subtracted
 		air_resistance = 0.003,
 		vertical_selection_shift = -0.5,
 		energy_per_hit_point = 5,
@@ -92,64 +89,8 @@ data:extend(
 				intensity = 0.6
 			}
 		},
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-
-					priority = "very-low",
-					width = 256,
-					height = 256,
-					direction_count = 128,
-					filenames =
-					{
-						"__yi_railway__/graphics/entity/railway/se_green_csheet-0.png",
-						"__yi_railway__/graphics/entity/railway/se_green_csheet-1.png",
-					},
-					line_length = 8,
-					lines_per_file = 8,
-					shift = {0.45, -1.125},
-				},
-				{
-					priority = "very-low",
-					flags = {"mask"},
-					width = 256,
-					height = 256,
-					direction_count = 128,
-					filenames =
-					{
-						--"__yi_railway__/graphics/entity/railway/se_green_sheet-m0.png",
-						--"__yi_railway__/graphics/entity/railway/se_green_sheet-m1.png",
-						"__yi_railway__/graphics/entity/railway/se_green_msheet-0.png",
-						"__yi_railway__/graphics/entity/railway/se_green_msheet-1.png",
-					},
-					line_length = 8,
-					lines_per_file = 8,
-					shift = {0.45, -1.125},
-					apply_runtime_tint = true,
-				},
-
-
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = standard_train_wheels,
 		rail_category = "regular",
-
 		stop_trigger =
 		{
 			-- left side
@@ -215,19 +156,16 @@ data:extend(
 		max_health = 1200,
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
-
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
 		connection_distance = 3, joint_distance = 4,
-
 		weight = 1800,
 		max_speed = 0.85,
 		max_power = "1100kW",
 		reversing_power_modifier = 0.6,
 		braking_force = 14,
 		friction_force = 0.003,
-		-- this is a percentage of current speed that will be subtracted
 		air_resistance = 0.002,
 		vertical_selection_shift = -0.5,
 		energy_per_hit_point = 5,
@@ -261,7 +199,6 @@ data:extend(
 				}
 			}
 		},
-
 		front_light =
 		{
 			{
@@ -295,43 +232,8 @@ data:extend(
 				intensity = 0.6
 			}
 		},
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			direction_count = 128,
-			filenames =
-			{
-				"__yi_railway__/graphics/entity/railway/se_blue_sheet-0.png",
-				"__yi_railway__/graphics/entity/railway/se_blue_sheet-1.png",
-			},
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
-		}
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = standard_train_wheels,
 		rail_category = "regular",
-
 		stop_trigger =
 		{
 			-- left side
@@ -386,11 +288,10 @@ data:extend(
 		sound_minimum_speed = 0.2;
 	},
 
-
 	{
 		type = "recipe",
 		name = "y_loco_steam_wt450",
-		category = "yir_rc_wsl", -- Workshop for Locomotives
+		category = "yir_rc_wsl",
 		enabled = true,
 		energy_required = 5.00,
 		ingredients = {
@@ -404,18 +305,23 @@ data:extend(
 		main_product = "y_loco_steam_wt450",
 		icon = "__yi_railway__/graphics/icons/railway/sewt_bl_icon.png",
 		icon_size = 64,
-		order = "a6", group = "yuoki_railway", subgroup = "yir_locomotives_steam",
+		order = "a6",
+		group = "yuoki_railway",
+		subgroup = "yir_locomotives_steam",
 	},
-
-
 
 	{
-		type = "item", name = "y_loco_steam_wt450", icon = "__yi_railway__/graphics/icons/railway/sewt_bl_icon.png",
-		group="yuoki_railway", subgroup="yir_locomotives_steam", order="a6",
-		stack_size = 10, default_request_amount = 5, icon_size = 64,
-		place_result="y_loco_steam_wt450",
+		type = "item",
+		name = "y_loco_steam_wt450",
+		icon = "__yi_railway__/graphics/icons/railway/sewt_bl_icon.png",
+		group = "yuoki_railway",
+		subgroup = "yir_locomotives_steam",
+		order = "a6",
+		stack_size = 10,
+		default_request_amount = 5,
+		icon_size = 64,
+		place_result = "y_loco_steam_wt450",
 	},
-
 
 	{
 		type = "locomotive",
@@ -428,19 +334,16 @@ data:extend(
 		max_health = 800,
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
-
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
 		connection_distance = 3, joint_distance = 4,
-
 		weight = 1400,
 		max_speed = 0.625,
 		max_power = "450kW",
 		reversing_power_modifier = 0.6,
 		braking_force = 8,
 		friction_force = 0.003,
-		-- this is a percentage of current speed that will be subtracted
 		air_resistance = 0.003,
 		vertical_selection_shift = -0.5,
 		energy_per_hit_point = 5,
@@ -507,52 +410,8 @@ data:extend(
 				intensity = 0.6
 			}
 		},
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 512,
-			height = 512,
-			direction_count = 128,
-			filenames =
-			{
-				"__yi_railway__/graphics/entity/railway/se_cbl_sheet-0.png",
-				"__yi_railway__/graphics/entity/railway/se_cbl_sheet-1.png",
-				"__yi_railway__/graphics/entity/railway/se_cbl_sheet-2.png",
-				"__yi_railway__/graphics/entity/railway/se_cbl_sheet-3.png",
-				"__yi_railway__/graphics/entity/railway/se_cbl_sheet-4.png",
-				"__yi_railway__/graphics/entity/railway/se_cbl_sheet-5.png",
-				"__yi_railway__/graphics/entity/railway/se_cbl_sheet-6.png",
-				"__yi_railway__/graphics/entity/railway/se_cbl_sheet-7.png",
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0, -1.125},
-			scale = 0.5,
-		}
-
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = standard_train_wheels,
 		rail_category = "regular",
-
 		stop_trigger =
 		{
 			-- left side

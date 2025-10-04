@@ -1,22 +1,5 @@
-local modname = "__yi_railway__"
-
-local function filenameGen(name, count, shadow)
-	local names = {}
-	local sh =""
-	if shadow ~= nil and shadow == true then
-		sh = "_shadow"
-	end
-	if count == 1 then
-			table.insert(names, modname.."/graphics/entity/railway/"..name..sh..".png")
-	else
-		for i = 0, count - 1, 1 do
-			table.insert(names, modname.."/graphics/entity/railway/"..name..(i+1)..sh..".png")
-		end
-	end
-	return names
-end
-
 drive_over_tie = require("lib.functions")
+
 data:extend(
 {
 	{
@@ -39,14 +22,10 @@ data:extend(
 		braking_force = 6,
 		friction_force = 0.005,
 		reversing_power_modifier = 1.0,
-		-- this is a percentage of current speed that will be subtracted
 		air_resistance = 0.005,
 		vertical_selection_shift = -0.5,
 		connection_distance = 3.6,
 		joint_distance = 1.8,
-
-		--    connection_distance = 3.5,
-		--    joint_distance = 1.3,
 		energy_per_hit_point = 5,
 		resistances =
 		{
@@ -78,7 +57,6 @@ data:extend(
 				}
 			}
 		},
-
 		front_light =
 		{
 			{
@@ -112,56 +90,8 @@ data:extend(
 				intensity = 0.6
 			}
 		},
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated =
-			{
-				layers =
-				{
-					{
-						priority = "very-low",
-						width = 256,
-						height = 256,
-						direction_count = 128,
-						filenames = filenameGen("des_gs", 8),
-						line_length = 4,
-						lines_per_file = 4,
-						shift = {0.42, -1.125},
-					},
-					{
-						priority = "very-low",
-						width = 256,
-						height = 256,
-						direction_count = 128,
-						filenames = filenameGen("des_gs", 8, true),
-						line_length = 4,
-						lines_per_file = 4,
-						shift = {0.42, -1.125},
-						draw_as_shadow = true,
-					}
-				}
-			}
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = no_wheels,
 		rail_category = "regular",
-
 		stop_trigger =
 		{
 			-- left side
@@ -236,7 +166,6 @@ data:extend(
 		reversing_power_modifier = 1.0,
 		braking_force = 8,
 		friction_force = 0.0025,
-		-- this is a percentage of current speed that will be subtracted
 		vertical_selection_shift = -0.5,
 		air_resistance = 0.004,
 		connection_distance = 3.5,
@@ -250,7 +179,6 @@ data:extend(
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
 		},
-
 		energy_source =
 		{
 			type = "burner",
@@ -306,49 +234,8 @@ data:extend(
 				intensity = 0.6
 			}
 		},
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			direction_count = 128,
-			filenames =
-			{
-				"__yi_railway__/graphics/entity/railway/des_os1.png",
-				"__yi_railway__/graphics/entity/railway/des_os2.png",
-				"__yi_railway__/graphics/entity/railway/des_os3.png",
-				"__yi_railway__/graphics/entity/railway/des_os4.png",
-				"__yi_railway__/graphics/entity/railway/des_os5.png",
-				"__yi_railway__/graphics/entity/railway/des_os6.png",
-				"__yi_railway__/graphics/entity/railway/des_os7.png",
-				"__yi_railway__/graphics/entity/railway/des_os8.png",
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0.42, -1.125}
-		}
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = no_wheels,
 		rail_category = "regular",
-
 		stop_trigger =
 		{
 			-- left side
@@ -402,6 +289,7 @@ data:extend(
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.2;
 	},
+
 	{
 		type = "locomotive",
 		name = "y_loco_desw_blue",
@@ -422,7 +310,6 @@ data:extend(
 		reversing_power_modifier = 1.0,
 		braking_force = 10,
 		friction_force = 0.003,
-		-- this is a percentage of current speed that will be subtracted
 		vertical_selection_shift = -0.5,
 		air_resistance = 0.004,
 		connection_distance = 3.5,
@@ -436,7 +323,6 @@ data:extend(
 			{type = "explosion", decrease = 15, percent = 30},
 			{type = "acid", decrease = 10, percent = 20}
 		},
-
 		energy_source =
 		{
 			type = "burner",
@@ -492,40 +378,8 @@ data:extend(
 				intensity = 0.6
 			}
 		},
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 412,
-			height = 356,
-			direction_count = 128,
-			filenames = filenameGen("des_bs", 1),
-			line_length = 8,
-			scale = 0.5,
-			lines_per_file = 16,
-			shift = {0.42, -1.125}
-		}
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = no_wheels,
 		rail_category = "regular",
-
 		stop_trigger =
 		{
 			-- left side
@@ -580,8 +434,6 @@ data:extend(
 		sound_minimum_speed = 0.2;
 	},
 
-
-	-- steam
 	{
 		type = "locomotive",
 		name = "y_loco_ses_std",
@@ -602,14 +454,10 @@ data:extend(
 		reversing_power_modifier = 1.0,
 		braking_force = 6,
 		friction_force = 0.005,
-		-- this is a percentage of current speed that will be subtracted
 		air_resistance = 0.005,
 		vertical_selection_shift = -0.5,
 		connection_distance = 3.6,
 		joint_distance = 1.8,
-
-		--    connection_distance = 3.5,
-		--    joint_distance = 1.3,
 		energy_per_hit_point = 5,
 		resistances =
 		{
@@ -619,7 +467,6 @@ data:extend(
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
 		},
-
 		energy_source =
 		{
 			type = "burner",
@@ -675,74 +522,8 @@ data:extend(
 				intensity = 0.6
 			}
 		},
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			direction_count = 128,
-			--[[
-			filenames =
-			{
-				"__yi_railway__/graphics/entity/railway/ses_sa1.png",
-				"__yi_railway__/graphics/entity/railway/ses_sa2.png",
-				"__yi_railway__/graphics/entity/railway/ses_sa3.png",
-				"__yi_railway__/graphics/entity/railway/ses_sa4.png",
-				"__yi_railway__/graphics/entity/railway/ses_sa5.png",
-				"__yi_railway__/graphics/entity/railway/ses_sa6.png",
-				"__yi_railway__/graphics/entity/railway/ses_sa7.png",
-				"__yi_railway__/graphics/entity/railway/ses_sa8.png",
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			]]
-
-			filenames =
-			{
-				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-0.png",
-				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-1.png",
-				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-2.png",
-				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-3.png",
-				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-4.png",
-				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-5.png",
-				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-6.png",
-				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-7.png",
-				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-8.png",
-				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-9.png",
-				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-10.png",
-				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-11.png",
-				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-12.png",
-				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-13.png",
-				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-14.png",
-				"__yi_railway__/graphics/entity/railway/ses-bx/ses_std-x_sheet-15.png",
-			},
-			frame_count = 5,
-			line_length = 1,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
-		}
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = no_wheels,
 		rail_category = "regular",
-
 		stop_trigger =
 		{
 			-- left side
@@ -818,14 +599,10 @@ data:extend(
 		reversing_power_modifier = 0.6,
 		braking_force = 6,
 		friction_force = 0.002,
-		-- this is a percentage of current speed that will be subtracted
 		air_resistance = 0.002,
 		vertical_selection_shift = -0.5,
 		connection_distance = 3.6,
 		joint_distance = 1.8,
-
-		--    connection_distance = 3.5,
-		--    joint_distance = 1.3,
 		energy_per_hit_point = 5,
 		resistances =
 		{
@@ -835,7 +612,6 @@ data:extend(
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
 		},
-
 		energy_source =
 		{
 			type = "burner",
@@ -891,49 +667,8 @@ data:extend(
 				intensity = 0.6
 			}
 		},
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			direction_count = 128,
-			filenames =
-			{
-				"__yi_railway__/graphics/entity/railway/ses_ared1.png",
-				"__yi_railway__/graphics/entity/railway/ses_ared2.png",
-				"__yi_railway__/graphics/entity/railway/ses_ared3.png",
-				"__yi_railway__/graphics/entity/railway/ses_ared4.png",
-				"__yi_railway__/graphics/entity/railway/ses_ared5.png",
-				"__yi_railway__/graphics/entity/railway/ses_ared6.png",
-				"__yi_railway__/graphics/entity/railway/ses_ared7.png",
-				"__yi_railway__/graphics/entity/railway/ses_ared8.png",
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0.42, -1.125}
-		}
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = no_wheels,
 		rail_category = "regular",
-
 		stop_trigger =
 		{
 			-- left side
@@ -989,7 +724,6 @@ data:extend(
 		sound_minimum_speed = 0.2;
 	},
 
-
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_trans",
@@ -1021,41 +755,6 @@ data:extend(
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.5,
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			back_equals_front = true,
-			direction_count = 64,
-			filenames =
-			{
-				"__yi_railway__/graphics/entity/railway/wcs_ts1.png",
-				"__yi_railway__/graphics/entity/railway/wcs_ts2.png",
-				"__yi_railway__/graphics/entity/railway/wcs_ts3.png",
-				"__yi_railway__/graphics/entity/railway/wcs_ts4.png",
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0.42, -1.125}
-		}
-		},
-		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = no_wheels,
 		rail_category = "regular",
 		drive_over_tie_trigger = yir_drive_over_tie(),
@@ -1075,6 +774,7 @@ data:extend(
 		sound_minimum_speed = 0.5;
 		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
 	},
+
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_coal",
@@ -1106,41 +806,6 @@ data:extend(
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.5,
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			back_equals_front = true,
-			direction_count = 64,
-			filenames =
-			{
-				"__yi_railway__/graphics/entity/railway/wcs_coal_s1.png",
-				"__yi_railway__/graphics/entity/railway/wcs_coal_s2.png",
-				"__yi_railway__/graphics/entity/railway/wcs_coal_s3.png",
-				"__yi_railway__/graphics/entity/railway/wcs_coal_s4.png",
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0.42, -1.125}
-		}
-		},
-		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = no_wheels,
 		rail_category = "regular",
 		drive_over_tie_trigger = yir_drive_over_tie(),
@@ -1160,6 +825,7 @@ data:extend(
 		sound_minimum_speed = 0.5;
 		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
 	},
+
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_copper",
@@ -1191,42 +857,6 @@ data:extend(
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.5,
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			back_equals_front = true,
-			direction_count = 64,
-			filenames =
-			{
-				"__yi_railway__/graphics/entity/railway/wcs_copper_s1.png",
-				"__yi_railway__/graphics/entity/railway/wcs_copper_s2.png",
-				"__yi_railway__/graphics/entity/railway/wcs_copper_s3.png",
-				"__yi_railway__/graphics/entity/railway/wcs_copper_s4.png",
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0.42, -1.125}
-		}
-		},
-
-		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = no_wheels,
 		rail_category = "regular",
 		drive_over_tie_trigger = yir_drive_over_tie(),
@@ -1278,41 +908,6 @@ data:extend(
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.5,
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			back_equals_front = true,
-			direction_count = 64,
-			filenames =
-			{
-				"__yi_railway__/graphics/entity/railway/wcs_iron_s1.png",
-				"__yi_railway__/graphics/entity/railway/wcs_iron_s2.png",
-				"__yi_railway__/graphics/entity/railway/wcs_iron_s3.png",
-				"__yi_railway__/graphics/entity/railway/wcs_iron_s4.png",
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0.42, -1.125}
-		}
-		},
-		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = no_wheels,
 		rail_category = "regular",
 		drive_over_tie_trigger = yir_drive_over_tie(),
@@ -1364,41 +959,6 @@ data:extend(
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.5,
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			back_equals_front = true,
-			direction_count = 64,
-			filenames =
-			{
-				"__yi_railway__/graphics/entity/railway/wcs_stone_s1.png",
-				"__yi_railway__/graphics/entity/railway/wcs_stone_s2.png",
-				"__yi_railway__/graphics/entity/railway/wcs_stone_s3.png",
-				"__yi_railway__/graphics/entity/railway/wcs_stone_s4.png",
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0.42, -1.125}
-		}
-		},
-		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = no_wheels,
 		rail_category = "regular",
 		drive_over_tie_trigger = yir_drive_over_tie(),
@@ -1418,5 +978,4 @@ data:extend(
 		sound_minimum_speed = 0.5;
 		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
 	},
-
 })

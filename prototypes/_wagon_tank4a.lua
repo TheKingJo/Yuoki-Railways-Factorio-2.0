@@ -1,4 +1,5 @@
 drive_over_tie = require("lib.functions")
+
 data:extend(
 {
 	{
@@ -7,7 +8,6 @@ data:extend(
 		icon = "__yi_railway__/graphics/icons/railway/4atw_fm1_icon.png",
 		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
-
 		minable = {mining_time = 1, result = "y_wagon_tank_fm1"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 600,
@@ -16,7 +16,6 @@ data:extend(
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
 		selection_box = {{-1, -2.7}, {1, 3.297}},
-
 		gui_front_tank =
 		{
 			filename = "__base__/graphics/entity/fluid-wagon/gui/front-tank.png",
@@ -66,9 +65,7 @@ data:extend(
 			height = 32,
 			flags = {"icon"}
 		},
-
 		vertical_selection_shift = -0.8,
-
 		weight = 3000,
 		max_speed = 1.2,
 		braking_force = 2,
@@ -84,37 +81,6 @@ data:extend(
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
-		},
-
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			back_equals_front = true,
-			direction_count = 64,
-			filename = "__yi_railway__/graphics/entity/railway/4atw_fm1_sheet-0.png",
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
-			}
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
 		},
 		wheels = standard_train_wheels,
 		rail_category = "regular",
@@ -215,34 +181,6 @@ data:extend(
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
 		},
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			back_equals_front = true,
-			direction_count = 64,
-			filename = "__yi_railway__/graphics/entity/railway/4atw_fm2_sheet-0.png",
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
-			}
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
 		wheels = standard_train_wheels,
 		rail_category = "regular",
 		drive_over_tie_trigger = yir_drive_over_tie(),
@@ -275,7 +213,6 @@ data:extend(
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
 		selection_box = {{-1, -2.7}, {1, 3.297}},
-
 		gui_front_tank =
 		{
 			filename = "__base__/graphics/entity/fluid-wagon/gui/front-tank.png",
@@ -327,7 +264,6 @@ data:extend(
 		},
 
 		vertical_selection_shift = -0.8,
-
 		weight = 3000,
 		max_speed = 1.2,
 		braking_force = 2,
@@ -345,43 +281,7 @@ data:extend(
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.5,
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 512,
-			height = 512,
-			scale = 0.5,
-			back_equals_front = true,
-			direction_count = 64,
-			filenames = {
-				"__yi_railway__/graphics/entity/railway/4aw_fw_acid_sheet-0.png",
-				"__yi_railway__/graphics/entity/railway/4aw_fw_acid_sheet-1.png",
-				"__yi_railway__/graphics/entity/railway/4aw_fw_acid_sheet-2.png",
-				"__yi_railway__/graphics/entity/railway/4aw_fw_acid_sheet-3.png",
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0.42, -1}
-		}
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		wheels = standard_train_wheels,
+						wheels = standard_train_wheels,
 		rail_category = "regular",
 		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
@@ -413,7 +313,6 @@ data:extend(
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
 		selection_box = {{-1, -2.7}, {1, 3.297}},
-
 		gui_front_tank =
 		{
 			filename = "__base__/graphics/entity/fluid-wagon/gui/front-tank.png",
@@ -465,7 +364,6 @@ data:extend(
 		},
 
 		vertical_selection_shift = -0.8,
-
 		weight = 3000,
 		max_speed = 1.2,
 		braking_force = 2,
@@ -481,41 +379,6 @@ data:extend(
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
-		},
-
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 512, height = 512, scale = 0.5,
-			back_equals_front = true,
-			direction_count = 64,
-			filenames = {
-				"__yi_railway__/graphics/entity/railway/4aw_fw_blue_sheet-0.png",
-				"__yi_railway__/graphics/entity/railway/4aw_fw_blue_sheet-1.png",
-				"__yi_railway__/graphics/entity/railway/4aw_fw_blue_sheet-2.png",
-				"__yi_railway__/graphics/entity/railway/4aw_fw_blue_sheet-3.png",
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0.42, -1}
-		}
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
 		},
 		wheels = standard_train_wheels,
 		rail_category = "regular",
@@ -535,13 +398,10 @@ data:extend(
 		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
 	},
 
-
-	--
-	-- Tankwagen Oil - 21706-12
 	{
 		type = "recipe",
 		name = "yir_fw4a_tank_oil",
-		category = "yir_rc_wsw", -- Workshop for Cargo Wagons
+		category = "yir_rc_wsw",
 		enabled = true,
 		energy_required = 3.00,
 		ingredients = {
@@ -550,20 +410,26 @@ data:extend(
 		{type = "item", name = "yir_color_red" , amount = 2.0,},
 		{type = "item", name = "yir_color_green" , amount = 1.0,},
 		{type = "item", name = "yir_diesel_coin" , amount = 5.0,},
-	},
-		results = {
-		{type = "item", name = "yir_fw4a_tank_oil", amount = 1.0,},
-	},
+		},
+			results = {
+			{type = "item", name = "yir_fw4a_tank_oil", amount = 1.0,},
+		},
 		main_product = "yir_fw4a_tank_oil",
 		icon = "__yi_railway__/graphics/icons/railway/4afw_oil_icon.png",icon_size = 64,
 		order = "0", group = "yuoki_railway", subgroup = "yir_fluidwagons_4A",
 	},
 
 	{
-		type = "item", name = "yir_fw4a_tank_oil", icon = "__yi_railway__/graphics/icons/railway/4afw_oil_icon.png",
-		group="yuoki_railway", subgroup="yir_fluidwagons_4A", order="a",
-		stack_size = 10, default_request_amount = 5, icon_size = 64,
-		place_result="yir_fw4a_tank_oil",
+		type = "item",
+		name = "yir_fw4a_tank_oil",
+		icon = "__yi_railway__/graphics/icons/railway/4afw_oil_icon.png",
+		group = "yuoki_railway",
+		subgroup = "yir_fluidwagons_4A",
+		order = "a",
+		stack_size = 10,
+		default_request_amount = 5,
+		icon_size = 64,
+		place_result = "yir_fw4a_tank_oil",
 	},
 
 	{
@@ -572,7 +438,6 @@ data:extend(
 		icon = "__yi_railway__/graphics/icons/railway/4afw_oil_icon.png",
 		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
-
 		minable = {mining_time = 1, result = "yir_fw4a_tank_oil"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1000,
@@ -581,7 +446,6 @@ data:extend(
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
 		selection_box = {{-1, -2.7}, {1, 3.297}},
-
 		gui_front_tank =
 		{
 			filename = "__base__/graphics/entity/fluid-wagon/gui/front-tank.png",
@@ -631,9 +495,7 @@ data:extend(
 			height = 32,
 			flags = {"icon"}
 		},
-
 		vertical_selection_shift = -0.8,
-
 		weight = 3750,
 		max_speed = 1.5,
 		braking_force = 4,
@@ -651,40 +513,6 @@ data:extend(
 			{type = "acid",decrease = 10,percent = 20}
 		},
 
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 512, height = 512, scale = 0.5,
-			back_equals_front = true,
-			direction_count = 64,
-			filenames = {
-				"__yi_railway__/graphics/entity/railway/4afw_oil_sheet-0.png",
-				"__yi_railway__/graphics/entity/railway/4afw_oil_sheet-1.png",
-				"__yi_railway__/graphics/entity/railway/4afw_oil_sheet-2.png",
-				"__yi_railway__/graphics/entity/railway/4afw_oil_sheet-3.png",
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0.42, -1}
-		}
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
 		wheels = standard_train_wheels,
 		rail_category = "regular",
 		drive_over_tie_trigger = yir_drive_over_tie(),
@@ -703,13 +531,10 @@ data:extend(
 		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
 	},
 
-
-	--
-	-- Special Green Tank - 21706-16
 	{
 		type = "recipe",
 		name = "yir_fw4_vc",
-		category = "yir_rc_wsw", -- Workshop for Cargo Wagons
+		category = "yir_rc_wsw",
 		enabled = true,
 		energy_required = 3.00,
 		ingredients = {
@@ -717,20 +542,25 @@ data:extend(
 		{type = "item", name = "yir_radsatz_waggon" , amount = 2,},
 		{type = "item", name = "yir_color_green" , amount = 4.0,},
 		{type = "item", name = "yir_diesel_coin" , amount = 3.0,},
-	},
-		results = {
-		{type = "item", name = "yir_fw4_vc", amount = 1.0,},
-	},
+		},
+			results = {
+			{type = "item", name = "yir_fw4_vc", amount = 1.0,},
+		},
 		main_product = "yir_fw4_vc",
 		icon = "__yi_railway__/graphics/icons/railway/4aw_fw_vc_icon.png",icon_size = 64,
 		order = "0", group = "yuoki_railway", subgroup = "yir_fluidwagons_4A",
 	},
 
 	{
-		type = "item", name = "yir_fw4_vc", icon = "__yi_railway__/graphics/icons/railway/4aw_fw_vc_icon.png",
-		group="yuoki_railway", subgroup="yir_fluidwagons_4A", order="a",
-		stack_size = 10, default_request_amount = 5,
-		place_result="yir_fw4_vc", icon_size = 64,
+		type = "item",
+		name = "yir_fw4_vc",
+		icon = "__yi_railway__/graphics/icons/railway/4aw_fw_vc_icon.png",
+		group = "yuoki_railway",
+		subgroup = "yir_fluidwagons_4A",
+		order = "a",
+		stack_size = 10,
+		default_request_amount = 5,
+		place_result = "yir_fw4_vc", icon_size = 64,
 	},
 
 	{
@@ -739,7 +569,6 @@ data:extend(
 		icon = "__yi_railway__/graphics/icons/railway/4aw_fw_vc_icon.png",
 		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
-
 		minable = {mining_time = 1, result = "yir_fw4_vc"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1000,
@@ -748,7 +577,6 @@ data:extend(
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
 		selection_box = {{-1, -2.7}, {1, 3.297}},
-
 		gui_front_tank =
 		{
 			filename = "__base__/graphics/entity/fluid-wagon/gui/front-tank.png",
@@ -798,9 +626,7 @@ data:extend(
 			height = 32,
 			flags = {"icon"}
 		},
-
 		vertical_selection_shift = -0.8,
-
 		weight = 3750,
 		max_speed = 2.0, braking_force = 4, friction_force = 0.4, air_resistance = 0.035,
 		connection_distance = 3,
@@ -813,41 +639,6 @@ data:extend(
 			{type = "impact",decrease = 50,percent = 60},
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
-		},
-
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 512, height = 512, scale = 0.5,
-			back_equals_front = true,
-			direction_count = 64,
-			filenames = {
-				"__yi_railway__/graphics/entity/railway/4aw_fw_vc_sheet-0.png",
-				"__yi_railway__/graphics/entity/railway/4aw_fw_vc_sheet-1.png",
-				"__yi_railway__/graphics/entity/railway/4aw_fw_vc_sheet-2.png",
-				"__yi_railway__/graphics/entity/railway/4aw_fw_vc_sheet-3.png",
-			},
-			line_length = 4,
-			lines_per_file = 4,
-			shift = {0.42, -0.875}
-		}
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
 		},
 		wheels = standard_train_wheels,
 		rail_category = "regular",
@@ -866,10 +657,4 @@ data:extend(
 		sound_minimum_speed = 0.5;
 		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
 	},
-
-
-
 })
-
-
- 

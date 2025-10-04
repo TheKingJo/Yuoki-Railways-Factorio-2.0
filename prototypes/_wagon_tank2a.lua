@@ -1,7 +1,7 @@
 require("lib.functions")
+
 data:extend(
 {
-
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_zement_gray",
@@ -33,37 +33,7 @@ data:extend(
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.5,
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			back_equals_front = true,
-			direction_count = 64,
-			filename = "__yi_railway__/graphics/entity/railway/csw_zement_gray_sheet.png",
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
-			}
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		wheels = standard_train_wheels,
+						wheels = standard_train_wheels,
 		rail_category = "regular",
 		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
@@ -114,37 +84,7 @@ data:extend(
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.5,
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			back_equals_front = true,
-			direction_count = 64,
-			filename = "__yi_railway__/graphics/entity/railway/csw_zement_white_sheet.png",
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
-			}
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/minimap-representation/fluid-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		wheels = standard_train_wheels,
+						wheels = standard_train_wheels,
 		rail_category = "regular",
 		drive_over_tie_trigger = yir_drive_over_tie(),
 		tie_distance = 50,
@@ -163,6 +103,4 @@ data:extend(
 		sound_minimum_speed = 0.5;
 		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
 	},
-
-
 })

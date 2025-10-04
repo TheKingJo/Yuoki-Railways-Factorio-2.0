@@ -1,14 +1,7 @@
 require("lib.functions")-- require("__base__.prototypes.entity.trains")
 
---local sounds = require("__base__.prototypes.entity.sounds")
---local hit_effects = require("__base__.prototypes.entity.hit-effects")
-
-
-
 data:extend(
 {
-
-
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_closed",
@@ -40,35 +33,7 @@ data:extend(
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.5,
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			back_equals_front = true,
-			direction_count = 64,
-			filename = "__yi_railway__/graphics/entity/railway/wcs_closed_sheet.png",
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
-			}
-		},
-		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
+						
 		wheels = standard_train_wheels,
 		rail_category = "regular",
 		drive_over_tie_trigger = yir_drive_over_tie(),
@@ -120,35 +85,7 @@ data:extend(
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.5,
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			back_equals_front = true,
-			direction_count = 64,
-			filename = "__yi_railway__/graphics/entity/railway/2a_hopper_y_sheet.png",
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
-			}
-		},
-		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
+				
 		wheels = standard_train_wheels,
 		rail_category = "regular",
 		drive_over_tie_trigger = yir_drive_over_tie(),
@@ -200,35 +137,7 @@ data:extend(
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.5,
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			back_equals_front = true,
-			direction_count = 64,
-			filename = "__yi_railway__/graphics/entity/railway/2a_corn_green_sheet.png",
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
-			}
-		},
-		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
+						
 		wheels = standard_train_wheels,
 		rail_category = "regular",
 		drive_over_tie_trigger = yir_drive_over_tie(),
@@ -280,35 +189,7 @@ data:extend(
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.5,
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			back_equals_front = true,
-			direction_count = 64,
-			filename = "__yi_railway__/graphics/entity/railway/2a_corn_blue_sheet.png",
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
-			}
-		},
-		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
+						
 		wheels = standard_train_wheels,
 		rail_category = "regular",
 		drive_over_tie_trigger = yir_drive_over_tie(),
@@ -360,35 +241,7 @@ data:extend(
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.5,
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			back_equals_front = true,
-			direction_count = 64,
-			filename = "__yi_railway__/graphics/entity/railway/2a_cws_tf1_sheet.png",
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
-			}
-		},
-		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
+						
 		wheels = standard_train_wheels,
 		rail_category = "regular",
 		drive_over_tie_trigger = yir_drive_over_tie(),
@@ -440,42 +293,6 @@ data:extend(
 			{type = "acid",decrease = 10,percent = 20}
 		},
 		vertical_selection_shift = -0.5,
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			back_equals_front = false,
-			--direction_count = 64,
-			--filename = "__yi_railway__/graphics/entity/railway/2a_cws_tf1_sheet.png",
-
-			direction_count = 128,
-			filenames = {
-				"__yi_railway__/graphics/entity/railway/2a_wood_sheet-0.png",
-				"__yi_railway__/graphics/entity/railway/2a_wood_sheet-1.png",
-			},
-
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
-		}
-		},
-		minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation = {
-			filename = "__base__/graphics/entity/cargo-wagon/minimap-representation/cargo-wagon-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = standard_train_wheels,
 		rail_category = "regular",
 		drive_over_tie_trigger = yir_drive_over_tie(),
@@ -495,5 +312,4 @@ data:extend(
 		sound_minimum_speed = 0.5;
 		vehicle_impact_sound =  {filename = "__base__/sound/car-wood-impact.ogg", volume = 1.0},
 	},
-
 })

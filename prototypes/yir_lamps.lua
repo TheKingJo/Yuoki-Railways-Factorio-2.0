@@ -25,7 +25,8 @@ data:extend(
 			filename = "__yi_railway__/graphics/entity/yir_lamp_modern_off.png",
 			priority = "high",
 			width = 256,
-			height = 256, scale = 1,
+			height = 256,
+			scale = 1,
 			shift = {0, -3.5}
 		},
 		picture_on =
@@ -33,7 +34,8 @@ data:extend(
 			filename = "__yi_railway__/graphics/entity/yir_lamp_modern_on.png",
 			priority = "high",
 			width = 256,
-			height = 256, scale = 1,
+			height = 256,
+			scale = 1,
 			shift = {0, -3.5}
 		},
 		circuit_wire_max_distance = 20,
@@ -64,7 +66,8 @@ data:extend(
 			filename = "__yi_railway__/graphics/entity/yir_lamp_old1_off.png",
 			priority = "high",
 			width = 256,
-			height = 256, scale = 0.5,
+			height = 256,
+			scale = 0.5,
 			shift = {0.5, -1.5}
 		},
 		picture_on =
@@ -72,7 +75,8 @@ data:extend(
 			filename = "__yi_railway__/graphics/entity/yir_lamp_old1_on.png",
 			priority = "high",
 			width = 256,
-			height = 256, scale = 0.5,
+			height = 256,
+			scale = 0.5,
 			shift = {0.5, -1.5}
 		},
 		circuit_wire_max_distance = 20,
@@ -101,7 +105,8 @@ data:extend(
 			filename = "__yi_railway__/graphics/entity/yir_clock_off.png",
 			priority = "high",
 			width = 256,
-			height = 256, scale = 0.5,
+			height = 256,
+			scale = 0.5,
 			shift = {1.5, -1.5}
 		},
 		picture_on =
@@ -109,7 +114,8 @@ data:extend(
 			filename = "__yi_railway__/graphics/entity/yir_clock_on.png",
 			priority = "high",
 			width = 256,
-			height = 256, scale = 0.5,
+			height = 256,
+			scale = 0.5,
 			shift = {1.5, -1.5}
 		},
 		circuit_wire_max_distance = 20,

@@ -1,4 +1,5 @@
 drive_over_tie = require("lib.functions")
+
 data:extend(
 {
 	{
@@ -21,14 +22,10 @@ data:extend(
 		reversing_power_modifier = 0.9,
 		braking_force = 6,
 		friction_force = 0.0035,
-		-- this is a percentage of current speed that will be subtracted
 		air_resistance = 0.0035,
 		vertical_selection_shift = -0.5,
 		connection_distance = 3.6,
 		joint_distance = 1.8,
-
-		--    connection_distance = 3.5,
-		--    joint_distance = 1.3,
 		energy_per_hit_point = 5,
 		resistances =
 		{
@@ -92,41 +89,6 @@ data:extend(
 				intensity = 0.6
 			}
 		},
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-					priority = "very-low",
-					width = 256,
-					height = 256,
-					direction_count = 128,
-					filenames =
-					{
-						"__yi_railway__/graphics/entity/railway/emd-1500blue_sheet-0-old.png",
-						"__yi_railway__/graphics/entity/railway/emd-1500blue_sheet-1-old.png",
-					},
-					line_length = 8,
-					lines_per_file = 8,
-					shift = {0.42, -1.125}
-
-			},
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = standard_train_wheels,
 		rail_category = "regular",
 		stop_trigger =
@@ -203,14 +165,10 @@ data:extend(
 		reversing_power_modifier = 0.7,
 		braking_force = 8,
 		friction_force = 0.0035,
-		-- this is a percentage of current speed that will be subtracted
 		air_resistance = 0.0035,
 		vertical_selection_shift = -0.5,
 		connection_distance = 3.6,
 		joint_distance = 1.8,
-
-		--    connection_distance = 3.5,
-		--    joint_distance = 1.3,
 		energy_per_hit_point = 5,
 		resistances =
 		{
@@ -275,43 +233,8 @@ data:extend(
 				intensity = 0.6
 			}
 		},
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			direction_count = 128,
-			filenames =
-			{
-				"__yi_railway__/graphics/entity/railway/emd-1500blue_sheet-0.png",
-				"__yi_railway__/graphics/entity/railway/emd-1500blue_sheet-1.png",
-			},
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
-		}
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = standard_train_wheels,
 		rail_category = "regular",
-
 		stop_trigger =
 		{
 			-- left side
@@ -386,14 +309,10 @@ data:extend(
 		reversing_power_modifier = 0.9,
 		braking_force = 12,
 		friction_force = 0.0025,
-		-- this is a percentage of current speed that will be subtracted
 		air_resistance = 0.0025,
 		vertical_selection_shift = -0.5,
 		connection_distance = 3.6,
 		joint_distance = 1.8,
-
-		--    connection_distance = 3.5,
-		--    joint_distance = 1.3,
 		energy_per_hit_point = 5,
 		resistances =
 		{
@@ -458,43 +377,8 @@ data:extend(
 				intensity = 0.8
 			}
 		},
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			direction_count = 128,
-			filenames =
-			{
-				"__yi_railway__/graphics/entity/railway/emd-1500black_sheet-0-old.png",
-				"__yi_railway__/graphics/entity/railway/emd-1500black_sheet-1-old.png",
-			},
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
-		}
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = standard_train_wheels,
 		rail_category = "regular",
-
 		stop_trigger =
 		{
 			-- left side
@@ -569,14 +453,10 @@ data:extend(
 		reversing_power_modifier = 0.9,
 		braking_force = 13,
 		friction_force = 0.0025,
-		-- this is a percentage of current speed that will be subtracted
 		air_resistance = 0.0025,
 		vertical_selection_shift = -0.5,
 		connection_distance = 3.6,
 		joint_distance = 1.8,
-
-		--    connection_distance = 3.5,
-		--    joint_distance = 1.3,
 		energy_per_hit_point = 5,
 		resistances =
 		{
@@ -641,43 +521,8 @@ data:extend(
 				intensity = 0.8
 			}
 		},
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			direction_count = 128,
-			filenames =
-			{
-				"__yi_railway__/graphics/entity/railway/DESW90-PU_sheet-0.png",
-				"__yi_railway__/graphics/entity/railway/DESW90-PU_sheet-1.png",
-			},
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
-		}
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = standard_train_wheels,
 		rail_category = "regular",
-
 		stop_trigger =
 		{
 			-- left side
@@ -752,14 +597,10 @@ data:extend(
 		reversing_power_modifier = 0.8,
 		braking_force = 10,
 		friction_force = 0.0026,
-		-- this is a percentage of current speed that will be subtracted
 		air_resistance = 0.003,
 		vertical_selection_shift = -0.5,
 		connection_distance = 3.6,
 		joint_distance = 1.8,
-
-		--    connection_distance = 3.5,
-		--    joint_distance = 1.3,
 		energy_per_hit_point = 5,
 		resistances =
 		{
@@ -824,43 +665,8 @@ data:extend(
 				intensity = 0.8
 			}
 		},
-		--back_light = rolling_stock_back_light(),
-		--stand_by_light = rolling_stock_stand_by_light(),
-		pictures =
-		{
-			rotated = {
-			priority = "very-low",
-			width = 256,
-			height = 256,
-			direction_count = 128,
-			filenames =
-			{
-				"__yi_railway__/graphics/entity/railway/DESW90-OP_sheet-0.png",
-				"__yi_railway__/graphics/entity/railway/DESW90-OP_sheet-1.png",
-			},
-			line_length = 8,
-			lines_per_file = 8,
-			shift = {0.42, -1.125}
-		}
-		},
-		minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-		selected_minimap_representation =
-		{
-			filename = "__base__/graphics/entity/locomotive/minimap-representation/locomotive-selected-minimap-representation.png",
-			flags = {"icon"},
-			size = {20, 40},
-			scale = 0.5
-		},
-
 		wheels = standard_train_wheels,
 		rail_category = "regular",
-
 		stop_trigger =
 		{
 			-- left side
@@ -914,5 +720,4 @@ data:extend(
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.3;
 	},
-
 })
