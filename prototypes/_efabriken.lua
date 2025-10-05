@@ -9,7 +9,7 @@ data:extend(
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_factory_loco"},
 		max_health = 750,
 		corpse = "big-remnants",
-		resistances = {{type = "physical",percent = 60},},
+		resistances = {{type = "physical",percent = 60}},
 		collision_box = {{-2.7, -2.7}, {2.7, 2.7}},
 		selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
 		graphics_set =
@@ -55,8 +55,6 @@ data:extend(
 			module_slots = 1,
 		},
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-
-		order = "a[atomics]",
 		subgroup = "yir_workshop",
 	},
 
@@ -69,7 +67,7 @@ data:extend(
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_factory_wagon"},
 		max_health = 750,
 		corpse = "big-remnants",
-		resistances = {{type = "physical",percent = 60},},
+		resistances = {{type = "physical",percent = 60}},
 		collision_box = {{-2.7, -2.7}, {2.7, 2.7}},
 		selection_box = {{-3.0, -3.0}, {3.0, 3.0}},
 		graphics_set =
@@ -123,8 +121,6 @@ data:extend(
 			module_slots = 1,
 		},
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-
-		order = "a[atomics]",
 		subgroup = "yir_workshop",
 	},
 
@@ -137,7 +133,7 @@ data:extend(
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_factory_tiles"},
 		max_health = 250,
 		corpse = "big-remnants",
-		resistances = {{type = "physical",percent = 60},},
+		resistances = {{type = "physical",percent = 60}},
 		collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
@@ -189,7 +185,6 @@ data:extend(
 			module_slots = 1,
 		},
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-		order = "a[atomics]",
 		subgroup = "yir_workshop",
 	},
 
@@ -202,7 +197,7 @@ data:extend(
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_factory_material"},
 		max_health = 250,
 		corpse = "big-remnants",
-		resistances = {{type = "physical",percent = 60},},
+		resistances = {{type = "physical",percent = 60}},
 		collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
 		selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
 		fast_replaceable_group = "assembling-machine",
@@ -255,7 +250,6 @@ data:extend(
 			module_slots = 1,
 		},
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-		order = "a[atomics]",
 		subgroup = "yir_workshop",
 	},
 
@@ -268,7 +262,7 @@ data:extend(
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_factory_stuff"},
 		max_health = 500,
 		corpse = "big-remnants",
-		resistances = {{type = "physical",percent = 60},},
+		resistances = {{type = "physical",percent = 60}},
 		collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
 		selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
 		fast_replaceable_group = "assembling-machine",
@@ -336,7 +330,6 @@ data:extend(
 		ingredient_count = 3,
 		module_specification = {module_slots = 0,	},
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-		order = "a[atomics]",
 		subgroup = "yir_workshop",
 	},
 
@@ -349,7 +342,7 @@ data:extend(
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_diesel_monument"},
 		max_health = 500,
 		corpse = "big-remnants",
-		resistances = {{type = "physical",percent = 60},},
+		resistances = {{type = "physical",percent = 60}},
 		collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
 		selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
 		fast_replaceable_group = "assembling-machine",
@@ -426,8 +419,7 @@ data:extend(
 			module_slots = 0,
 		},
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-		order = "b",
-		subgroup = "yir_railyardliquid",
+		subgroup = "yir_workshop",
 	},
 
 	{
@@ -439,7 +431,7 @@ data:extend(
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_future_monument"},
 		max_health = 500,
 		corpse = "big-remnants",
-		resistances = {{type = "physical",percent = 60},},
+		resistances = {{type = "physical",percent = 60}},
 		collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
 		selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
 		fast_replaceable_group = "assembling-machine",
@@ -518,8 +510,7 @@ data:extend(
 			module_slots = 0,
 		},
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-		order = "b",
-		subgroup = "yir_railyardliquid",
+		subgroup = "yir_workshop",
 	},
 
 	{
@@ -531,7 +522,7 @@ data:extend(
 		minable = {hardness = 0.2, mining_time = 0.5, result = "yir_factory_chemical"},
 		max_health = 500,
 		corpse = "big-remnants",
-		resistances = {{type = "physical",percent = 60},},
+		resistances = {{type = "physical",percent = 60}},
 		collision_box = {{-1.2,-1.2},{1.2,1.2}},
 		selection_box = {{-1.5,-1.5},{1.5,1.5}},
 		fast_replaceable_group = "assembling-machine",
@@ -577,14 +568,13 @@ data:extend(
 				},
 			},
 		},
-		crafting_categories = {"yir_fuel", "advanced-crafting"},
+		crafting_categories = {"yir_fuel"},
 		crafting_speed = 0.5,
-		energy_source = {type = "electric", usage_priority = "secondary-input",},
+		energy_source = {type = "electric", usage_priority = "secondary-input"},
 		energy_usage = "1500kW",
 		ingredient_count = 3,
-		module_specification = {module_slots = 0,},
+		module_specification = {module_slots = 0},
 		allowed_effects = {"consumption", "speed", "productivity", "pollution"},
-		order = "a[atomics]",
-		subgroup = "yir_railyardliquid",
+		subgroup = "yir_workshop",
 	},
 })

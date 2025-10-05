@@ -137,7 +137,7 @@ data:extend({
 			usage_priority = "secondary-input"
 		},
 		energy_usage_per_tick = "20kW",
-		light = {intensity = 0.9, size = 70,},
+		light = {intensity = 0.9, size = 70},
 		tint = {r=1.0, g=1.0, b=0.6, a=0.8},
 		picture_off =
 		{

@@ -11,7 +11,7 @@ data:extend(
 			{type = "item", name = "stone",  amount=4},
 			{type = "item", name = "coal",  amount=1},
 		},
-		results = {{type = "item", name = "yir_muster1_tile", amount=8},},
+		results = {{type = "item", name = "yir_muster1_tile", amount=8}},
 		main_product = "yir_muster1_tile",
 		category = "yir_rc_tiles",
 		order = "ground-3",

@@ -7,7 +7,7 @@ data:extend(
 		name = "y_loco_fs_steam_green",
 		icon = "__yi_railway__/graphics/icons/railway/rsea_green_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "y_loco_fs_steam_green"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1000,
@@ -22,8 +22,8 @@ data:extend(
 		max_power = "1000kW",
 		reversing_power_modifier = 0.6,
 		braking_force = 12,
-		friction_force = 0.003,
-		air_resistance = 0.003,
+		friction_force = 03,
+		air_resistance = 03,
 		vertical_selection_shift = -0.5,
 		energy_per_hit_point = 5,
 		resistances =
@@ -100,7 +100,7 @@ data:extend(
 				smoke_name = "smoke-train-stop",
 				initial_height = 0,
 				-- smoke goes to the left
-				speed = {-0.03, 0},
+				speed = {-03, 0},
 				speed_multiplier = 0.75,
 				speed_multiplier_deviation = 1.1,
 				offset_deviation = {{-0.75, -2.7}, {-0.3, 2.7}}
@@ -112,7 +112,7 @@ data:extend(
 				smoke_name = "smoke-train-stop",
 				initial_height = 0,
 				-- smoke goes to the right
-				speed = {0.03, 0},
+				speed = {03, 0},
 				speed_multiplier = 0.75,
 				speed_multiplier_deviation = 1.1,
 				offset_deviation = {{0.3, -2.7}, {0.75, 2.7}}
@@ -150,7 +150,7 @@ data:extend(
 		name = "yir_loco_sel_blue",
 		icon = "__yi_railway__/graphics/icons/railway/rsea_blue_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "yir_loco_sel_blue"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1200,
@@ -165,8 +165,8 @@ data:extend(
 		max_power = "1100kW",
 		reversing_power_modifier = 0.6,
 		braking_force = 14,
-		friction_force = 0.003,
-		air_resistance = 0.002,
+		friction_force = 03,
+		air_resistance = 02,
 		vertical_selection_shift = -0.5,
 		energy_per_hit_point = 5,
 		resistances =
@@ -243,7 +243,7 @@ data:extend(
 				smoke_name = "smoke-train-stop",
 				initial_height = 0,
 				-- smoke goes to the left
-				speed = {-0.03, 0},
+				speed = {-03, 0},
 				speed_multiplier = 0.75,
 				speed_multiplier_deviation = 1.1,
 				offset_deviation = {{-0.75, -2.7}, {-0.3, 2.7}}
@@ -255,7 +255,7 @@ data:extend(
 				smoke_name = "smoke-train-stop",
 				initial_height = 0,
 				-- smoke goes to the right
-				speed = {0.03, 0},
+				speed = {03, 0},
 				speed_multiplier = 0.75,
 				speed_multiplier_deviation = 1.1,
 				offset_deviation = {{0.3, -2.7}, {0.75, 2.7}}
@@ -289,46 +289,11 @@ data:extend(
 	},
 
 	{
-		type = "recipe",
-		name = "y_loco_steam_wt450",
-		category = "yir_rc_wsl",
-		enabled = true,
-		energy_required = 5.00,
-		ingredients = {
-			{type = "item", name = "y_loco_ses_std" , amount = 1.0,},
-			{type = "item", name = "y_wagon_tender_black" , amount = 1.0,},
-			{type = "item", name = "yir_coin" , amount = 5.0,},
-		},
-		results = {
-			{type = "item", name = "y_loco_steam_wt450", amount = 1.0,},
-		},
-		main_product = "y_loco_steam_wt450",
-		icon = "__yi_railway__/graphics/icons/railway/sewt_bl_icon.png",
-		icon_size = 64,
-		order = "a6",
-		group = "yuoki_railway",
-		subgroup = "yir_locomotives_steam",
-	},
-
-	{
-		type = "item",
-		name = "y_loco_steam_wt450",
-		icon = "__yi_railway__/graphics/icons/railway/sewt_bl_icon.png",
-		group = "yuoki_railway",
-		subgroup = "yir_locomotives_steam",
-		order = "a6",
-		stack_size = 10,
-		default_request_amount = 5,
-		icon_size = 64,
-		place_result = "y_loco_steam_wt450",
-	},
-
-	{
 		type = "locomotive",
 		name = "y_loco_steam_wt450",
 		icon = "__yi_railway__/graphics/icons/railway/sewt_bl_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "y_loco_steam_wt450"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 800,
@@ -343,8 +308,8 @@ data:extend(
 		max_power = "450kW",
 		reversing_power_modifier = 0.6,
 		braking_force = 8,
-		friction_force = 0.003,
-		air_resistance = 0.003,
+		friction_force = 03,
+		air_resistance = 03,
 		vertical_selection_shift = -0.5,
 		energy_per_hit_point = 5,
 		resistances =
@@ -421,7 +386,7 @@ data:extend(
 				smoke_name = "smoke-train-stop",
 				initial_height = 0,
 				-- smoke goes to the left
-				speed = {-0.03, 0},
+				speed = {-03, 0},
 				speed_multiplier = 0.75,
 				speed_multiplier_deviation = 1.1,
 				offset_deviation = {{-0.75, -2.7}, {-0.3, 2.7}}
@@ -433,7 +398,7 @@ data:extend(
 				smoke_name = "smoke-train-stop",
 				initial_height = 0,
 				-- smoke goes to the right
-				speed = {0.03, 0},
+				speed = {03, 0},
 				speed_multiplier = 0.75,
 				speed_multiplier_deviation = 1.1,
 				offset_deviation = {{0.3, -2.7}, {0.75, 2.7}}

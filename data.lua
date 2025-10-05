@@ -1,6 +1,7 @@
 
 require "util"
 
+require ("prototypes.technology")
 require ("prototypes.z_items")
 require ("prototypes.z_recipes")
 require ("prototypes.fuel_categorys")

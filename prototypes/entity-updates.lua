@@ -11,7 +11,7 @@ local entityData = {
 		yir_loco_fut_red = 		{filename = "future_red_sheet", 		double = true, 	doublesided = false, size = {4032, 8096}, sizeSh = {4096, 8192}, shift = {0   ,-0.625}},
 		yir_loco_del_KR = 		{filename = "kurts_sheet", 				double = true, 	doublesided = false, size = {4096, 8192}, sizeSh = {4096, 8192}, shift = {0.42,-1.125}},
 		y_loco_emd3000_white = 	{filename = "emd_gp_white_sheet", 		double = true, 	doublesided = false, size = {4096, 6752}, sizeSh = {4096, 8064}, shift = {0.42,-1.125}},
-		yir_loco_del_bluegray = {filename = "emd_gp2_gray_sheet", 		double = true, 	doublesided = false, size = {4096, 6688}, sizeSh = {4096, 8192}, shift = {0.42,-1.125}},
+		yir_loco_de_bluegray = {filename = "emd_gp2_gray_sheet", 		double = true, 	doublesided = false, size = {4096, 6688}, sizeSh = {4096, 8192}, shift = {0.42,-1.125}},
 		yir_loco_del_mk1400 = 	{filename = "emd_gp2_yellow_sheet", 	double = true, 	doublesided = false, size = {4096, 6688}, sizeSh = {4096, 8064}, shift = {0.42,-1.125}},
 		y_loco_fs_steam_green = {filename = "se_green_csheet", 			double = true, 	doublesided = false, size = {4096, 7456}, sizeSh = {4096, 8160}, shift = {0.45,-1.125}},
 		yir_loco_sel_blue = 	{filename = "se_blue_sheet", 			double = true, 	doublesided = false, size = {4096, 6656}, sizeSh = {4096, 7232}, shift = {0.42,-1.125}},
@@ -23,7 +23,7 @@ local entityData = {
 		y_loco_ses_red = 		{filename = "ses_ared", 				double = true, 	doublesided = false, size = {3200, 5472}, sizeSh = {3232, 5888}, shift = {0.42,-1.125}},
 	},
 	["cargo-wagon"] = {
-		y_wagon_closed = 		{filename = "wcs_closed_sheet", 		double = false, doublesided = true,	size = {3216, 2736}, sizeSh = {3296, 3056}, shift = {0.42,-1.125}},
+		yir_wagon2a_closed = 	{filename = "wcs_closed_sheet", 		double = false, doublesided = true,	size = {3216, 2736}, sizeSh = {3296, 3056}, shift = {0.42,-1.125}},
 		y_wagon_hopper_yellow = {filename = "2a_hopper_y_sheet", 		double = false, doublesided = true,	size = {3344, 2832}, sizeSh = {3360, 3136}, shift = {0.42,-1.125}},
 		y_wagon_corn_green = 	{filename = "2a_corn_green_sheet", 		double = false, doublesided = true,	size = {3344, 2848}, sizeSh = {3360, 3136}, shift = {0.42,-1.125}},
 		y_wagon_corn_blue = 	{filename = "2a_corn_blue_sheet", 		double = false, doublesided = true,	size = {3344, 2848}, sizeSh = {3360, 3136}, shift = {0.42,-1.125}},
@@ -55,8 +55,8 @@ local entityData = {
 	["fluid-wagon"] = {
 		y_wagon_tank_fm1 = 		{filename = "4atw_fm1_sheet", 		double = false,	doublesided = true,	size = {4096, 3360}, sizeSh = {4096, 3648}, shift = {0.42,-1.125}},
 		y_wagon_tank_fm2 = 		{filename = "4atw_fm2_sheet", 		double = false,	doublesided = true,	size = {4096, 3376}, sizeSh = {4096, 3648}, shift = {0.42,-1.125}},
-		y_wagon_tank_orange =	{filename = "4aw_fw_acid_sheet", 	double = false,	doublesided = true,	size = {4080, 4000}, sizeSh = {4080, 4096}, shift = {0.42,-1}},
-		y_wagon_tank_blue = 	{filename = "4aw_fw_blue_sheet", 	double = false,	doublesided = true,	size = {4080, 4000}, sizeSh = {4080, 4096}, shift = {0.42,-1}},
+		yir_wagon_tank_orange =	{filename = "4aw_fw_acid_sheet", 	double = false,	doublesided = true,	size = {4080, 4000}, sizeSh = {4080, 4096}, shift = {0.42,-1}},
+		yir_wagon_tank_blue = 	{filename = "4aw_fw_blue_sheet", 	double = false,	doublesided = true,	size = {4080, 4000}, sizeSh = {4080, 4096}, shift = {0.42,-1}},
 		yir_fw4a_tank_oil = 	{filename = "4afw_oil_sheet", 		double = false,	doublesided = true,	size = {3840, 3760}, sizeSh = {3840, 4096}, shift = {0.42,-1}},
 		yir_fw4_vc = 			{filename = "4aw_fw_vc_sheet", 		double = false,	doublesided = true,	size = {4080, 4000}, sizeSh = {4080, 4096}, shift = {0.42,-0.875}},
 	},
@@ -131,10 +131,34 @@ local itemData = {
 		"yir_fuel_fluid_u3",
 	}
 }
---[[
 
-]]
-
+local locoCategories = {
+	steam = {
+		"yir_loco_sel_blue",
+		"y_loco_fs_steam_green",
+		"y_loco_steam_wt450",
+		"y_loco_ses_std",
+		"y_loco_ses_red",
+	},
+	diesel = {
+		"yir_loco_del_KR",
+		"yir_loco_del_mk1400",
+		"yir_loco_de_bluegray",
+		"y_loco_emd3000_white",
+		"y_loco_emd1500black_v2",
+		"y_loco_emd1500blue_v2",
+		"y_loco_emd1500black",
+		"y_loco_emd1500blue",
+		"y_loco_desw_orange",
+		"y_loco_desw_blue",
+		"y_loco_desw",
+	},
+	future = {
+		"yir_loco_fut_red",
+		"yir_loco_fesw_op",
+	}
+}
+--yir_diesel_coin
 local function filenameGen(name, count, shadow)
 	local names = {}
 	local sh =""
@@ -271,7 +295,7 @@ local vehicles = {
 	"yir_loco_fut_red",
 	"yir_loco_del_KR",
 	"y_loco_emd3000_white",
-	"yir_loco_del_bluegray",
+	"yir_loco_de_bluegray",
 	"yir_loco_del_mk1400",
 	"y_loco_fs_steam_green",
 	"yir_loco_sel_blue",
@@ -281,7 +305,7 @@ local vehicles = {
 	"y_loco_desw_blue",
 	"y_loco_ses_std",
 	"y_loco_ses_red",-----
-	"y_wagon_closed",
+	"yir_wagon2a_closed",
 	"y_wagon_hopper_yellow",
 	"y_wagon_corn_green",
 	"y_wagon_corn_blue",
@@ -311,8 +335,8 @@ local vehicles = {
 	"y_wagon_stone",-----
 	"y_wagon_tank_fm1",
 	"y_wagon_tank_fm2",
-	"y_wagon_tank_orange",
-	"y_wagon_tank_blue",
+	"yir_wagon_tank_orange",
+	"yir_wagon_tank_blue",
 	"yir_fw4a_tank_oil",
 	"yir_fw4_vc",
 }

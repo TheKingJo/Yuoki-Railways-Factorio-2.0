@@ -2,46 +2,12 @@ drive_over_tie = require("lib.functions")
 
 data:extend(
 {
-	-- Future Red
-	{
-		type = "recipe",
-		name = "yir_loco_fut_red",
-		category = "yir_rc_wsl",
-		enabled = true,
-		energy_required = 5.00,
-		ingredients = {
-			{type = "item", name = "yir_future_coin" , amount = 5,},
-			{type = "item", name = "yir_frame_loco_future" , amount = 2.0,},
-			{type = "item", name = "yir_radsatz_locos" , amount = 6.0,},
-			{type = "item", name = "yir_color_red" , amount = 6.0,},
-		},
-		results = {
-			{type = "item", name = "yir_loco_fut_red", amount = 1.0,},
-		},
-		main_product = "yir_loco_fut_red",
-		icon = "__yi_railway__/graphics/icons/railway/future_red_icon.png",icon_size = 64,
-		order = "0", group = "yuoki_railway", subgroup = "yir_locomotives_nslong",
-	},
-
-	{
-		type = "item",
-		name = "yir_loco_fut_red",
-		icon = "__yi_railway__/graphics/icons/railway/future_red_icon.png",
-		group = "yuoki_railway",
-		subgroup = "yir_locomotives_nslong",
-		order = "a",
-		stack_size = 10,
-		default_request_amount = 5,
-		icon_size = 64,
-		place_result = "yir_loco_fut_red",
-	},
-
 	{
 		type = "locomotive",
 		name = "yir_loco_fut_red",
 		icon = "__yi_railway__/graphics/icons/railway/future_red_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "yir_loco_fut_red"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1200,
@@ -57,10 +23,10 @@ data:extend(
 		reversing_power_modifier = 0.6,
 		braking_force = 40,
 		friction_force = 0.275,
-		air_resistance = 0.00275,
+		air_resistance = 0275,
 		vertical_selection_shift = -0.5,
 		energy_per_hit_point = 25,
-		resistances = {{type = "impact",decrease = 50,percent = 60},},
+		resistances = {{type = "impact",decrease = 50,percent = 60}},
 		energy_source =
 		{
 			type = "burner",
@@ -127,7 +93,7 @@ data:extend(
 				smoke_name = "smoke-train-stop",
 				initial_height = 0,
 				-- smoke goes to the left
-				speed = {-0.03, 0},
+				speed = {-03, 0},
 				speed_multiplier = 0.75,
 				speed_multiplier_deviation = 1.1,
 				offset_deviation = {{-0.75, -2.7}, {-0.3, 2.7}}
@@ -139,7 +105,7 @@ data:extend(
 				smoke_name = "smoke-train-stop",
 				initial_height = 0,
 				-- smoke goes to the right
-				speed = {0.03, 0},
+				speed = {03, 0},
 				speed_multiplier = 0.75,
 				speed_multiplier_deviation = 1.1,
 				offset_deviation = {{0.3, -2.7}, {0.75, 2.7}}
@@ -177,7 +143,7 @@ data:extend(
 		name = "yir_loco_del_KR",
 		icon = "__yi_railway__/graphics/icons/railway/kurts_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "yir_loco_del_KR"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1600,
@@ -188,15 +154,15 @@ data:extend(
 		drawing_box = {{-1, -4}, {1, 3}},
 		connection_distance = 3, joint_distance = 4,
 		weight = 3000,
-		max_speed = 1.00,
+		max_speed = 1,
 		max_power = "2700kW",
 		reversing_power_modifier = 0.6,
 		braking_force = 30,
-		friction_force = 0.00275,
-		air_resistance = 0.00275,
+		friction_force = 0275,
+		air_resistance = 0275,
 		vertical_selection_shift = -0.5,
 		energy_per_hit_point = 5,
-		resistances = {{type = "impact",decrease = 50,percent = 60},},
+		resistances = {{type = "impact",decrease = 50,percent = 60}},
 
 		energy_source =
 		{
@@ -264,7 +230,7 @@ data:extend(
 				smoke_name = "smoke-train-stop",
 				initial_height = 0,
 				-- smoke goes to the left
-				speed = {-0.03, 0},
+				speed = {-03, 0},
 				speed_multiplier = 0.75,
 				speed_multiplier_deviation = 1.1,
 				offset_deviation = {{-0.75, -2.7}, {-0.3, 2.7}}
@@ -276,7 +242,7 @@ data:extend(
 				smoke_name = "smoke-train-stop",
 				initial_height = 0,
 				-- smoke goes to the right
-				speed = {0.03, 0},
+				speed = {03, 0},
 				speed_multiplier = 0.75,
 				speed_multiplier_deviation = 1.1,
 				offset_deviation = {{0.3, -2.7}, {0.75, 2.7}}
@@ -314,7 +280,7 @@ data:extend(
 		name = "y_loco_emd3000_white",
 		icon = "__yi_railway__/graphics/icons/railway/emd_gp_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "y_loco_emd3000_white"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1500,
@@ -329,8 +295,8 @@ data:extend(
 		max_power = "1200kW",
 		reversing_power_modifier = 0.6,
 		braking_force = 18,
-		friction_force = 0.003,
-		air_resistance = 0.003,
+		friction_force = 03,
+		air_resistance = 03,
 		vertical_selection_shift = -0.5,
 		energy_per_hit_point = 5,
 		resistances =
@@ -407,7 +373,7 @@ data:extend(
 				smoke_name = "smoke-train-stop",
 				initial_height = 0,
 				-- smoke goes to the left
-				speed = {-0.03, 0},
+				speed = {-03, 0},
 				speed_multiplier = 0.75,
 				speed_multiplier_deviation = 1.1,
 				offset_deviation = {{-0.75, -2.7}, {-0.3, 2.7}}
@@ -419,7 +385,7 @@ data:extend(
 				smoke_name = "smoke-train-stop",
 				initial_height = 0,
 				-- smoke goes to the right
-				speed = {0.03, 0},
+				speed = {03, 0},
 				speed_multiplier = 0.75,
 				speed_multiplier_deviation = 1.1,
 				offset_deviation = {{0.3, -2.7}, {0.75, 2.7}}
@@ -454,11 +420,11 @@ data:extend(
 
 	{
 		type = "locomotive",
-		name = "yir_loco_del_bluegray",
+		name = "yir_loco_de_bluegray",
 		icon = "__yi_railway__/graphics/icons/railway/emd-gp_bluegray_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
-		minable = {mining_time = 1, result = "yir_loco_del_bluegray"},
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
+		minable = {mining_time = 1, result = "yir_loco_de_bluegray"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1600,
 		corpse = "medium-remnants",
@@ -472,8 +438,8 @@ data:extend(
 		max_power = "1300kW",
 		reversing_power_modifier = 0.6,
 		braking_force = 20,
-		friction_force = 0.00275,
-		air_resistance = 0.00275,
+		friction_force = 0275,
+		air_resistance = 0275,
 		vertical_selection_shift = -0.5,
 		energy_per_hit_point = 5,
 		resistances =
@@ -550,7 +516,7 @@ data:extend(
 				smoke_name = "smoke-train-stop",
 				initial_height = 0,
 				-- smoke goes to the left
-				speed = {-0.03, 0},
+				speed = {-03, 0},
 				speed_multiplier = 0.75,
 				speed_multiplier_deviation = 1.1,
 				offset_deviation = {{-0.75, -2.7}, {-0.3, 2.7}}
@@ -562,7 +528,7 @@ data:extend(
 				smoke_name = "smoke-train-stop",
 				initial_height = 0,
 				-- smoke goes to the right
-				speed = {0.03, 0},
+				speed = {03, 0},
 				speed_multiplier = 0.75,
 				speed_multiplier_deviation = 1.1,
 				offset_deviation = {{0.3, -2.7}, {0.75, 2.7}}
@@ -600,7 +566,7 @@ data:extend(
 		name = "yir_loco_del_mk1400",
 		icon = "__yi_railway__/graphics/icons/railway/emd-gp_orange_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid",},
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
 		minable = {mining_time = 1, result = "yir_loco_del_mk1400"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1600,
@@ -615,8 +581,8 @@ data:extend(
 		max_power = "1400kW",
 		reversing_power_modifier = 0.6,
 		braking_force = 20,
-		friction_force = 0.00275,
-		air_resistance = 0.00275,
+		friction_force = 0275,
+		air_resistance = 0275,
 		vertical_selection_shift = -0.5,
 		energy_per_hit_point = 5,
 		resistances =
@@ -694,7 +660,7 @@ data:extend(
 				smoke_name = "smoke-train-stop",
 				initial_height = 0,
 				-- smoke goes to the left
-				speed = {-0.03, 0},
+				speed = {-03, 0},
 				speed_multiplier = 0.75,
 				speed_multiplier_deviation = 1.1,
 				offset_deviation = {{-0.75, -2.7}, {-0.3, 2.7}}
@@ -706,7 +672,7 @@ data:extend(
 				smoke_name = "smoke-train-stop",
 				initial_height = 0,
 				-- smoke goes to the right
-				speed = {0.03, 0},
+				speed = {03, 0},
 				speed_multiplier = 0.75,
 				speed_multiplier_deviation = 1.1,
 				offset_deviation = {{0.3, -2.7}, {0.75, 2.7}}

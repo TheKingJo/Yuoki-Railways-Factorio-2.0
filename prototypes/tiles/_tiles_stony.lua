@@ -10,7 +10,7 @@ data:extend(
 		ingredients = {
 			{type = "item", name = "stone-brick",  amount=4},
 		},
-		results = {{type = "item", name = "yir_stony_tile", amount=4},},
+		results = {{type = "item", name = "yir_stony_tile", amount=4}},
 		main_product = "yir_stony_tile",
 		category = "yir_rc_tiles",
 	},

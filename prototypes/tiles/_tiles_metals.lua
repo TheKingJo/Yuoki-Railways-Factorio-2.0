@@ -10,7 +10,7 @@ data:extend(
 		ingredients = {
 			{type = "item", name = "iron-plate",  amount=1},
 		},
-		results = {{type = "item", name = "yir_metal2_tile", amount=4},},
+		results = {{type = "item", name = "yir_metal2_tile", amount=4}},
 		main_product = "yir_metal2_tile",
 		category = "yir_rc_tiles",
 	},
@@ -25,7 +25,7 @@ data:extend(
 		layer = 59, decorative_removal_probability = 1.0,
 		variants =
 		{
-			main ={{picture = "__yi_railway__/graphics/path_tiles/metal_gitter.png",count = 1,size = 1},},
+			main ={{picture = "__yi_railway__/graphics/path_tiles/metal_gitter.png",count = 1,size = 1}},
 			transition =
 			{
 				overlay_layout =
@@ -71,7 +71,7 @@ data:extend(
 		ingredients = {
 			{type = "item", name = "iron-plate",  amount=1},
 		},
-		results = {{type = "item", name = "yir_metal3_tile", amount=4},},
+		results = {{type = "item", name = "yir_metal3_tile", amount=4}},
 		main_product = "yir_metal3_tile",
 		category = "yir_rc_tiles",
 	},
@@ -86,7 +86,7 @@ data:extend(
 		layer = 59, decorative_removal_probability = 1.0,
 		variants =
 		{
-			main ={{picture = "__yi_railway__/graphics/path_tiles/metal_3.png",count = 1,size = 1},},
+			main ={{picture = "__yi_railway__/graphics/path_tiles/metal_3.png",count = 1,size = 1}},
 			transition =
 			{
 				overlay_layout =
@@ -132,7 +132,7 @@ data:extend(
 		ingredients = {
 			{type = "item", name = "iron-plate",  amount=1},
 		},
-		results = {{type = "item", name = "yir_metal4_tile", amount=4},},
+		results = {{type = "item", name = "yir_metal4_tile", amount=4}},
 		main_product = "yir_metal4_tile",
 		category = "yir_rc_tiles",
 	},
@@ -147,7 +147,7 @@ data:extend(
 		layer = 59, decorative_removal_probability = 1.0,
 		variants =
 		{
-			main ={{picture = "__yi_railway__/graphics/path_tiles/metal_4.png",count = 1,size = 1},},
+			main ={{picture = "__yi_railway__/graphics/path_tiles/metal_4.png",count = 1,size = 1}},
 			transition =
 			{
 				overlay_layout =
