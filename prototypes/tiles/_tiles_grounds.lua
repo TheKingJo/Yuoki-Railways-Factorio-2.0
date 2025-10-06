@@ -3,21 +3,6 @@ local tile_collision_masks = require("__base__/prototypes/tile/tile-collision-ma
 data:extend(
 {
 	{
-		type = "recipe",
-		name = "yir_muster1_tile",
-		energy_required = 2,
-		enabled = true,
-		ingredients = {
-			{type = "item", name = "stone",  amount=4},
-			{type = "item", name = "coal",  amount=1},
-		},
-		results = {{type = "item", name = "yir_muster1_tile", amount=8}},
-		main_product = "yir_muster1_tile",
-		category = "yir_rc_tiles",
-		order = "ground-3",
-	},
-
-	{
 		type = "tile",
 		name = "yir_muster1_tile",
 		needs_correction = false,

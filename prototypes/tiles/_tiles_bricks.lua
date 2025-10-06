@@ -3,21 +3,6 @@ local tile_collision_masks = require("__base__/prototypes/tile/tile-collision-ma
 data:extend(
 {
 	{
-		type = "recipe",
-		name = "yir_brick1_tile",
-		energy_required = 2,
-		enabled = true,
-		ingredients = {
-			{type = "item", name = "stone-brick",  amount=4},
-			{type = "item", name = "yir_color_red",  amount=1},
-		},
-		results = {{type = "item", name = "yir_brick1_tile", amount=12}},
-		main_product = "yir_brick1_tile",
-		category = "yir_rc_tiles",
-		order = "brick-1",
-	},
-
-	{
 		type = "tile",
 		name = "yir_brick1_tile",
 		needs_correction = false,
@@ -73,21 +58,6 @@ data:extend(
 		ageing=0,
 		walking_sound = concrete_sounds,
 		vehicle_friction_modifier = stone_path_vehicle_speed_modifier
-	},
-
-	{
-		type = "recipe",
-		name = "yir_brick2_tile",
-		energy_required = 2,
-		enabled = true,
-		ingredients = {
-			{type = "item", name = "stone-brick",  amount=4},
-			{type = "item", name = "yir_color_red",  amount=1},
-		},
-		results = {{type = "item", name = "yir_brick2_tile", amount=12}},
-		main_product = "yir_brick2_tile",
-		category = "yir_rc_tiles",
-		order = "brick-2",
 	},
 
 	{

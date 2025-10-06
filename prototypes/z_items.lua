@@ -143,6 +143,7 @@ data:extend({
 		subgroup = "yir_important",
 		order = "e",
 		stack_size = 50,
+		hidden = true,
 		fuel_value = "50MJ",
 		fuel_category = "yr_diesel",
 	},
@@ -167,6 +168,7 @@ data:extend({
 		subgroup = "yir_important",
 		order = "g",
 		stack_size = 2500,
+		hidden = true,
 		fuel_value = "2MJ",
 		fuel_category = "yr_diesel",
 	},
@@ -178,8 +180,8 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_important",
 		order = "h",
-		stack_size = 2500,
-		fuel_value = "4MJ",
+		stack_size = 2000,
+		fuel_value = "1MJ",
 		fuel_category = "yr_diesel",
 	},
 	{
@@ -191,6 +193,7 @@ data:extend({
 		subgroup = "yir_important",
 		order = "i",
 		stack_size = 2500,
+		hidden = true,
 		fuel_value = "3MJ",
 		fuel_category = "yr_diesel",
 	},
@@ -362,149 +365,11 @@ data:extend({
 	{
 		type = "item",
 		name = "y_tgb",
-		icon_size = 32,
-		icon = "__yi_railway__/graphics/path_tiles/floor_tplate.png",
-		group = "yuoki_railway",
-		subgroup = "yir_tiles",
-		order = "a",
-		stack_size = 500,
-			},
-	{
-		type = "item",
-		name = "y_tring",
-		icon_size = 32,
-		icon = "__yi_railway__/graphics/path_tiles/stripes.png",
-		group = "yuoki_railway",
-		subgroup = "yir_tiles",
-		order = "a",
-		stack_size = 500,
-			},
-	{
-		type = "item",
-		name = "y_path_checker",
-		icon_size = 32,
-		icon = "__yi_railway__/graphics/path_tiles/labor_icon.png",
-		group = "yuoki_railway",
-		subgroup = "yir_tiles",
-		order = "a",
-		stack_size = 500,
-			},
-	{
-		type = "item",
-		name = "y_path_science",
-		icon_size = 32,
-		icon = "__yi_railway__/graphics/path_tiles/vent_icon.png",
-		group = "yuoki_railway",
-		subgroup = "yir_tiles",
-		order = "p2",
-		stack_size = 500,
-			},
-	{
-		type = "item",
-		name = "y_path_labor",
-		icon_size = 32,
-		icon = "__yi_railway__/graphics/path_tiles/floor004_icon.png",
-		group = "yuoki_railway",
-		subgroup = "yir_tiles",
-		order = "p1",
-		stack_size = 500,
-			},
-	{
-		type = "item",
-		name = "y_path_slag",
-		icon_size = 32,
-		icon = "__yi_railway__/graphics/path_tiles/pslag_icon.png",
-		group = "yuoki_railway",
-		subgroup = "yir_tiles",
-		order = "p0",
-		stack_size = 500,
-			},
-	{
-		type = "item",
-		name = "yir_brick1_tile",
-		icon = "__yi_railway__/graphics/path_tiles/bricks_1.png",
-		icon_size = 32,
-		subgroup = "yir_tiles",
-		order = "brick-1",
-		stack_size = 500,
-		place_as_tile =
-		{
-			result = "yir_brick1_tile",
-			condition_size = 2,
-			condition = {layers={water_tile=true}}
-		}
-	},
-	{
-		type = "item",
-		name = "yir_muster1_tile",
-		icon = "__yi_railway__/graphics/path_tiles/muster-1.png",
-		icon_size = 32,
-		subgroup = "yir_tiles",
-		order = "ground-3",
-		stack_size = 500,
-		place_as_tile =
-		{
-			result = "yir_muster1_tile",
-			condition_size = 2,
-			condition = {layers={water_tile=true}}
-		}
-	},
-	{
-		type = "item",
-		name = "yir_metal2_tile",
-		icon_size = 32,
-		icon = "__yi_railway__/graphics/path_tiles/metal_gitter.png",
-		subgroup = "yir_tiles",
-		order = "metal-2",
-		stack_size = 500,
-		place_as_tile = {result = "yir_metal2_tile", condition_size = 2, condition = {layers={water_tile=true}}}
-	},
-	{
-		type = "item",
-		name = "yir_metal3_tile",
-		icon_size = 32,
-		icon = "__yi_railway__/graphics/path_tiles/metal_3.png",
-		subgroup = "yir_tiles",
-		order = "metal-3",
-		stack_size = 500,
-		place_as_tile = {result = "yir_metal3_tile",
-		condition_size = 2,
-		condition = {layers={water_tile=true}}}
-	},
-	{
-		type = "item",
-		name = "yir_metal4_tile",
-		icon_size = 32,
-		icon = "__yi_railway__/graphics/path_tiles/metal_4.png",
-		subgroup = "yir_tiles",
-		order = "metal-4",
-		stack_size = 500,
-		place_as_tile = {result = "yir_metal4_tile", condition_size = 2, condition = {layers={water_tile=true}}}
-	},
-
-	{
-		type = "item",
-		name = "yir_stony_tile",
-		icon = "__yi_railway__/graphics/path_tiles/stony_icon.png",
-		icon_size = 32,
-		subgroup = "yir_tiles",
-		order = "b[concrete]",
-		stack_size = 500,
-		place_as_tile =
-		{
-			result = "yir_stony_tile",
-			condition_size = 2,
-			condition = {layers={water_tile=true}}
-		}
-	},
-	{
-		type = "item",
-		name = "y_tgb",
 		icon = "__yi_railway__/graphics/path_tiles/floor_tplate.png",
 		icon_size = 32,
 		subgroup = "yir_tiles",
 		order = "b[concrete]",
-		stack_size = 500,
+		stack_size = 100,
 		place_as_tile =
 		{
 			result = "y_tgb",
@@ -519,7 +384,7 @@ data:extend({
 		icon_size = 32,
 		subgroup = "yir_tiles",
 		order = "b[concrete]",
-		stack_size = 500,
+		stack_size = 100,
 		place_as_tile =
 		{
 			result = "y_tring",
@@ -529,15 +394,15 @@ data:extend({
 	},
 	{
 		type = "item",
-		name = "y_path_labor",
-		icon = "__yi_railway__/graphics/path_tiles/floor004_icon.png",
+		name = "y_path_checker",
+		icon = "__yi_railway__/graphics/path_tiles/labor_icon.png",
 		icon_size = 32,
 		subgroup = "yir_tiles",
 		order = "b[concrete]",
-		stack_size = 500,
+		stack_size = 100,
 		place_as_tile =
 		{
-			result = "y_path_labor",
+			result = "y_path_checker",
 			condition_size = 2,
 			condition = {layers={water_tile=true}}
 		}
@@ -549,10 +414,121 @@ data:extend({
 		icon_size = 32,
 		subgroup = "yir_tiles",
 		order = "b[concrete]",
-		stack_size = 500,
+		stack_size = 100,
 		place_as_tile =
 		{
 			result = "y_path_science",
+			condition_size = 2,
+			condition = {layers={water_tile=true}}
+		}
+	},
+	{
+		type = "item",
+		name = "y_path_labor",
+		icon = "__yi_railway__/graphics/path_tiles/floor004_icon.png",
+		icon_size = 32,
+		subgroup = "yir_tiles",
+		order = "b[concrete]",
+		stack_size = 100,
+		place_as_tile =
+		{
+			result = "y_path_labor",
+			condition_size = 2,
+			condition = {layers={water_tile=true}}
+		}
+	},
+	{
+		type = "item",
+		name = "y_path_slag",
+		icon_size = 32,
+		icon = "__yi_railway__/graphics/path_tiles/pslag_icon.png",
+		group = "yuoki_railway",
+		subgroup = "yir_tiles",
+		hidden = true,
+		order = "p0",
+		stack_size = 100,
+	},
+	{
+		type = "item",
+		name = "yir_brick1_tile",
+		icon = "__yi_railway__/graphics/path_tiles/bricks_1.png",
+		icon_size = 32,
+		subgroup = "yir_tiles",
+		order = "brick-1",
+		stack_size = 100,
+		place_as_tile =
+		{
+			result = "yir_brick1_tile",
+			condition_size = 2,
+			condition = {layers={water_tile=true}}
+		}
+	},
+	{
+		type = "item",
+		name = "yir_muster1_tile",
+		icon = "__yi_railway__/graphics/path_tiles/muster-1.png",
+		icon_size = 32,
+		subgroup = "yir_tiles",
+		order = "ground-3",
+		stack_size = 100,
+		place_as_tile =
+		{
+			result = "yir_muster1_tile",
+			condition_size = 2,
+			condition = {layers={water_tile=true}}
+		}
+	},
+	{
+		type = "item",
+		name = "yir_metal2_tile",
+		icon_size = 32,
+		icon = "__yi_railway__/graphics/path_tiles/metal_gitter.png",
+		subgroup = "yir_tiles",
+		order = "metal-2",
+		stack_size = 100,
+		place_as_tile = {
+			result = "yir_metal2_tile",
+			condition_size = 2,
+			condition = {layers={water_tile=true}}
+		}
+	},
+	{
+		type = "item",
+		name = "yir_metal3_tile",
+		icon_size = 32,
+		icon = "__yi_railway__/graphics/path_tiles/metal_3.png",
+		subgroup = "yir_tiles",
+		order = "metal-3",
+		stack_size = 100,
+		place_as_tile = {result = "yir_metal3_tile",
+		condition_size = 2,
+		condition = {layers={water_tile=true}}}
+	},
+	{
+		type = "item",
+		name = "yir_metal4_tile",
+		icon_size = 32,
+		icon = "__yi_railway__/graphics/path_tiles/metal_4.png",
+		subgroup = "yir_tiles",
+		order = "metal-4",
+		stack_size = 100,
+		place_as_tile = {
+			result = "yir_metal4_tile",
+			condition_size = 2,
+			condition = {layers={water_tile=true}}
+		}
+	},
+	{
+		type = "item",
+		name = "yir_stony_tile",
+		icon = "__yi_railway__/graphics/path_tiles/stony_icon.png",
+		icon_size = 32,
+		subgroup = "yir_tiles",
+		order = "b[concrete]",
+		stack_size = 100,
+		place_as_tile =
+		{
+			result = "yir_stony_tile",
 			condition_size = 2,
 			condition = {layers={water_tile=true}}
 		}
@@ -565,7 +541,7 @@ data:extend({
 		icon_size = 32,
 		subgroup = "yir_tiles",
 		order = "brick-1",
-		stack_size = 500,
+		stack_size = 100,
 		place_as_tile =
 		{
 			result = "yir_brick2_tile",
@@ -573,23 +549,6 @@ data:extend({
 			condition = {layers={water_tile=true}}
 		}
 	},
-
-	{
-		type = "item",
-		name = "y_path_checker",
-		icon = "__yi_railway__/graphics/path_tiles/labor_icon.png",
-		icon_size = 32,
-		subgroup = "yir_tiles",
-		order = "b[concrete]",
-		stack_size = 500,
-		place_as_tile =
-		{
-			result = "y_path_checker",
-			condition_size = 2,
-			condition = {layers={water_tile=true}}
-		}
-	},
-
 	{
 		type = "item",
 		name = "yir_grating_tile",
@@ -597,7 +556,7 @@ data:extend({
 		icon_size = 32,
 		subgroup = "yir_tiles",
 		order = "b[concrete]",
-		stack_size = 500,
+		stack_size = 100,
 		place_as_tile =
 		{
 			result = "yir_grating_tile",
@@ -616,7 +575,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons_small",
 		order = "a1",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_wagon_coal",
 	},
 	{
@@ -627,7 +586,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons_small",
 		order = "a2",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_wagon_stone",
 	},
 	{
@@ -638,7 +597,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons_small",
 		order = "a3",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_wagon_iron",
 	},
 	{
@@ -649,7 +608,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons_small",
 		order = "a4",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_wagon_copper",
 	},
 
@@ -661,7 +620,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons_small",
 		order = "b1",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_wagon_trans",
 	},
 	{
@@ -672,7 +631,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons_small",
 		order = "b2",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_2acw_wood",
 	},
 	{
@@ -683,7 +642,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons_small",
 		order = "b3",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_2acw_3blocks",
 	},
 	{
@@ -694,7 +653,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons_small",
 		order = "b4",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_wagon_hopper_yellow",
 	},
 	{
@@ -705,7 +664,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons_small",
 		order = "b5",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_wagon2a_closed",
 	},
 	{
@@ -716,7 +675,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons_small",
 		order = "b6",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_wagon_corn_blue",
 	},
 	{
@@ -727,7 +686,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons_small",
 		order = "b7",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_wagon_corn_green",
 	},
 
@@ -739,7 +698,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons_small",
 		order = "c1",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_wagon_zement_white",
 	},
 	{
@@ -750,7 +709,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons_small",
 		order = "c2",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_wagon_zement_gray",
 	},
 
@@ -762,7 +721,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons_small",
 		order = "d1",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_wagon_tender_green",
 	},
 	{
@@ -773,7 +732,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons_small",
 		order = "d2",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_wagon_tender_black",
 	},
 
@@ -786,7 +745,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons",
 		order = "a1",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_4acw_coal",
 	},
 	{
@@ -797,7 +756,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons",
 		order = "a2",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_4acw_stone",
 	},
 	{
@@ -808,7 +767,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons",
 		order = "a3",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_4acw_iron",
 	},
 	{
@@ -819,7 +778,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons",
 		order = "a4",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_4acw_copper",
 	},
 
@@ -832,7 +791,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons",
 		order = "b1",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_4acw_mun",
 	},
 	{
@@ -843,7 +802,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons",
 		order = "b2",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_4acw_wood",
 	},
 	{
@@ -854,7 +813,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons",
 		order = "b3",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_4acw_tf",
 	},
 	{
@@ -865,7 +824,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons",
 		order = "b4",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_4acw_gold",
 	},
 	{
@@ -876,7 +835,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons",
 		order = "b5",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_4acw_closed",
 	},
 	{
@@ -887,7 +846,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons",
 		order = "b6",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_4acw_purple",
 	},
 	{
@@ -897,7 +856,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons",
 		order = "b7",
-		stack_size = 10,
+		stack_size = 5,
 		icon_size = 64,
 		place_result = "yir_4acw_vc",
 	},
@@ -909,7 +868,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons",
 		order = "b8",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_4acw_grey",
 	},
 	{
@@ -920,7 +879,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_cargowagons",
 		order = "b9",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_4acw_oceanblue",
 	},
 
@@ -932,7 +891,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_fluidwagons",
 		order = "a",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_fw4_vc", icon_size = 64,
 	},
 	{
@@ -943,7 +902,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_fluidwagons",
 		order = "b1",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_wagon_tank_fm1",
 	},
 	{
@@ -954,7 +913,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_fluidwagons",
 		order = "b2",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_wagon_tank_fm2",
 	},
 	{
@@ -965,7 +924,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_fluidwagons",
 		order = "c1",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_wagon_tank_orange",
 	},
 	{
@@ -976,7 +935,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_fluidwagons",
 		order = "c2",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_wagon_tank_blue",
 	},
 	{
@@ -986,7 +945,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_fluidwagons",
 		order = "d",
-		stack_size = 10,
+		stack_size = 5,
 		icon_size = 64,
 		place_result = "yir_fw4a_tank_oil",
 	},
@@ -1001,7 +960,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_loco_big",
 		order = "b-diesel",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_loco_del_KR",
 	},
 	{
@@ -1012,7 +971,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_loco_big",
 		order = "b-diesel",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_loco_del_mk1400",
 	},
 	{
@@ -1023,7 +982,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_loco_big",
 		order = "b-diesel",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_loco_de_bluegray",
 	},
 	{
@@ -1034,7 +993,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_loco_big",
 		order = "a-steam-2",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_loco_sel_blue",
 	},
 	{
@@ -1045,7 +1004,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_loco_big",
 		order = "a-steam-2",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_loco_fs_steam_green",
 	},
 	{
@@ -1056,7 +1015,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_loco_big",
 		order = "b-diesel",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_loco_emd3000_white",
 	},
 	{
@@ -1066,7 +1025,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_loco_big",
 		order = "a-steam-1",
-		stack_size = 10,
+		stack_size = 5,
 		icon_size = 64,
 		place_result = "y_loco_steam_wt450",
 	},
@@ -1077,7 +1036,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_loco_big",
 		order = "c-electrical",
-		stack_size = 10,
+		stack_size = 5,
 		icon_size = 64,
 		place_result = "yir_loco_fut_red",
 	},
@@ -1091,7 +1050,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_loco_small",
 		order = "c-electrical",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "yir_loco_fesw_op",
 	},
 	{
@@ -1102,7 +1061,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_loco_small",
 		order = "b-diesel",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_loco_emd1500black_v2",
 	},
 	{
@@ -1113,7 +1072,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_loco_small",
 		order = "b-diesel",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_loco_emd1500blue_v2",
 	},
 	{
@@ -1124,7 +1083,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_loco_small",
 		order = "b-diesel",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_loco_emd1500black",
 	},
 	{
@@ -1135,7 +1094,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_loco_small",
 		order = "b-diesel",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_loco_emd1500blue",
 	},
 	{
@@ -1146,7 +1105,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_loco_small",
 		order = "b-diesel",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_loco_desw_orange",
 	},
 	{
@@ -1157,7 +1116,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_loco_small",
 		order = "b-diesel",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_loco_desw_blue",
 	},
 	{
@@ -1168,7 +1127,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_loco_small",
 		order = "a-steam-0",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_loco_ses_std",
 	},
 	{
@@ -1179,7 +1138,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_loco_small",
 		order = "a-steam-0",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_loco_ses_red",
 	},
 	{
@@ -1190,7 +1149,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_loco_small",
 		order = "b-diesel",
-		stack_size = 10,
+		stack_size = 5,
 		place_result = "y_loco_desw",
 	},
 })

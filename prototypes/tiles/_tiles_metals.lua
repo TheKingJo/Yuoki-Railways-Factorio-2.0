@@ -3,18 +3,6 @@ local tile_collision_masks = require("__base__/prototypes/tile/tile-collision-ma
 data:extend(
 {
 	{
-		type = "recipe",
-		name = "yir_metal2_tile",
-		energy_required = 2,
-		enabled = true,
-		ingredients = {
-			{type = "item", name = "iron-plate",  amount=1},
-		},
-		results = {{type = "item", name = "yir_metal2_tile", amount=4}},
-		main_product = "yir_metal2_tile",
-		category = "yir_rc_tiles",
-	},
-	{
 		type = "tile",
 		name = "yir_metal2_tile",
 		needs_correction = false,
@@ -61,19 +49,6 @@ data:extend(
 		walking_sound = concrete_sounds,
 		-- pollution_absorption_per_second = 0,
 		map_color={r=90, g=70, b=50}, ageing=0, vehicle_friction_modifier = stone_path_vehicle_speed_modifier
-	},
-
-	{
-		type = "recipe",
-		name = "yir_metal3_tile",
-		energy_required = 2,
-		enabled = true,
-		ingredients = {
-			{type = "item", name = "iron-plate",  amount=1},
-		},
-		results = {{type = "item", name = "yir_metal3_tile", amount=4}},
-		main_product = "yir_metal3_tile",
-		category = "yir_rc_tiles",
 	},
 	{
 		type = "tile",
@@ -122,19 +97,6 @@ data:extend(
 		walking_sound = concrete_sounds,
 		-- pollution_absorption_per_second = 0,
 		map_color={r=90, g=70, b=50}, ageing=0, vehicle_friction_modifier = stone_path_vehicle_speed_modifier
-	},
-
-	{
-		type = "recipe",
-		name = "yir_metal4_tile",
-		energy_required = 2,
-		enabled = true,
-		ingredients = {
-			{type = "item", name = "iron-plate",  amount=1},
-		},
-		results = {{type = "item", name = "yir_metal4_tile", amount=4}},
-		main_product = "yir_metal4_tile",
-		category = "yir_rc_tiles",
 	},
 	{
 		type = "tile",

@@ -12,10 +12,6 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "yir_factory_material"
-            },
-            {
-                type = "unlock-recipe",
                 recipe = "yir_color_white"
             },
             {
@@ -53,6 +49,74 @@ data:extend({
     },
     {
         type = "technology",
+        name = "yir_railway_tiles",
+        icon = "__yi_railway__/graphics/icons/railway_tech.png",
+        icon_size = 256,
+        effects =
+        {
+            {
+                type = "unlock-recipe",
+                recipe = "y_tgb"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "y_tring"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "y_path_checker"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "y_path_science"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "y_path_labor"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "yir_grating_tile"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "yir_brick1_tile"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "yir_brick2_tile"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "yir_muster1_tile"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "yir_metal2_tile"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "yir_metal3_tile"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "yir_metal4_tile"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "yir_stony_tile"
+            },
+        },
+        research_trigger =
+        {
+            type = "craft-item",
+            item = "yir_factory_tiles",
+            count = 1
+        },
+        prerequisites = {"yir_railway_basic"},
+    },
+    {
+        type = "technology",
         name = "yir_railway_steam",
         icon = "__yi_railway__/graphics/icons/railway_tech.png",
         icon_size = 256,
@@ -68,11 +132,11 @@ data:extend({
             },
             {
                 type = "unlock-recipe",
-                recipe = "yir_factory_loco"
+                recipe = "yir_factory_material"
             },
             {
                 type = "unlock-recipe",
-                recipe = "yir_factory_wagon"
+                recipe = "yir_factory_loco"
             },
             {
                 type = "unlock-recipe",
@@ -146,6 +210,10 @@ data:extend({
         icon_size = 256,
         effects =
         {
+            {
+                type = "unlock-recipe",
+                recipe = "yir_factory_wagon"
+            },
             {
                 type = "unlock-recipe",
                 recipe = "yir_frame_waggon"
@@ -249,6 +317,23 @@ data:extend({
 
             {
                 type = "unlock-recipe",
+                recipe = "yir_factory_chemical"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "yir_fuel_fluid_u1"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "yir_fuel_fluid_u2"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "yir_fuel_fluid_u3"
+            },
+
+            {
+                type = "unlock-recipe",
                 recipe = "y_loco_desw_orange"
             },
             {
@@ -282,7 +367,7 @@ data:extend({
             fluid = "light-oil",
             amount = 1000
         },
-        prerequisites = {"yir_railway_steam_better"},
+        prerequisites = {"yir_railway_steam_better", "advanced-oil-processing"},
     },
 
     {
@@ -404,6 +489,11 @@ data:extend({
 
             {
                 type = "unlock-recipe",
+                recipe = "yir_fuel_energy_u1"
+            },
+
+            {
+                type = "unlock-recipe",
                 recipe = "yir_loco_fesw_op"
             },
             {
@@ -417,7 +507,7 @@ data:extend({
             item = "utility-science-pack",
             count = 1
         },
-        prerequisites = {"yir_railway_diesel_better"},
+        prerequisites = {"yir_railway_diesel_better", "utility-science-pack"},
     },
     {
         type = "technology",

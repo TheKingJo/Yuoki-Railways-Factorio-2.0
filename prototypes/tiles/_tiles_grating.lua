@@ -3,19 +3,6 @@ local tile_collision_masks = require("__base__/prototypes/tile/tile-collision-ma
 data:extend(
 {
 	{
-		type = "recipe",
-		name = "yir_grating_tile",
-		energy_required = 2,
-		enabled = true,
-		ingredients = {
-			{type = "item", name = "iron-stick",  amount=6},
-		},
-		results = {{type = "item", name = "yir_grating_tile", amount=3}},
-		main_product = "yir_grating_tile",
-		category = "yir_rc_tiles",
-	},
-
-	{
 		type = "tile",
 		name = "yir_grating_tile",
 		needs_correction = false,
