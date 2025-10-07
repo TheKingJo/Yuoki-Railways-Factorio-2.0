@@ -500,6 +500,10 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "yir_loco_fut_red"
             },
+            {
+                type = "unlock-recipe",
+                recipe = "yir_lamp_modern"
+            },
         },
         research_trigger =
         {
