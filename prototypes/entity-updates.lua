@@ -261,6 +261,61 @@ for type, typeData in pairs(entityData) do
 	end
 end
 
+local stats1 = {
+	steam1  = {max_speed = 0.5, max_power = "300kW", braking_force = 6,  friction_force = 0.0075, air_resistance = 0.01,  energy_per_hit_point = 10,reversing_power_modifier = 0.4},
+	steam2  = {max_speed = 0.6, max_power = "500kW", braking_force = 7,  friction_force = 0.0065, air_resistance = 0.009, energy_per_hit_point = 9, reversing_power_modifier = 0.5},
+	steam3  = {max_speed = 0.8, max_power = "750kW", braking_force = 8,  friction_force = 0.0055, air_resistance = 0.007, energy_per_hit_point = 8, reversing_power_modifier = 0.6},
+	diesel1 = {max_speed = 0.4,	max_power = "300kW", braking_force = 20, friction_force = 0.0050, air_resistance = 0.007, energy_per_hit_point = 6, reversing_power_modifier = 1},
+	diesel2 = {max_speed = 0.5, max_power = "500kW", braking_force = 15, friction_force = 0.0045, air_resistance = 0.006, energy_per_hit_point = 6, reversing_power_modifier = 0.9},
+	diesel3 = {max_speed = 0.8, max_power = "1200kW",braking_force = 12, friction_force = 0.0040, air_resistance = 0.006, energy_per_hit_point = 6, reversing_power_modifier = 0.8},
+	future  = {max_speed = 2.0,	max_power = "2000kW",braking_force = 20, friction_force = 0.0025, air_resistance = 0.003, energy_per_hit_point = 4, reversing_power_modifier = 1},
+}
+local stats2 = {
+	steam1  = {fuel_inventory_size = 1, effectivity = 0.6},
+	steam2  = {fuel_inventory_size = 3, effectivity = 0.7},
+	steam3  = {fuel_inventory_size = 2, effectivity = 0.75},
+	diesel1 = {fuel_inventory_size = 1, effectivity = 0.8},
+	diesel2 = {fuel_inventory_size = 2, effectivity = 0.85},
+	diesel3 = {fuel_inventory_size = 3, effectivity = 0.90},
+	future  = {fuel_inventory_size = 1, effectivity = 1},
+}
+
+local function adjustStats(name, stat)
+	local lok = data.raw["locomotive"][name]
+
+	if not lok then
+		return
+	end
+	for k, v in pairs(stats1[stat]) do
+		lok[k] = v
+	end
+	for k, v in pairs(stats2[stat]) do
+		lok.energy_source[k] = v
+	end
+end
+
+adjustStats("y_loco_ses_std", "steam1")
+adjustStats("y_loco_ses_red", "steam1")
+adjustStats("y_loco_steam_wt450", "steam2")
+adjustStats("y_loco_fs_steam_green", "steam3")
+adjustStats("yir_loco_sel_blue", "steam3")
+
+adjustStats("y_loco_desw", "diesel1")
+adjustStats("y_loco_desw_orange", "diesel1")
+adjustStats("y_loco_desw_blue", "diesel1")
+
+adjustStats("y_loco_emd1500blue", "diesel2")
+adjustStats("y_loco_emd1500blue_v2", "diesel2")
+adjustStats("y_loco_emd1500black", "diesel2")
+adjustStats("y_loco_emd1500black_v2", "diesel2")
+
+adjustStats("yir_loco_del_KR", "diesel3")
+adjustStats("y_loco_emd3000_white", "diesel3")
+adjustStats("yir_loco_de_bluegray", "diesel3")
+adjustStats("yir_loco_del_mk1400", "diesel3")
+
+adjustStats("yir_loco_fesw_op", "future")
+adjustStats("yir_loco_fut_red", "future")
 --[[
 Umsortierung:
 - Factories
@@ -287,24 +342,29 @@ for name, _ in pairs(data.raw["fluid-wagon"]) do
 	log(name)
 end
 local vehicles = {
+	"y_loco_ses_std",
+	"y_loco_ses_red",
+	"y_loco_steam_wt450",
+	"y_loco_fs_steam_green",
+	"yir_loco_sel_blue",
+
+	"y_loco_desw",
+	"y_loco_desw_orange",
+	"y_loco_desw_blue",
 	"y_loco_emd1500blue",
 	"y_loco_emd1500blue_v2",
 	"y_loco_emd1500black",
 	"y_loco_emd1500black_v2",
-	"yir_loco_fesw_op",
-	"yir_loco_fut_red",
+
 	"yir_loco_del_KR",
 	"y_loco_emd3000_white",
 	"yir_loco_de_bluegray",
 	"yir_loco_del_mk1400",
-	"y_loco_fs_steam_green",
-	"yir_loco_sel_blue",
-	"y_loco_steam_wt450",
-	"y_loco_desw",
-	"y_loco_desw_orange",
-	"y_loco_desw_blue",
-	"y_loco_ses_std",
-	"y_loco_ses_red",-----
+
+	"yir_loco_fesw_op",
+	"yir_loco_fut_red",
+
+
 	"yir_wagon2a_closed",
 	"y_wagon_hopper_yellow",
 	"y_wagon_corn_green",
@@ -333,6 +393,7 @@ local vehicles = {
 	"y_wagon_copper",
 	"y_wagon_iron",
 	"y_wagon_stone",-----
+
 	"y_wagon_tank_fm1",
 	"y_wagon_tank_fm2",
 	"yir_wagon_tank_orange",
