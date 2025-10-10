@@ -260,15 +260,95 @@ for type, typeData in pairs(entityData) do
 		log(name.." changed")
 	end
 end
-
+local resistance1 = {
+	{
+		type = "fire",
+		decrease = 25,
+		percent = 50
+	},
+	{
+		type = "physical",
+		decrease = 10,
+		percent = 25
+	},
+	{
+		type = "impact",
+		decrease = 30,
+		percent = 50
+	},
+	{
+		type = "explosion",
+		decrease = 20,
+		percent = 35
+	},
+	{
+		type = "acid",
+		decrease = 10,
+		percent = 30
+	}
+}
+local resistance2 = {
+	{
+		type = "fire",
+		decrease = 15,
+		percent = 50
+	},
+	{
+		type = "physical",
+		decrease = 15,
+		percent = 30
+	},
+	{
+		type = "impact",
+		decrease = 50,
+		percent = 50
+	},
+	{
+		type = "explosion",
+		decrease = 15,
+		percent = 30
+	},
+	{
+		type = "acid",
+		decrease = 3,
+		percent = 20
+	}
+}
+local resistance3 = {
+	{
+		type = "fire",
+		decrease = 25,
+		percent = 50
+	},
+	{
+		type = "physical",
+		decrease = 25,
+		percent = 35
+	},
+	{
+		type = "impact",
+		decrease = 75,
+		percent = 65
+	},
+	{
+		type = "explosion",
+		decrease = 25,
+		percent = 40
+	},
+	{
+		type = "acid",
+		decrease = 10,
+		percent = 30
+	}
+}
 local stats1 = {
-	steam1  = {max_speed = 0.5, max_power = "300kW", braking_force = 6,  friction_force = 0.0075, air_resistance = 0.01,  energy_per_hit_point = 10,reversing_power_modifier = 0.4},
-	steam2  = {max_speed = 0.6, max_power = "500kW", braking_force = 7,  friction_force = 0.0065, air_resistance = 0.009, energy_per_hit_point = 9, reversing_power_modifier = 0.5},
-	steam3  = {max_speed = 0.8, max_power = "750kW", braking_force = 8,  friction_force = 0.0055, air_resistance = 0.007, energy_per_hit_point = 8, reversing_power_modifier = 0.6},
-	diesel1 = {max_speed = 0.4,	max_power = "300kW", braking_force = 20, friction_force = 0.0050, air_resistance = 0.007, energy_per_hit_point = 6, reversing_power_modifier = 1},
-	diesel2 = {max_speed = 0.5, max_power = "500kW", braking_force = 15, friction_force = 0.0045, air_resistance = 0.006, energy_per_hit_point = 6, reversing_power_modifier = 0.9},
-	diesel3 = {max_speed = 0.8, max_power = "1200kW",braking_force = 12, friction_force = 0.0040, air_resistance = 0.006, energy_per_hit_point = 6, reversing_power_modifier = 0.8},
-	future  = {max_speed = 2.0,	max_power = "2000kW",braking_force = 20, friction_force = 0.0025, air_resistance = 0.003, energy_per_hit_point = 4, reversing_power_modifier = 1},
+	steam1  = {resistances = resistance1, max_speed = 0.5, max_power = "300kW", braking_force = 6,  friction_force = 0.0075, air_resistance = 0.01,  energy_per_hit_point = 10,reversing_power_modifier = 0.4},
+	steam2  = {resistances = resistance1, max_speed = 0.6, max_power = "500kW", braking_force = 7,  friction_force = 0.0065, air_resistance = 0.009, energy_per_hit_point = 9, reversing_power_modifier = 0.5},
+	steam3  = {resistances = resistance1, max_speed = 0.8, max_power = "750kW", braking_force = 8,  friction_force = 0.0055, air_resistance = 0.007, energy_per_hit_point = 8, reversing_power_modifier = 0.6},
+	diesel1 = {resistances = resistance2, max_speed = 0.4,	max_power = "300kW", braking_force = 15, friction_force = 0.0050, air_resistance = 0.007, energy_per_hit_point = 6, reversing_power_modifier = 1},
+	diesel2 = {resistances = resistance2, max_speed = 0.5, max_power = "500kW", braking_force = 13, friction_force = 0.0045, air_resistance = 0.006, energy_per_hit_point = 6, reversing_power_modifier = 0.9},
+	diesel3 = {resistances = resistance2, max_speed = 0.8, max_power = "800kW", braking_force = 12, friction_force = 0.0040, air_resistance = 0.006, energy_per_hit_point = 6, reversing_power_modifier = 0.8},
+	future  = {resistances = resistance3, max_speed = 2.0,	max_power = "2000kW",braking_force = 20, friction_force = 0.0025, air_resistance = 0.003, energy_per_hit_point = 4, reversing_power_modifier = 1},
 }
 local stats2 = {
 	steam1  = {fuel_inventory_size = 1, effectivity = 0.6},
