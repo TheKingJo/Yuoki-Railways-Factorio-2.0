@@ -1,6 +1,17 @@
 functions = require("lib.functions")
+local trivial_smoke = require("__base__.prototypes.entity.smoke-animations").trivial_smoke
 
 data:extend({
+	trivial_smoke {
+		name = "yir_loco_smoke_dark",
+		color = {r = 0.3, g = 0.3, b = 0.3, a = 1},
+		duration = 150,
+		spread_duration = 100,
+		fade_away_duration = 100,
+		start_scale = 0.4,
+		end_scale = 1.5,
+    	affected_by_wind = true
+	},
 	{
 		type = "locomotive",
 		name = "y_loco_ses_std",
@@ -43,7 +54,7 @@ data:extend({
 			smoke =
 			{
 				{
-					name = "train-smoke",
+					name = "yir_loco_smoke_dark",
 					deviation = {0.3, 0.3},
 					frequency = 100,
 					position = {0, -2},
@@ -140,7 +151,7 @@ data:extend({
 			smoke =
 			{
 				{
-					name = "train-smoke",
+					name = "yir_loco_smoke_dark",
 					deviation = {0.3, 0.3},
 					frequency = 100,
 					position = {0, -2},

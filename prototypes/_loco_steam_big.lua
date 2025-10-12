@@ -42,7 +42,7 @@ data:extend({
 			smoke =
 			{
 				{
-					name = "train-smoke",
+					name = "yir_loco_smoke_dark",
 					deviation = {0.3, 0.3},
 					frequency = 300,
 					position = {0, -2.2},
@@ -147,7 +147,7 @@ data:extend({
 			smoke =
 			{
 				{
-					name = "train-smoke",
+					name = "yir_loco_smoke_dark",
 					deviation = {0.3, 0.3},
 					frequency = 300,
 					position = {0, -2},
@@ -252,7 +252,7 @@ data:extend({
 			smoke =
 			{
 				{
-					name = "train-smoke",
+					name = "yir_loco_smoke_dark",
 					deviation = {0.3, 0.3},
 					frequency = 300,
 					position = {0, -3},
