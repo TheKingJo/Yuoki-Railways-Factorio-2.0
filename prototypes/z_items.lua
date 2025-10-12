@@ -10,7 +10,7 @@ data:extend({
 		order = "a",
 		stack_size = 10,
 		place_result = "yir_factory_stuff",
-		weight = 100000,
+		weight = 1000000,
    },
    {
 		type = "item",
@@ -108,7 +108,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_important",
 		order = "a",
-		stack_size = 1000,
+		stack_size = 10,
 		weight = 10000,
 	},
 	{
@@ -119,7 +119,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_important",
 		order = "b",
-		stack_size = 1000,
+		stack_size = 10,
 		weight = 10000,
 	},
 	{
@@ -130,7 +130,7 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_important",
 		order = "c",
-		stack_size = 1000,
+		stack_size = 10,
 		weight = 10000,
 	},
 	{
@@ -216,8 +216,9 @@ data:extend({
 		group = "yuoki_railway",
 		subgroup = "yir_important",
 		order = "j",
-		stack_size = 2500,
-		fuel_value = "10MJ",
+		stack_size = 2000,
+		weight = 500,
+		fuel_value = "2MJ",
 		fuel_category = "yr_future",
 	},
 

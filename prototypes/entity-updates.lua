@@ -249,6 +249,10 @@ for type, typeData in pairs(entityData) do
 			vehicle.pictures = makePictures(datas)
 			vehicle.minimap_representation = data.raw[type][type].minimap_representation
 			vehicle.selected_minimap_representation = data.raw[type][type].selected_minimap_representation
+			if type == "locomotive" then
+				vehicle.max_health = 0.5 * vehicle.weight
+				vehicle.stop_trigger = data.raw[type][type].stop_trigger
+			end
 		end
 
 		if item ~= nil then
@@ -285,6 +289,16 @@ local resistance1 = {
 		type = "acid",
 		decrease = 10,
 		percent = 30
+	},
+	{
+		type = "laser",
+		decrease = 20,
+		percent = 45
+	},
+	{
+		type = "electric",
+		decrease = 20,
+		percent = 45
 	}
 }
 local resistance2 = {
@@ -311,6 +325,16 @@ local resistance2 = {
 	{
 		type = "acid",
 		decrease = 3,
+		percent = 20
+	},
+	{
+		type = "laser",
+		decrease = 10,
+		percent = 20
+	},
+	{
+		type = "electric",
+		decrease = 5,
 		percent = 20
 	}
 }
@@ -339,16 +363,31 @@ local resistance3 = {
 		type = "acid",
 		decrease = 10,
 		percent = 30
+	},
+	{
+		type = "laser",
+		decrease = 15,
+		percent = 25
+	},
+	{
+		type = "electric",
+		decrease = 10,
+		percent = 20
 	}
 }
+local workingSoundDiesel = data.raw["locomotive"]["locomotive"].working_sound
+local workingSoundSteam = table.deepcopy(data.raw["locomotive"]["locomotive"].working_sound)
+workingSoundSteam.main_sounds[2].sound.filename = "__base__/sound/steam-engine-90bpm.ogg"
+workingSoundSteam.main_sounds[2].sound.volume = 0.5
+
 local stats1 = {
-	steam1  = {resistances = resistance1, max_speed = 0.5, max_power = "300kW", braking_force = 6,  friction_force = 0.0075, air_resistance = 0.01,  energy_per_hit_point = 10,reversing_power_modifier = 0.4},
-	steam2  = {resistances = resistance1, max_speed = 0.6, max_power = "500kW", braking_force = 7,  friction_force = 0.0065, air_resistance = 0.009, energy_per_hit_point = 9, reversing_power_modifier = 0.5},
-	steam3  = {resistances = resistance1, max_speed = 0.8, max_power = "750kW", braking_force = 8,  friction_force = 0.0055, air_resistance = 0.007, energy_per_hit_point = 8, reversing_power_modifier = 0.6},
-	diesel1 = {resistances = resistance2, max_speed = 0.4,	max_power = "300kW", braking_force = 15, friction_force = 0.0050, air_resistance = 0.007, energy_per_hit_point = 6, reversing_power_modifier = 1},
-	diesel2 = {resistances = resistance2, max_speed = 0.5, max_power = "500kW", braking_force = 13, friction_force = 0.0045, air_resistance = 0.006, energy_per_hit_point = 6, reversing_power_modifier = 0.9},
-	diesel3 = {resistances = resistance2, max_speed = 0.8, max_power = "800kW", braking_force = 12, friction_force = 0.0040, air_resistance = 0.006, energy_per_hit_point = 6, reversing_power_modifier = 0.8},
-	future  = {resistances = resistance3, max_speed = 2.0,	max_power = "2000kW",braking_force = 20, friction_force = 0.0025, air_resistance = 0.003, energy_per_hit_point = 4, reversing_power_modifier = 1},
+	steam1  = {resistances = resistance1, max_speed = 0.5, max_power = "300kW", braking_force = 2,  friction_force = 0.0075, air_resistance = 0.01,  energy_per_hit_point = 10,reversing_power_modifier = 0.4, working_sound = workingSoundSteam},
+	steam2  = {resistances = resistance1, max_speed = 0.6, max_power = "500kW", braking_force = 5,  friction_force = 0.0065, air_resistance = 0.009, energy_per_hit_point = 9, reversing_power_modifier = 0.5, working_sound = workingSoundSteam},
+	steam3  = {resistances = resistance1, max_speed = 0.8, max_power = "750kW", braking_force = 8,  friction_force = 0.0055, air_resistance = 0.007, energy_per_hit_point = 8, reversing_power_modifier = 0.6, working_sound = workingSoundSteam},
+	diesel1 = {resistances = resistance2, max_speed = 0.4, max_power = "300kW", braking_force = 4,  friction_force = 0.0050, air_resistance = 0.007, energy_per_hit_point = 6, reversing_power_modifier = 1,   working_sound = workingSoundDiesel},
+	diesel2 = {resistances = resistance2, max_speed = 0.5, max_power = "500kW", braking_force = 4,  friction_force = 0.0045, air_resistance = 0.006, energy_per_hit_point = 6, reversing_power_modifier = 0.9, working_sound = workingSoundDiesel},
+	diesel3 = {resistances = resistance2, max_speed = 0.8, max_power = "800kW", braking_force = 12, friction_force = 0.0040, air_resistance = 0.006, energy_per_hit_point = 6, reversing_power_modifier = 0.8, working_sound = workingSoundDiesel},
+	future  = {resistances = resistance3, max_speed = 2.0, max_power = "2000kW",braking_force = 20, friction_force = 0.0025, air_resistance = 0.003, energy_per_hit_point = 4, reversing_power_modifier = 1,   working_sound = workingSoundDiesel},
 }
 local stats2 = {
 	steam1  = {fuel_inventory_size = 1, effectivity = 0.6},
@@ -523,3 +562,4 @@ for _, name in ipairs(vehicles) do
 	::continue::
 end
 ]]
+--log(serpent.block(data.raw["locomotive"]["y_loco_emd1500blue"]))

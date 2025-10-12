@@ -50,8 +50,15 @@ data:extend({
     {
         type = "technology",
         name = "yir_railway_tiles",
-        icon = "__yi_railway__/graphics/icons/railway_tech.png",
-        icon_size = 256,
+        icons = {
+            {
+                icon = "__yi_railway__/graphics/icons/factories/yir_fac_tiles_icon.png",
+                icon_size = 64,
+                scale = 1.5,
+                shift = {0,-8},
+                draw_background = true,
+            },
+        },
         effects =
         {
             {
@@ -118,8 +125,19 @@ data:extend({
     {
         type = "technology",
         name = "yir_railway_steam",
-        icon = "__yi_railway__/graphics/icons/railway_tech.png",
-        icon_size = 256,
+        icons = {
+            {
+                icon = "__yi_railway__/graphics/icons/railway_tech.png",
+                icon_size = 256,
+            },
+            {
+                icon = "__base__/graphics/icons/fluid/steam.png",
+                icon_size = 64,
+                scale = 1.5,
+                shift = {0,-5},
+                draw_background = true,
+            },
+        },
         effects =
         {
             {
@@ -170,8 +188,27 @@ data:extend({
     {
         type = "technology",
         name = "yir_railway_steam_better",
-        icon = "__yi_railway__/graphics/icons/railway_tech.png",
-        icon_size = 256,
+        icons = {
+            {
+                icon = "__yi_railway__/graphics/icons/railway_tech.png",
+                icon_size = 256,
+            },
+            {
+                icon = "__base__/graphics/icons/fluid/steam.png",
+                icon_size = 64,
+                scale = 1.5,
+                shift = {0,-5},
+                draw_background = true,
+            },
+            {
+                icon = "__base__/graphics/icons/arrows/up-arrow.png",
+                icon_size = 64,
+                scale = 1,
+                shift = {0,-8},
+                draw_background = true,
+                tint = {r=0, g=0.776, b=0.34, a=1},
+            },
+        },
         effects =
         {
             {
@@ -206,8 +243,15 @@ data:extend({
     {
         type = "technology",
         name = "yir_railway_wagon",
-        icon = "__yi_railway__/graphics/icons/railway_tech.png",
-        icon_size = 256,
+        icons = {
+            {
+                icon = "__yi_railway__/graphics/icons/frame_wagon.png",
+                icon_size = 64,
+                scale = 1.5,
+                shift = {0,-8},
+                draw_background = true,
+            },
+        },
         effects =
         {
             {
@@ -298,8 +342,19 @@ data:extend({
     {
         type = "technology",
         name = "yir_railway_diesel",
-        icon = "__yi_railway__/graphics/icons/railway_tech.png",
-        icon_size = 256,
+        icons = {
+            {
+                icon = "__yi_railway__/graphics/icons/railway_tech.png",
+                icon_size = 256,
+            },
+            {
+                icon = "__base__/graphics/icons/fluid/light-oil.png",
+                icon_size = 64,
+                scale = 1.5,
+                shift = {0,-16},
+                draw_background = true,
+            },
+        },
         effects =
         {
             {
@@ -373,8 +428,26 @@ data:extend({
     {
         type = "technology",
         name = "yir_railway_diesel_better",
-        icon = "__yi_railway__/graphics/icons/railway_tech.png",
-        icon_size = 256,
+        icons = {
+            {
+                icon = "__yi_railway__/graphics/icons/railway_tech.png",
+                icon_size = 256,
+            },
+            {
+                icon = "__base__/graphics/icons/fluid/light-oil.png",
+                icon_size = 64,
+                scale = 1.5,
+                shift = {0,-16},
+                draw_background = true,
+            },
+            {
+                icon = "__base__/graphics/icons/arrows/up-arrow.png",
+                icon_size = 64,
+                scale = 1,
+                draw_background = true,
+                tint = {r=0, g=0.776, b=0.34, a=1},
+            },
+        },
         effects =
         {
             {
@@ -405,8 +478,22 @@ data:extend({
     {
         type = "technology",
         name = "yir_railway_wagon_better",
-        icon = "__yi_railway__/graphics/icons/railway_tech.png",
-        icon_size = 256,
+        icons = {
+            {
+                icon = "__yi_railway__/graphics/icons/frame_wagon.png",
+                icon_size = 64,
+                scale = 1.5,
+                shift = {0,-8},
+                draw_background = true,
+            },
+            {
+                icon = "__base__/graphics/icons/arrows/up-arrow.png",
+                icon_size = 64,
+                scale = 1,
+                draw_background = true,
+                tint = {r=0, g=0.776, b=0.34, a=1},
+            },
+        },
         effects =
         {
             {
@@ -474,8 +561,19 @@ data:extend({
     {
         type = "technology",
         name = "yir_railway_future",
-        icon = "__yi_railway__/graphics/icons/railway_tech.png",
-        icon_size = 256,
+        icons = {
+            {
+                icon = "__yi_railway__/graphics/icons/railway_tech.png",
+                icon_size = 256,
+            },
+            {
+                icon = "__yi_railway__/graphics/icons/fuel_energy.png",
+                icon_size = 64,
+                scale = 1.5,
+                shift = {0,-16},
+                draw_background = true,
+            },
+        },
         effects =
         {
             {
@@ -490,6 +588,11 @@ data:extend({
             {
                 type = "unlock-recipe",
                 recipe = "yir_fuel_energy_u1"
+            },
+
+            {
+                type = "unlock-recipe",
+                recipe = "yir_frame_loco_future"
             },
 
             {
@@ -516,8 +619,31 @@ data:extend({
     {
         type = "technology",
         name = "yir_railway_wagon_future",
-        icon = "__yi_railway__/graphics/icons/railway_tech.png",
-        icon_size = 256,
+        icons = {
+            {
+                icon = "__yi_railway__/graphics/icons/frame_wagon.png",
+                icon_size = 64,
+                scale = 1.5,
+                shift = {0,-8},
+                draw_background = true,
+            },
+            {
+                icon = "__base__/graphics/icons/arrows/up-arrow.png",
+                icon_size = 64,
+                scale = 1,
+                shift = {0,-22},
+                draw_background = true,
+                tint = {r=0, g=0.776, b=0.34, a=1},
+            },
+            {
+                icon = "__base__/graphics/icons/arrows/up-arrow.png",
+                icon_size = 64,
+                scale = 1,
+                shift = {0,10},
+                draw_background = true,
+                tint = {r=0, g=0.776, b=0.34, a=1},
+            },
+        },
         effects =
         {
             {
