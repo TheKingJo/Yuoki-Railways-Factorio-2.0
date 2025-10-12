@@ -1,316 +1,30 @@
-drive_over_tie = require("lib.functions")
+functions = require("lib.functions")
 
-data:extend(
-{
+data:extend({
 	{
 		type = "locomotive",
-		name = "y_loco_fs_steam_green",
-		icon = "__yi_railway__/graphics/icons/railway/rsea_green_icon.png",
+		name = "y_loco_emd1500blue",
+		icon = "__yi_railway__/graphics/icons/railway/emd-1500_blue_icon.png",
 		icon_size = 64,
 		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "y_loco_fs_steam_green"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
-		max_health = 1000,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
-		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
-		selection_box = {{-1, -3}, {1, 3}},
-		drawing_box = {{-1, -4}, {1, 3}},
-		connection_distance = 3, joint_distance = 4,
-		weight = 2000,
-		max_speed = 0.9,
-		max_power = "1000kW",
-		reversing_power_modifier = 0.6,
-		braking_force = 10,
-		friction_force = 0.003,
-		air_resistance = 0.003,
-		vertical_selection_shift = -0.5,
-		energy_per_hit_point = 5,
-		resistances =
-		{
-			{type = "fire", decrease = 15, percent = 50},
-			{type = "physical", decrease = 15, percent = 30},
-			{type = "impact",decrease = 50,percent = 60},
-			{type = "explosion",decrease = 15,percent = 30},
-			{type = "acid",decrease = 10,percent = 20}
-		},
-		energy_source =
-		{
-			type = "burner",
-			fuel_categories = {"chemical"},
-			effectivity = 1,
-			fuel_inventory_size = 1,
-			smoke =
-			{
-				{
-					name = "train-smoke",
-					deviation = {0.3, 0.3},
-					frequency = 300,
-					position = {0, 0},
-					starting_frame = 0,
-					starting_frame_deviation = 60,
-					height = 3,
-					height_deviation = 0.5,
-					starting_vertical_speed = 0.2,
-					starting_vertical_speed_deviation = 0.1,
-				}
-			}
-		},
-		front_light =
-		{
-			{
-				type = "oriented",
-				minimum_darkness = 0.3,
-				picture =
-				{
-					filename = "__core__/graphics/light-cone.png",
-					priority = "medium",
-					scale = 2,
-					width = 200,
-					height = 200
-				},
-				shift = {-0.6, -16},
-				size = 2,
-				intensity = 0.6
-			},
-			{
-				type = "oriented",
-				minimum_darkness = 0.3,
-				picture =
-				{
-					filename = "__core__/graphics/light-cone.png",
-					priority = "medium",
-					scale = 2,
-					width = 200,
-					height = 200
-				},
-				shift = {0.6, -16},
-				size = 2,
-				intensity = 0.6
-			}
-		},
-		wheels = standard_train_wheels,
-		rail_category = "regular",
-		stop_trigger =
-		{
-			-- left side
-			{
-				type = "create-trivial-smoke",
-				repeat_count = 75,
-				smoke_name = "smoke-train-stop",
-				initial_height = 0,
-				-- smoke goes to the left
-				speed = {-03, 0},
-				speed_multiplier = 0.75,
-				speed_multiplier_deviation = 1.1,
-				offset_deviation = {{-0.75, -2.7}, {-0.3, 2.7}}
-			},
-			-- right side
-			{
-				type = "create-trivial-smoke",
-				repeat_count = 75,
-				smoke_name = "smoke-train-stop",
-				initial_height = 0,
-				-- smoke goes to the right
-				speed = {03, 0},
-				speed_multiplier = 0.75,
-				speed_multiplier_deviation = 1.1,
-				offset_deviation = {{0.3, -2.7}, {0.75, 2.7}}
-			},
-			{
-				type = "play-sound",
-				sound =
-				{
-					{
-						filename = "__base__/sound/train-breaks.ogg",
-						volume = 0.6
-					},
-				}
-			},
-		},
-		drive_over_tie_trigger = yir_drive_over_tie(),
-		tie_distance = 50,
-		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
-		working_sound =
-		{
-			sound =
-			{
-				filename = "__base__/sound/steam-engine-90bpm.ogg",
-				volume = 0.8
-			},
-			match_speed_to_activity = true,
-		},
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
-		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
-		sound_minimum_speed = 0.2;
-	},
-
-	{
-		type = "locomotive",
-		name = "yir_loco_sel_blue",
-		icon = "__yi_railway__/graphics/icons/railway/rsea_blue_icon.png",
-		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "yir_loco_sel_blue"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
-		max_health = 1200,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
-		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
-		selection_box = {{-1, -3}, {1, 3}},
-		drawing_box = {{-1, -4}, {1, 3}},
-		connection_distance = 3, joint_distance = 4,
-		weight = 2000,
-		max_speed = 0.85,
-		max_power = "1100kW",
-		reversing_power_modifier = 0.6,
-		braking_force = 10,
-		friction_force = 0.003,
-		air_resistance = 0.002,
-		vertical_selection_shift = -0.5,
-		energy_per_hit_point = 5,
-		resistances =
-		{
-			{type = "fire", decrease = 15, percent = 50},
-			{type = "physical", decrease = 15, percent = 30},
-			{type = "impact",decrease = 50,percent = 60},
-			{type = "explosion",decrease = 15,percent = 30},
-			{type = "acid",decrease = 10,percent = 20}
-		},
-		energy_source =
-		{
-			type = "burner",
-			fuel_categories = {"chemical"},
-			effectivity = 1,
-			fuel_inventory_size = 3,
-			smoke =
-			{
-				{
-					name = "train-smoke",
-					deviation = {0.3, 0.3},
-					frequency = 300,
-					position = {0, 0},
-					starting_frame = 0,
-					starting_frame_deviation = 60,
-					height = 3,
-					height_deviation = 0.5,
-					starting_vertical_speed = 0.2,
-					starting_vertical_speed_deviation = 0.1,
-				}
-			}
-		},
-		front_light =
-		{
-			{
-				type = "oriented",
-				minimum_darkness = 0.3,
-				picture =
-				{
-					filename = "__core__/graphics/light-cone.png",
-					priority = "medium",
-					scale = 2,
-					width = 200,
-					height = 200
-				},
-				shift = {-0.6, -16},
-				size = 2,
-				intensity = 0.6
-			},
-			{
-				type = "oriented",
-				minimum_darkness = 0.3,
-				picture =
-				{
-					filename = "__core__/graphics/light-cone.png",
-					priority = "medium",
-					scale = 2,
-					width = 200,
-					height = 200
-				},
-				shift = {0.6, -16},
-				size = 2,
-				intensity = 0.6
-			}
-		},
-		wheels = standard_train_wheels,
-		rail_category = "regular",
-		stop_trigger =
-		{
-			-- left side
-			{
-				type = "create-trivial-smoke",
-				repeat_count = 75,
-				smoke_name = "smoke-train-stop",
-				initial_height = 0,
-				-- smoke goes to the left
-				speed = {-03, 0},
-				speed_multiplier = 0.75,
-				speed_multiplier_deviation = 1.1,
-				offset_deviation = {{-0.75, -2.7}, {-0.3, 2.7}}
-			},
-			-- right side
-			{
-				type = "create-trivial-smoke",
-				repeat_count = 75,
-				smoke_name = "smoke-train-stop",
-				initial_height = 0,
-				-- smoke goes to the right
-				speed = {03, 0},
-				speed_multiplier = 0.75,
-				speed_multiplier_deviation = 1.1,
-				offset_deviation = {{0.3, -2.7}, {0.75, 2.7}}
-			},
-			{
-				type = "play-sound",
-				sound =
-				{
-					{
-						filename = "__base__/sound/train-breaks.ogg",
-						volume = 0.6
-					},
-				}
-			},
-		},
-		drive_over_tie_trigger = yir_drive_over_tie(),
-		tie_distance = 50,
-		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
-		working_sound =
-		{
-			sound =
-			{
-				filename = "__base__/sound/steam-engine-90bpm.ogg",
-				volume = 0.8
-			},
-			match_speed_to_activity = true,
-		},
-		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
-		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
-		sound_minimum_speed = 0.2;
-	},
-
-	{
-		type = "locomotive",
-		name = "y_loco_steam_wt450",
-		icon = "__yi_railway__/graphics/icons/railway/sewt_bl_icon.png",
-		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "y_loco_steam_wt450"},
+		minable = {mining_time = 0.5, result = "y_loco_emd1500blue"},
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 800,
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
-		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
-		selection_box = {{-1, -3}, {1, 3}},
-		drawing_box = {{-1, -4}, {1, 3}},
-		connection_distance = 3, joint_distance = 4,
-		weight = 2000,
-		max_speed = 0.625,
-		max_power = "450kW",
-		reversing_power_modifier = 0.6,
+		collision_box = {{-0.6, -1.1}, {0.6, 1.1}},
+		selection_box = {{-0.85, -1.5}, {0.9, 1.5}},
+		drawing_box = {{-1, -1}, {1, 1}},
+		weight = 1500,
+		max_speed = 0.5,
+		max_power = "800kW",
+		reversing_power_modifier = 0.9,
 		braking_force = 10,
-		friction_force = 0.003,
-		air_resistance = 0.003,
+		friction_force = 0.0035,
+		air_resistance = 0.0035,
 		vertical_selection_shift = -0.5,
+		connection_distance = 3.6,
+		joint_distance = 1.8,
 		energy_per_hit_point = 5,
 		resistances =
 		{
@@ -320,22 +34,21 @@ data:extend(
 			{type = "explosion",decrease = 15,percent = 30},
 			{type = "acid",decrease = 10,percent = 20}
 		},
-		energy_source =
-		{
+		energy_source = {
 			type = "burner",
-			fuel_categories = {"chemical"},
+			fuel_categories = {"yr_diesel"},
 			effectivity = 1,
-			fuel_inventory_size = 3,
+			fuel_inventory_size = 2,
 			smoke =
 			{
 				{
 					name = "train-smoke",
 					deviation = {0.3, 0.3},
-					frequency = 300,
-					position = {0, 0},
+					frequency = 100,
+					position = {0, -0.5},
 					starting_frame = 0,
 					starting_frame_deviation = 60,
-					height = 3,
+					height = 2,
 					height_deviation = 0.5,
 					starting_vertical_speed = 0.2,
 					starting_vertical_speed_deviation = 0.1,
@@ -375,57 +88,301 @@ data:extend(
 				intensity = 0.6
 			}
 		},
-		wheels = standard_train_wheels,
-		rail_category = "regular",
-		stop_trigger =
-		{
-			-- left side
-			{
-				type = "create-trivial-smoke",
-				repeat_count = 75,
-				smoke_name = "smoke-train-stop",
-				initial_height = 0,
-				-- smoke goes to the left
-				speed = {-03, 0},
-				speed_multiplier = 0.75,
-				speed_multiplier_deviation = 1.1,
-				offset_deviation = {{-0.75, -2.7}, {-0.3, 2.7}}
-			},
-			-- right side
-			{
-				type = "create-trivial-smoke",
-				repeat_count = 75,
-				smoke_name = "smoke-train-stop",
-				initial_height = 0,
-				-- smoke goes to the right
-				speed = {03, 0},
-				speed_multiplier = 0.75,
-				speed_multiplier_deviation = 1.1,
-				offset_deviation = {{0.3, -2.7}, {0.75, 2.7}}
-			},
-			{
-				type = "play-sound",
-				sound =
-				{
-					{
-						filename = "__base__/sound/train-breaks.ogg",
-						volume = 0.6
-					},
-				}
-			},
-		},
-		drive_over_tie_trigger = yir_drive_over_tie(),
+		wheels = functions.standard_train_wheels,
+		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
-		working_sound =
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
+		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
+		sound_minimum_speed = 0.2;
+	},
+
+	{
+		type = "locomotive",
+		name = "y_loco_emd1500blue_v2",
+		icon = "__yi_railway__/graphics/icons/railway/emd-1500_blue_icon.png",
+		icon_size = 64,
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
+		minable = {mining_time = 0.5, result = "y_loco_emd1500blue_v2"},
+		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
+		max_health = 800,
+		corpse = "medium-remnants",
+		dying_explosion = "medium-explosion",
+		collision_box = {{-0.6, -1.1}, {0.6, 1.1}},
+		selection_box = {{-0.85, -1.5}, {0.9, 1.5}},
+		drawing_box = {{-1, -1}, {1, 1}},
+		weight = 1500,
+		max_speed = 0.6,
+		max_power = "900kW",
+		reversing_power_modifier = 0.7,
+		braking_force = 10,
+		friction_force = 0.0035,
+		air_resistance = 0.0035,
+		vertical_selection_shift = -0.5,
+		connection_distance = 3.6,
+		joint_distance = 1.8,
+		energy_per_hit_point = 5,
+		resistances =
 		{
-			sound =
-			{
-				filename = "__base__/sound/steam-engine-90bpm.ogg",
-				volume = 0.8
-			},
-			match_speed_to_activity = true,
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
+			{type = "impact",decrease = 50,percent = 60},
+			{type = "explosion",decrease = 15,percent = 30},
+			{type = "acid",decrease = 10,percent = 20}
 		},
+		energy_source =
+		{
+			type = "burner",
+			fuel_categories = {"yr_diesel"},
+			effectivity = 1,
+			fuel_inventory_size = 2,
+			smoke =
+			{
+				{
+					name = "train-smoke",
+					deviation = {0.3, 0.3},
+					frequency = 100,
+					position = {0, -0.5},
+					starting_frame = 0,
+					starting_frame_deviation = 60,
+					height = 2,
+					height_deviation = 0.5,
+					starting_vertical_speed = 0.2,
+					starting_vertical_speed_deviation = 0.1,
+				}
+			}
+		},
+		front_light =
+		{
+			{
+				type = "oriented",
+				minimum_darkness = 0.3,
+				picture =
+				{
+					filename = "__core__/graphics/light-cone.png",
+					priority = "medium",
+					scale = 2,
+					width = 200,
+					height = 200
+				},
+				shift = {-0.6, -16},
+				size = 2,
+				intensity = 0.6
+			},
+			{
+				type = "oriented",
+				minimum_darkness = 0.3,
+				picture =
+				{
+					filename = "__core__/graphics/light-cone.png",
+					priority = "medium",
+					scale = 2,
+					width = 200,
+					height = 200
+				},
+				shift = {0.6, -16},
+				size = 2,
+				intensity = 0.6
+			}
+		},
+		wheels = functions.standard_train_wheels,
+		drive_over_tie_trigger = functions.yir_drive_over_tie,
+		tie_distance = 50,
+		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
+		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
+		sound_minimum_speed = 0.2;
+	},
+
+	{
+		type = "locomotive",
+		name = "y_loco_emd1500black",
+		icon = "__yi_railway__/graphics/icons/railway/emd-1500_black_icon.png",
+		icon_size = 64,
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
+		minable = {mining_time = 0.5, result = "y_loco_emd1500black"},
+		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
+		max_health = 850,
+		corpse = "medium-remnants",
+		dying_explosion = "medium-explosion",
+		collision_box = {{-0.6, -1.1}, {0.6, 1.1}},
+		selection_box = {{-0.85, -1.5}, {0.9, 1.5}},
+		drawing_box = {{-1, -1}, {1, 1}},
+		weight = 1500,
+		max_speed = 0.5,
+		max_power = "800kW",
+		reversing_power_modifier = 0.9,
+		braking_force = 10,
+		friction_force = 0.0025,
+		air_resistance = 0.0025,
+		vertical_selection_shift = -0.5,
+		connection_distance = 3.6,
+		joint_distance = 1.8,
+		energy_per_hit_point = 5,
+		resistances =
+		{
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
+			{type = "impact",decrease = 50,percent = 60},
+			{type = "explosion",decrease = 15,percent = 30},
+			{type = "acid",decrease = 10,percent = 20}
+		},
+		energy_source =
+		{
+			type = "burner",
+			fuel_categories = {"yr_diesel"},
+			effectivity = 1,
+			fuel_inventory_size = 3,
+			smoke =
+			{
+				{
+					name = "train-smoke",
+					deviation = {0.3, 0.3},
+					frequency = 100,
+					position = {0, -0.5},
+					starting_frame = 0,
+					starting_frame_deviation = 60,
+					height = 2,
+					height_deviation = 0.5,
+					starting_vertical_speed = 0.2,
+					starting_vertical_speed_deviation = 0.1,
+				}
+			}
+		},
+		front_light =
+		{
+			{
+				type = "oriented",
+				minimum_darkness = 0.3,
+				picture =
+				{
+					filename = "__core__/graphics/light-cone.png",
+					priority = "medium",
+					scale = 2,
+					width = 200,
+					height = 200
+				},
+				shift = {-0.6, -16},
+				size = 2,
+				intensity = 0.8
+			},
+			{
+				type = "oriented",
+				minimum_darkness = 0.3,
+				picture =
+				{
+					filename = "__core__/graphics/light-cone.png",
+					priority = "medium",
+					scale = 2,
+					width = 200,
+					height = 200
+				},
+				shift = {0.6, -16},
+				size = 2,
+				intensity = 0.8
+			}
+		},
+		wheels = functions.standard_train_wheels,
+		drive_over_tie_trigger = functions.yir_drive_over_tie,
+		tie_distance = 50,
+		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
+		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
+		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
+		sound_minimum_speed = 0.2;
+	},
+
+	{
+		type = "locomotive",
+		name = "y_loco_emd1500black_v2",
+		icon = "__yi_railway__/graphics/icons/railway/DESW90-BL-icon.png",
+		icon_size = 64,
+		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
+		minable = {mining_time = 0.5, result = "y_loco_emd1500black_v2"},
+		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
+		max_health = 850,
+		corpse = "medium-remnants",
+		dying_explosion = "medium-explosion",
+		collision_box = {{-0.6, -1.1}, {0.6, 1.1}},
+		selection_box = {{-0.85, -1.5}, {0.9, 1.5}},
+		drawing_box = {{-1, -1}, {1, 1}},
+		weight = 1500,
+		max_speed = 0.6,
+		max_power = "900kW",
+		reversing_power_modifier = 0.9,
+		braking_force = 13,
+		friction_force = 0.0025,
+		air_resistance = 0.0025,
+		vertical_selection_shift = -0.5,
+		connection_distance = 3.6,
+		joint_distance = 1.8,
+		energy_per_hit_point = 5,
+		resistances =
+		{
+			{type = "fire", decrease = 15, percent = 50},
+			{type = "physical", decrease = 15, percent = 30},
+			{type = "impact",decrease = 50,percent = 60},
+			{type = "explosion",decrease = 15,percent = 30},
+			{type = "acid",decrease = 10,percent = 20}
+		},
+		energy_source =
+		{
+			type = "burner",
+			fuel_categories = {"yr_diesel"},
+			effectivity = 1,
+			fuel_inventory_size = 3,
+			smoke =
+			{
+				{
+					name = "train-smoke",
+					deviation = {0.3, 0.3},
+					frequency = 100,
+					position = {0, -0.5},
+					starting_frame = 0,
+					starting_frame_deviation = 60,
+					height = 2,
+					height_deviation = 0.5,
+					starting_vertical_speed = 0.2,
+					starting_vertical_speed_deviation = 0.1,
+				}
+			}
+		},
+		front_light =
+		{
+			{
+				type = "oriented",
+				minimum_darkness = 0.3,
+				picture =
+				{
+					filename = "__core__/graphics/light-cone.png",
+					priority = "medium",
+					scale = 2,
+					width = 200,
+					height = 200
+				},
+				shift = {-0.6, -16},
+				size = 2,
+				intensity = 0.8
+			},
+			{
+				type = "oriented",
+				minimum_darkness = 0.3,
+				picture =
+				{
+					filename = "__core__/graphics/light-cone.png",
+					priority = "medium",
+					scale = 2,
+					width = 200,
+					height = 200
+				},
+				shift = {0.6, -16},
+				size = 2,
+				intensity = 0.8
+			}
+		},
+		wheels = functions.standard_train_wheels,
+		drive_over_tie_trigger = functions.yir_drive_over_tie,
+		tie_distance = 50,
+		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
 		sound_minimum_speed = 0.2;

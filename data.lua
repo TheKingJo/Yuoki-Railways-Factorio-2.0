@@ -10,22 +10,19 @@ require ("prototypes.groups") -- manual group file -> should transfered soon
 -- entitys
 require ("prototypes._loader")
 require ("prototypes._efabriken")
-require ("prototypes._wagon_cargo2a")
-require ("prototypes._wagon_cargo4a")
-require ("prototypes._wagon_tank2a")
-require ("prototypes._wagon_tank4a")
-require ("prototypes._locomotives4a")
-require ("prototypes._locomotives_de_long")
-require ("prototypes._locomotives_se_long")
-require ("prototypes._wagon_tender")
+require ("prototypes._wagon_small")
+require ("prototypes._wagon_big")
+require ("prototypes._loco_diesel1")
+require ("prototypes._loco_diesel2")
+require ("prototypes._loco_diesel3")
+require ("prototypes._loco_future")
+require ("prototypes._loco_steam_small")
+require ("prototypes._loco_steam_big")
 
 require ("prototypes.yir_lamps")
 
 -- fatmice code +  control.lua
 --require ("prototypes._fluid_handling")
-
--- old changed files
-require ("prototypes._railway")
 
 -- tiles
 require ("prototypes.tiles._tiles_bricks")
