@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.0
+Date: 12.10.2025
+  Changes:
+    - TheKingJo: upscaled sprites, separated shadow from base sprite
+    - TheKingJo: added item sounds, modernized vehicle sounds
+    - TheKingJo: added a tech tree to unlock the stuff by crafting certain things
+    - TheKingJo: improved balancing and recipe costs (now it's actually worth using the trains instead of vanilla)
+    - TheKingJo: improved locale, added german locale
+    - TheKingJo: refactor of a lot of code
+    - TheKingJo: hid unused items
+    - TheKingJo: quality of life improvements
+---------------------------------------------------------------------------------------------------
 Version: 1.2.1
 Date: 13. 4. 2025
   Fixes:
