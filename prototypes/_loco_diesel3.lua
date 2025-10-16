@@ -81,14 +81,14 @@ data:extend({
 				size = 2,
 				intensity = 0.6
 			}
-		},	
+		},
+		crash_trigger = functions.crash_trigger,
 		wheels = functions.standard_train_wheels,
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
-		sound_minimum_speed = 0.3;
 	},
 
 	{
@@ -178,13 +178,13 @@ data:extend({
 				intensity = 0.6
 			}
 		},
+		crash_trigger = functions.crash_trigger,
 		wheels = functions.standard_train_wheels,
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
-		sound_minimum_speed = 0.2;
 	},
 
 	{
@@ -274,13 +274,13 @@ data:extend({
 				intensity = 0.6
 			}
 		},
+		crash_trigger = functions.crash_trigger,
 		wheels = functions.standard_train_wheels,
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
-		sound_minimum_speed = 0.3;
 	},
 
 	{
@@ -370,12 +370,12 @@ data:extend({
 				intensity = 0.6
 			}
 		},
+		crash_trigger = functions.crash_trigger,
 		wheels = functions.standard_train_wheels,
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		open_sound = {filename = "__base__/sound/car-door-open.ogg", volume = 0.7},
 		close_sound = {filename = "__base__/sound/car-door-close.ogg", volume = 0.7},
-		sound_minimum_speed = 0.3;
 	},
 })

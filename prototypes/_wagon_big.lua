@@ -17,57 +17,8 @@ data:extend(
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
-		gui_front_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/front-tank.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_center_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/center-tank.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_back_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/back-tank.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_connect_front_center_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/connector-front-center.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_connect_center_back_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/connector-center-back.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_front_center_tank_indiciation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/1.png",
-			width = 32,
-			height = 32,
-			flags = {"icon"}
-		},
-		gui_center_back_tank_indiciation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/2.png",
-			width = 32,
-			height = 32,
-			flags = {"icon"}
-		},
 		weight = 1000,
 		max_speed = 1.5,
 		braking_force = 2,
@@ -81,7 +32,7 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 	},
 
 	{
@@ -98,57 +49,8 @@ data:extend(
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
-		gui_front_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/front-tank.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_center_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/center-tank.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_back_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/back-tank.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_connect_front_center_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/connector-front-center.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_connect_center_back_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/connector-center-back.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_front_center_tank_indiciation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/1.png",
-			width = 32,
-			height = 32,
-			flags = {"icon"}
-		},
-		gui_center_back_tank_indiciation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/2.png",
-			width = 32,
-			height = 32,
-			flags = {"icon"}
-		},
 		weight = 1000,
 		max_speed = 1.5,
 		braking_force = 2,
@@ -162,7 +64,7 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 	},
 
 	{
@@ -178,58 +80,8 @@ data:extend(
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
-		gui_front_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/front-tank.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_center_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/center-tank.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_back_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/back-tank.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_connect_front_center_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/connector-front-center.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_connect_center_back_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/connector-center-back.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_front_center_tank_indiciation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/1.png",
-			width = 32,
-			height = 32,
-			flags = {"icon"}
-		},
-		gui_center_back_tank_indiciation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/2.png",
-			width = 32,
-			height = 32,
-			flags = {"icon"}
-		},
-
 		weight = 1000,
 		max_speed = 1.5,
 		braking_force = 2,
@@ -243,7 +95,7 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 	},
 
 	{
@@ -259,58 +111,8 @@ data:extend(
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
-		gui_front_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/front-tank.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_center_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/center-tank.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_back_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/back-tank.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_connect_front_center_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/connector-front-center.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_connect_center_back_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/connector-center-back.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_front_center_tank_indiciation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/1.png",
-			width = 32,
-			height = 32,
-			flags = {"icon"}
-		},
-		gui_center_back_tank_indiciation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/2.png",
-			width = 32,
-			height = 32,
-			flags = {"icon"}
-		},
-
 		weight = 1000,
 		max_speed = 1.5,
 		braking_force = 2,
@@ -324,7 +126,7 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 	},
 
 	{
@@ -340,57 +142,8 @@ data:extend(
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
-		gui_front_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/front-tank.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_center_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/center-tank.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_back_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/back-tank.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_connect_front_center_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/connector-front-center.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_connect_center_back_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/connector-center-back.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_front_center_tank_indiciation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/1.png",
-			width = 32,
-			height = 32,
-			flags = {"icon"}
-		},
-		gui_center_back_tank_indiciation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/2.png",
-			width = 32,
-			height = 32,
-			flags = {"icon"}
-		},
 		weight = 1000,
 		max_speed = 1.5,
 		braking_force = 2,
@@ -404,7 +157,7 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 	},
 
 	{
@@ -420,57 +173,8 @@ data:extend(
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
-		gui_front_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/front-tank.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_center_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/center-tank.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_back_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/back-tank.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_connect_front_center_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/connector-front-center.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_connect_center_back_tank =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/connector-center-back.png",
-			width = 64,
-			height = 64,
-			flags = {"icon"}
-		},
-		gui_front_center_tank_indiciation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/1.png",
-			width = 32,
-			height = 32,
-			flags = {"icon"}
-		},
-		gui_center_back_tank_indiciation =
-		{
-			filename = "__base__/graphics/entity/fluid-wagon/gui/2.png",
-			width = 32,
-			height = 32,
-			flags = {"icon"}
-		},
 		weight = 1000,
 		max_speed = 2.0,
 		braking_force = 2,
@@ -493,7 +197,7 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 	},
 
 	{
@@ -509,7 +213,7 @@ data:extend(
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
 		connection_distance = 3,
 		joint_distance = 4,
@@ -534,7 +238,7 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
@@ -552,7 +256,7 @@ data:extend(
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
 		connection_distance = 3,
 		joint_distance = 4,
@@ -567,7 +271,7 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
@@ -585,7 +289,7 @@ data:extend(
 		corpse = "medium-remnants",
 		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
 		connection_distance = 3,
 		joint_distance = 4,
@@ -600,11 +304,11 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
-	
+
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_coal",
@@ -616,7 +320,7 @@ data:extend(
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 600, corpse = "medium-remnants", dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
 		connection_distance = 3,
 		joint_distance = 4,
@@ -631,7 +335,7 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound =	{sound = {filename = "__base__/sound/train-wheels.ogg", volume = 0.5}, match_volume_to_activity = true},
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
@@ -647,7 +351,7 @@ data:extend(
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 600, corpse = "medium-remnants", dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
 		connection_distance = 3,
 		joint_distance = 4,
@@ -662,11 +366,11 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound =	{sound = {filename = "__base__/sound/train-wheels.ogg", volume = 0.5}, match_volume_to_activity = true},
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
-	
+
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_copper",
@@ -678,7 +382,7 @@ data:extend(
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 600, corpse = "medium-remnants", dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
 		connection_distance = 3,
 		joint_distance = 4,
@@ -693,11 +397,11 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound =	{sound = {filename = "__base__/sound/train-wheels.ogg", volume = 0.5}, match_volume_to_activity = true},
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
-	
+
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_stone",
@@ -709,7 +413,7 @@ data:extend(
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 600, corpse = "medium-remnants", dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
 		connection_distance = 3,
 		joint_distance = 4,
@@ -724,11 +428,11 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound =	{sound = {filename = "__base__/sound/train-wheels.ogg", volume = 0.5}, match_volume_to_activity = true},
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
-	
+
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_wood",
@@ -740,7 +444,7 @@ data:extend(
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 600, corpse = "medium-remnants", dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
 		connection_distance = 3,
 		joint_distance = 4,
@@ -755,11 +459,11 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound =	{sound = {filename = "__base__/sound/train-wheels.ogg", volume = 0.5}, match_volume_to_activity = true},
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
-	
+
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_closed",
@@ -771,7 +475,7 @@ data:extend(
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 600, corpse = "medium-remnants", dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
 		connection_distance = 3,
 		joint_distance = 4,
@@ -786,11 +490,11 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound =	{sound = {filename = "__base__/sound/train-wheels.ogg", volume = 0.5}, match_volume_to_activity = true},
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
-	
+
 	{
 		type = "cargo-wagon",
 		name = "yir_4acw_gold",
@@ -802,7 +506,7 @@ data:extend(
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 600, corpse = "medium-remnants", dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
 		connection_distance = 3,
 		joint_distance = 4,
@@ -817,7 +521,7 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound =	{sound = {filename = "__base__/sound/train-wheels.ogg", volume = 0.5}, match_volume_to_activity = true},
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
@@ -833,7 +537,7 @@ data:extend(
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 600, corpse = "medium-remnants", dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
 		connection_distance = 3,
 		joint_distance = 4,
@@ -848,7 +552,7 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound =	{sound = {filename = "__base__/sound/train-wheels.ogg", volume = 0.5}, match_volume_to_activity = true},
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
@@ -864,7 +568,7 @@ data:extend(
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 600, corpse = "medium-remnants", dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
 		connection_distance = 3,
 		joint_distance = 4,
@@ -879,7 +583,7 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound =	{sound = {filename = "__base__/sound/train-wheels.ogg", volume = 0.5}, match_volume_to_activity = true},
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
@@ -895,7 +599,7 @@ data:extend(
 		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1000, corpse = "medium-remnants", dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.4}, {0.6, 2.4}},
-		selection_box = {{-1, -2.7}, {1, 3.3}},
+		selection_box = {{-1.0, -3}, {1, 3}},
 		vertical_selection_shift = -0.5,
 		connection_distance = 3,
 		joint_distance = 4,
@@ -919,7 +623,7 @@ data:extend(
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		working_sound =	{sound = {filename = "__base__/sound/train-wheels.ogg", volume = 0.5}, match_volume_to_activity = true},
-		crash_trigger = crash_trigger(),
+		crash_trigger = functions.crash_trigger,
 		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
 		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
