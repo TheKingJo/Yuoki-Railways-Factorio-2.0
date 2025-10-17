@@ -249,6 +249,8 @@ for type, typeData in pairs(entityData) do
 			vehicle.pictures = makePictures(datas)
 			vehicle.minimap_representation = data.raw[type][type].minimap_representation
 			vehicle.selected_minimap_representation = data.raw[type][type].selected_minimap_representation
+			vehicle.open_sound = data.raw[type][type].open_sound
+			vehicle.close_sound = data.raw[type][type].close_sound
 			if type == "locomotive" then
 				vehicle.max_health = 0.5 * vehicle.weight
 				vehicle.stop_trigger = data.raw[type][type].stop_trigger

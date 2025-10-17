@@ -33,8 +33,6 @@ data:extend(
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
 		crash_trigger = functions.crash_trigger,
-		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
-		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
 
 	{
@@ -66,8 +64,6 @@ data:extend(
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
 		crash_trigger = functions.crash_trigger,
-		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
-		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
 
 	{
@@ -99,8 +95,6 @@ data:extend(
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
 		crash_trigger = functions.crash_trigger,
-		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
-		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
 
 	{
@@ -132,8 +126,6 @@ data:extend(
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
 		crash_trigger = functions.crash_trigger,
-		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
-		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
 
 	{
@@ -165,8 +157,6 @@ data:extend(
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
 		crash_trigger = functions.crash_trigger,
-		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
-		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
 
 	{
@@ -198,8 +188,6 @@ data:extend(
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
 		crash_trigger = functions.crash_trigger,
-		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
-		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
 
 	{
@@ -231,8 +219,6 @@ data:extend(
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
 		crash_trigger = functions.crash_trigger,
-		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
-		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
 
 	{
@@ -264,8 +250,6 @@ data:extend(
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
 		crash_trigger = functions.crash_trigger,
-		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
-		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
 
 	{
@@ -297,8 +281,6 @@ data:extend(
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
 		crash_trigger = functions.crash_trigger,
-		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
-		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
 
 	{
@@ -330,8 +312,6 @@ data:extend(
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
 		crash_trigger = functions.crash_trigger,
-		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
-		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
 
 	{
@@ -363,8 +343,6 @@ data:extend(
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
 		crash_trigger = functions.crash_trigger,
-		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
-		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
 
 	{
@@ -396,8 +374,6 @@ data:extend(
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
 		crash_trigger = functions.crash_trigger,
-		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
-		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
 
 	{
@@ -429,8 +405,6 @@ data:extend(
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
 		crash_trigger = functions.crash_trigger,
-		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
-		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
 
 	{
@@ -462,8 +436,6 @@ data:extend(
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
 		crash_trigger = functions.crash_trigger,
-		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
-		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
 
 	{
@@ -495,7 +467,5 @@ data:extend(
 		tie_distance = 50,
 		working_sound = sounds.train_wagon_wheels,
 		crash_trigger = functions.crash_trigger,
-		open_sound = {filename = "__base__/sound/machine-open.ogg", volume = 0.85},
-		close_sound = {filename = "__base__/sound/machine-close.ogg", volume = 0.75},
 	},
 })

@@ -395,7 +395,7 @@ data:extend({
 			{type = "item", name = "yir_frame_waggon", amount = 2},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
 			{type = "item", name = "yir_color_green", amount = 6},
-			{type = "item", name = "steel-chest", amount = 2},
+			{type = "item", name = "steel-chest", amount = 4},
 		},
 		results = {
 			{type = "item", name = "yir_4acw_tf", amount = 1},
