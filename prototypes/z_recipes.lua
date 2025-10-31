@@ -373,7 +373,7 @@ data:extend({
 		enabled = false,
 		energy_required = 10,
 		ingredients = {
-			{type = "item", name = "yir_diesel_coin", amount = 2},
+			{type = "item", name = "yir_diesel_coin", amount = 1},
 			{type = "item", name = "yir_frame_loco_diesel", amount = 2},
 			{type = "item", name = "yir_radsatz_locos", amount = 6},
 			{type = "item", name = "yir_color_blue", amount = 8},
@@ -1516,7 +1516,7 @@ data:extend({
 		enabled = false,
 		energy_required = 10,
 		ingredients = {
-			{type = "item", name = "yir_diesel_coin", amount = 2},
+			{type = "item", name = "yir_diesel_coin", amount = 1},
 			{type = "item", name = "yir_frame_loco_diesel", amount = 1},
 			{type = "item", name = "yir_radsatz_locos", amount = 2},
 			{type = "item", name = "yir_color_blue", amount = 3},
@@ -1539,7 +1539,7 @@ data:extend({
 			{type = "item", name = "yir_frame_loco_diesel", amount = 1},
 			{type = "item", name = "yir_radsatz_locos", amount = 2},
 			{type = "item", name = "yir_color_black", amount = 4},
-			{type = "item", name = "yir_diesel_coin", amount = 2},
+			{type = "item", name = "yir_diesel_coin", amount = 1},
 		},
 		results = {
 			{type = "item", name = "y_loco_emd1500black", amount = 1},
