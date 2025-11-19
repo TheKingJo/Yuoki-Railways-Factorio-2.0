@@ -89,7 +89,6 @@ data:extend({
 			}
 		},
 		crash_trigger = functions.crash_trigger,
-		wheels = functions.standard_train_wheels,
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
@@ -192,7 +191,6 @@ data:extend({
 			}
 		},
 		crash_trigger = functions.crash_trigger,
-		wheels = functions.standard_train_wheels,
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
@@ -295,7 +293,6 @@ data:extend({
 			}
 		},
 		crash_trigger = functions.crash_trigger,
-		wheels = functions.standard_train_wheels,
 		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 50,
 		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},

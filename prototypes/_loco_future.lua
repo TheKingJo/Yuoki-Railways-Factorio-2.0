@@ -66,7 +66,6 @@ data:extend({
 				intensity = 0.6
 			}
 		},
-		wheels = functions.standard_train_wheels,
 		stop_trigger =
 		{
 			-- left side
@@ -183,7 +182,6 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		wheels = functions.standard_train_wheels,
 		stop_trigger =
 		{
 			-- left side
