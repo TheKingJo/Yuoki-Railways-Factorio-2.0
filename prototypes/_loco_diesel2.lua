@@ -6,12 +6,7 @@ data:extend({
 		name = "y_loco_emd1500blue",
 		icon = "__yi_railway__/graphics/icons/railway/emd-1500_blue_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "y_loco_emd1500blue"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 800,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -1.1}, {0.6, 1.1}},
 		selection_box = {{-0.85, -1.5}, {0.9, 1.5}},
 		drawing_box = {{-1, -1}, {1, 1}},
@@ -88,11 +83,7 @@ data:extend({
 				intensity = 0.6
 			}
 		},
-		crash_trigger = functions.crash_trigger,
 		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
-		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 	},
 
 	{
@@ -100,12 +91,7 @@ data:extend({
 		name = "y_loco_emd1500blue_v2",
 		icon = "__yi_railway__/graphics/icons/railway/emd-1500_blue_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "y_loco_emd1500blue_v2"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 800,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -1.1}, {0.6, 1.1}},
 		selection_box = {{-0.85, -1.5}, {0.9, 1.5}},
 		drawing_box = {{-1, -1}, {1, 1}},
@@ -183,11 +169,7 @@ data:extend({
 				intensity = 0.6
 			}
 		},
-		crash_trigger = functions.crash_trigger,
 		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
-		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 	},
 
 	{
@@ -195,12 +177,7 @@ data:extend({
 		name = "y_loco_emd1500black",
 		icon = "__yi_railway__/graphics/icons/railway/emd-1500_black_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "y_loco_emd1500black"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 850,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -1.1}, {0.6, 1.1}},
 		selection_box = {{-0.85, -1.5}, {0.9, 1.5}},
 		drawing_box = {{-1, -1}, {1, 1}},
@@ -278,11 +255,7 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		crash_trigger = functions.crash_trigger,
 		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
-		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 	},
 
 	{
@@ -290,12 +263,7 @@ data:extend({
 		name = "y_loco_emd1500black_v2",
 		icon = "__yi_railway__/graphics/icons/railway/DESW90-BL-icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "y_loco_emd1500black_v2"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 850,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -1.1}, {0.6, 1.1}},
 		selection_box = {{-0.85, -1.5}, {0.9, 1.5}},
 		drawing_box = {{-1, -1}, {1, 1}},
@@ -373,10 +341,6 @@ data:extend({
 				intensity = 0.8
 			}
 		},
-		crash_trigger = functions.crash_trigger,
 		wheels = functions.standard_train_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
-		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 	},
 })

@@ -35,4 +35,4 @@ require ("prototypes.tiles._tiles_tgb")
 require ("prototypes.tiles._tiles1")
 require ("prototypes.tiles._tiles_tring")
 
-require("prototypes.entity-updates")
+require("prototypes.entity_updates")

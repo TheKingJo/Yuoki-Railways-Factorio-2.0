@@ -6,12 +6,7 @@ data:extend({
 		name = "y_loco_desw",
 		icon = "__yi_railway__/graphics/icons/railway/des_green_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "y_loco_desw"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 700,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -1.1}, {0.6, 1.1}},
 		selection_box = {{-0.9, -1.5}, {0.9, 1.5}},
 		drawing_box = {{-1, -1}, {1, 1}},
@@ -89,11 +84,6 @@ data:extend({
 				intensity = 0.6
 			}
 		},
-		crash_trigger = functions.crash_trigger,
-		wheels = no_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
-		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 	},
 
 	{
@@ -101,12 +91,7 @@ data:extend({
 		name = "y_loco_desw_orange",
 		icon = "__yi_railway__/graphics/icons/railway/des_orange_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "y_loco_desw_orange"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 800,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -1.1}, {0.6, 1.1}},
 		selection_box = {{-0.85, -1.5}, {0.9, 1.5}},
 		drawing_box = {{-1, -1}, {1, 1}},
@@ -184,11 +169,6 @@ data:extend({
 				intensity = 0.6
 			}
 		},
-		crash_trigger = functions.crash_trigger,
-		wheels = no_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
-		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 	},
 
 	{
@@ -196,12 +176,7 @@ data:extend({
 		name = "y_loco_desw_blue",
 		icon = "__yi_railway__/graphics/icons/railway/des_blue_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "y_loco_desw_blue"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 900,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -1.1}, {0.6, 1.1}},
 		selection_box = {{-0.85, -1.5}, {0.9, 1.5}},
 		drawing_box = {{-1, -1}, {1, 1}},
@@ -279,10 +254,6 @@ data:extend({
 				intensity = 0.6
 			}
 		},
-		crash_trigger = functions.crash_trigger,
-		wheels = no_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
 		tie_distance = 30,
-		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 	},
 })

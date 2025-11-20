@@ -17,12 +17,7 @@ data:extend({
 		name = "y_loco_ses_std",
 		icon = "__yi_railway__/graphics/icons/railway/sea-ss-icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "y_loco_ses_std"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 700,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -1.1}, {0.6, 1.1}},
 		selection_box = {{-0.85, -1.5}, {0.9, 1.5}},
 		drawing_box = {{-1, -1}, {1, 1}},
@@ -100,11 +95,6 @@ data:extend({
 				intensity = 0.6
 			}
 		},
-		crash_trigger = functions.crash_trigger,
-		wheels = no_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
-		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 	},
 
 	{
@@ -112,12 +102,7 @@ data:extend({
 		name = "y_loco_ses_red",
 		icon = "__yi_railway__/graphics/icons/railway/sea-sr-icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "y_loco_ses_red"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 800,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -1.1}, {0.6, 1.1}},
 		selection_box = {{-0.85, -1.5}, {0.9, 1.5}},
 		drawing_box = {{-1, -1}, {1, 1}},
@@ -195,10 +180,5 @@ data:extend({
 				intensity = 0.6
 			}
 		},
-		crash_trigger = functions.crash_trigger,
-		wheels = no_wheels,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
-		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 	},
 })

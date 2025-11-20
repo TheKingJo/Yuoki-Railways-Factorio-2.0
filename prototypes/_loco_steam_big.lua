@@ -6,16 +6,12 @@ data:extend({
 		name = "y_loco_fs_steam_green",
 		icon = "__yi_railway__/graphics/icons/railway/rsea_green_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "y_loco_fs_steam_green"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1000,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
-		connection_distance = 3, joint_distance = 4,
+		connection_distance = 3, 
+		joint_distance = 4,
 		weight = 2000,
 		max_speed = 0.9,
 		max_power = "1000kW",
@@ -88,10 +84,6 @@ data:extend({
 				intensity = 0.6
 			}
 		},
-		crash_trigger = functions.crash_trigger,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
-		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		working_sound =
 		{
 			sound =
@@ -108,16 +100,12 @@ data:extend({
 		name = "yir_loco_sel_blue",
 		icon = "__yi_railway__/graphics/icons/railway/rsea_blue_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "yir_loco_sel_blue"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 1200,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
-		connection_distance = 3, joint_distance = 4,
+		connection_distance = 3, 
+		joint_distance = 4,
 		weight = 2000,
 		max_speed = 0.85,
 		max_power = "1100kW",
@@ -190,10 +178,6 @@ data:extend({
 				intensity = 0.6
 			}
 		},
-		crash_trigger = functions.crash_trigger,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
-		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		working_sound =
 		{
 			sound =
@@ -210,16 +194,12 @@ data:extend({
 		name = "y_loco_steam_wt450",
 		icon = "__yi_railway__/graphics/icons/railway/sewt_bl_icon.png",
 		icon_size = 64,
-		flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-		minable = {mining_time = 0.5, result = "y_loco_steam_wt450"},
-		mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
 		max_health = 800,
-		corpse = "medium-remnants",
-		dying_explosion = "medium-explosion",
 		collision_box = {{-0.6, -2.6}, {0.6, 2.6}},
 		selection_box = {{-1, -3}, {1, 3}},
 		drawing_box = {{-1, -4}, {1, 3}},
-		connection_distance = 3, joint_distance = 4,
+		connection_distance = 3, 
+		joint_distance = 4,
 		weight = 2000,
 		max_speed = 0.625,
 		max_power = "450kW",
@@ -292,10 +272,6 @@ data:extend({
 				intensity = 0.6
 			}
 		},
-		crash_trigger = functions.crash_trigger,
-		drive_over_tie_trigger = functions.yir_drive_over_tie,
-		tie_distance = 50,
-		vehicle_impact_sound =  {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
 		working_sound =
 		{
 			sound =
