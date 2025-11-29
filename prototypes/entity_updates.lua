@@ -59,6 +59,8 @@ local entityData = {
 		yir_wagon_tank_blue = 	{filename = "4aw_fw_blue_sheet", 	double = false,	doublesided = true,	size = {4080, 4000}, sizeSh = {4080, 4096}, shift = {0.42,-1}},
 		yir_fw4a_tank_oil = 	{filename = "4afw_oil_sheet", 		double = false,	doublesided = true,	size = {3840, 3760}, sizeSh = {3840, 4096}, shift = {0.42,-1}},
 		yir_fw4_vc = 			{filename = "4aw_fw_vc_sheet", 		double = false,	doublesided = true,	size = {4080, 4000}, sizeSh = {4080, 4096}, shift = {0.42,-0.875}},
+		yir_wagon_tank_blue_small={filename = "wcs_tank_blue_sheet",	double = true, doublesided = false, size = {3216, 5472}, sizeSh = {3232, 6112}, shift = {0.42,-1.125}},
+		yir_wagon_tank_orange_small={filename = "wcs_tank_orange_sheet",double = true, doublesided = false, size = {4096, 8192}, sizeSh = {4096, 8192}, shift = {0.42,-1.125}},
 	},
 }
 

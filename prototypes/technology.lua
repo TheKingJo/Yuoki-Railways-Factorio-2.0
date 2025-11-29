@@ -548,6 +548,18 @@ data:extend({
                 type = "unlock-recipe",
                 recipe = "yir_wagon_tank_blue"
             },
+            {
+                type = "unlock-recipe",
+                recipe = "yir_fw4a_tank_oil"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "yir_wagon_tank_orange_small"
+            },
+            {
+                type = "unlock-recipe",
+                recipe = "yir_wagon_tank_blue_small"
+            },
         },
         research_trigger =
         {

@@ -1,7 +1,45 @@
 functions = require("lib.functions")
 
-data:extend(
-{
+data:extend({
+	{
+		type = "fluid-wagon",
+		name = "yir_wagon_tank_blue_small",
+		icon = "__yi_railway__/graphics/icons/railway/4atw_fm1_icon.png",
+		icon_size = 64,
+		max_health = 400,
+		capacity = 20000,
+		collision_box = {{-0.6, -1.5}, {0.6, 1.5}},
+		selection_box = {{-1, -2}, {1, 2}},
+		vertical_selection_shift = -0.5,
+		weight = 500,
+		max_speed = 1.5,
+		braking_force = 1,
+		friction_force = 0.3,
+		air_resistance = 0.01,
+		connection_distance = 3.6,
+		joint_distance = 1.8,
+		energy_per_hit_point = 5,
+	},
+	{
+		type = "fluid-wagon",
+		name = "yir_wagon_tank_orange_small",
+		icon = "__yi_railway__/graphics/icons/railway/4atw_fm1_icon.png",
+		icon_size = 64,
+		max_health = 400,
+		capacity = 20000,
+		collision_box = {{-0.6, -1.5}, {0.6, 1.5}},
+		selection_box = {{-1, -2}, {1, 2}},
+		vertical_selection_shift = -0.5,
+		weight = 500,
+		max_speed = 1.5,
+		braking_force = 1,
+		friction_force = 0.3,
+		air_resistance = 0.01,
+		connection_distance = 3.6,
+		joint_distance = 1.8,
+		energy_per_hit_point = 5,
+	},
+
 	{
 		type = "cargo-wagon",
 		name = "y_wagon_zement_gray",
