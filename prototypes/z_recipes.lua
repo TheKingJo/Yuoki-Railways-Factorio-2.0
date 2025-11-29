@@ -1,4 +1,78 @@
+--tiles
 data:extend({
+	{
+		type = "recipe",
+		name = "y_path_labor",
+		category = "yir_rc_tiles",
+		enabled = false,
+		energy_required = 20,
+		ingredients = {
+			{type = "item", name = "iron-plate", amount = 4},
+		},
+		results = {
+			{type = "item", name = "y_path_labor", amount = 12},
+		},
+		icon_size = 32,
+	},
+	{
+		type = "recipe",
+		name = "y_path_science",
+		category = "yir_rc_tiles",
+		enabled = false,
+		energy_required = 20,
+		ingredients = {
+			{type = "item", name = "iron-stick", amount = 8},
+		},
+		results = {
+			{type = "item", name = "y_path_science", amount = 2},
+		},
+		icon_size = 32,
+	},
+	{
+		type = "recipe",
+		name = "y_tring",
+		category = "yir_rc_tiles",
+		enabled = false,
+		energy_required = 20,
+		ingredients = {
+			{type = "item", name = "yir_color_white", amount = 1},
+			{type = "item", name = "iron-plate", amount = 4},
+		},
+		results = {
+			{type = "item", name = "y_tring", amount = 4},
+		},
+		icon_size = 32,
+	},
+	{
+		type = "recipe",
+		name = "y_path_checker",
+		category = "yir_rc_tiles",
+		enabled = false,
+		energy_required = 20,
+		ingredients = {
+			{type = "item", name = "iron-plate", amount = 4},
+			{type = "item", name = "coal", amount = 2},
+		},
+		results = {
+			{type = "item", name = "y_path_checker", amount = 8},
+		},
+		icon_size = 32,
+	},
+	{
+		type = "recipe",
+		name = "y_tgb",
+		category = "yir_rc_tiles",
+		enabled = false,
+		energy_required = 20,
+		ingredients = {
+			{type = "item", name = "yir_color_white", amount = 1},
+			{type = "item", name = "steel-plate", amount = 1},
+		},
+		results = {
+			{type = "item", name = "y_tgb", amount = 8},
+		},
+		icon_size = 32,
+	},
 	{
 		type = "recipe",
 		name = "yir_brick1_tile",
@@ -93,7 +167,9 @@ data:extend({
 		results = {{type = "item", name = "yir_metal4_tile", amount = 4}},
 		category = "yir_rc_tiles",
 	},
-
+})
+--locos
+data:extend({
 	{
 		type = "recipe",
 		name = "yir_loco_fut_red",
@@ -101,88 +177,297 @@ data:extend({
 		enabled = false,
 		energy_required = 20,
 		ingredients = {
-			{type = "item", name = "yir_future_coin", amount = 4},
-			{type = "item", name = "yir_frame_loco_future", amount = 2},
+			{type = "item", name = "yir_future_coin", amount = 15},
+			{type = "item", name = "yir_frame_loco_future", amount = 3},
 			{type = "item", name = "yir_radsatz_locos", amount = 6},
-			{type = "item", name = "yir_color_red", amount = 6},
+			{type = "item", name = "yir_color_red", amount = 10},
 		},
 		results = {
 			{type = "item", name = "yir_loco_fut_red", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/future_red_icon.png",icon_size = 64,
 	},
 	{
 		type = "recipe",
 		name = "y_loco_steam_wt450",
 		category = "yir_rc_wsl",
 		enabled = false,
-		energy_required = 10,
+		energy_required = 1,
 		ingredients = {
 			{type = "item", name = "y_loco_ses_std", amount = 1},
 			{type = "item", name = "y_wagon_tender_black", amount = 1},
-			{type = "item", name = "yir_coin", amount = 5},
+			{type = "item", name = "yir_coin", amount = 4},
 		},
 		results = {
 			{type = "item", name = "y_loco_steam_wt450", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/sewt_bl_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
-		name = "yir_4acw_vc",
-		category = "yir_rc_wsw",
-		enabled = false,
-		energy_required = 20,
-		ingredients = {
-			{type = "item", name = "yir_frame_waggon", amount = 1},
-			{type = "item", name = "yir_radsatz_waggon", amount = 2},
-			{type = "item", name = "yir_color_green", amount = 4},
-			{type = "item", name = "yir_future_coin", amount = 30},
-		},
-		results = {
-			{type = "item", name = "yir_4acw_vc", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/railway/4a-cw_vc_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_fw4_vc",
-		category = "yir_rc_wsw",
-		enabled = false,
-		energy_required = 20,
-		ingredients = {
-			{type = "item", name = "yir_frame_waggon", amount = 2},
-			{type = "item", name = "yir_radsatz_waggon", amount = 2},
-			{type = "item", name = "yir_color_green", amount = 4},
-			{type = "item", name = "yir_future_coin", amount = 30},
-		},
-		results = {
-			{type = "item", name = "yir_fw4_vc", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/railway/4aw_fw_vc_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_fw4a_tank_oil",
-		category = "yir_rc_wsw",
+		name = "yir_loco_del_KR",
+		category = "yir_rc_wsl",
 		enabled = false,
 		energy_required = 10,
 		ingredients = {
-			{type = "item", name = "yir_frame_waggon", amount = 1},
-			{type = "item", name = "yir_radsatz_waggon", amount = 2},
-			{type = "item", name = "yir_color_red", amount = 2},
-			{type = "item", name = "yir_color_green", amount = 1},
 			{type = "item", name = "yir_diesel_coin", amount = 5},
+			{type = "item", name = "yir_frame_loco_diesel", amount = 2},
+			{type = "item", name = "yir_radsatz_locos", amount = 6},
+			{type = "item", name = "yir_color_blue", amount = 8},
+			{type = "item", name = "yir_color_white", amount = 4},
 		},
 		results = {
-			{type = "item", name = "yir_fw4a_tank_oil", amount = 1},
+			{type = "item", name = "yir_loco_del_KR", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/4afw_oil_icon.png",
-		icon_size = 64,
 	},
+	{
+		type = "recipe",
+		name = "yir_loco_fesw_op",
+		category = "yir_rc_wsl",
+		enabled = false,
+		energy_required = 20,
+		ingredients = {
+			{type = "item", name = "yir_future_coin", amount = 15},
+			{type = "item", name = "yir_frame_loco_future", amount = 1},
+			{type = "item", name = "yir_radsatz_waggon", amount = 2},
+		},
+		results = {
+			{type = "item", name = "yir_loco_fesw_op", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "y_loco_desw",
+		category = "yir_rc_wsl",
+		enabled = false,
+		energy_required = 10,
+		ingredients = {
+			{type = "item", name = "yir_frame_loco_diesel", amount = 1},
+			{type = "item", name = "yir_radsatz_waggon", amount = 2},
+			{type = "item", name = "yir_color_green", amount = 5},
+			{type = "item", name = "yir_diesel_coin", amount = 1},
+		},
+		results = {
+			{type = "item", name = "y_loco_desw", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "y_loco_desw_orange",
+		category = "yir_rc_wsl",
+		enabled = false,
+		energy_required = 10,
+		ingredients = {
+			{type = "item", name = "yir_frame_loco_diesel", amount = 1},
+			{type = "item", name = "yir_diesel_coin", amount = 1},
+			{type = "item", name = "yir_color_red", amount = 3},
+			{type = "item", name = "yir_color_green", amount = 2},
+			{type = "item", name = "yir_radsatz_waggon", amount = 2},
+		},
+		results = {
+			{type = "item", name = "y_loco_desw_orange", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "y_loco_desw_blue",
+		category = "yir_rc_wsl",
+		enabled = false,
+		energy_required = 10,
+		ingredients = {
+			{type = "item", name = "yir_diesel_coin", amount = 1},
+			{type = "item", name = "yir_frame_loco_diesel", amount = 1},
+			{type = "item", name = "yir_radsatz_waggon", amount = 2},
+			{type = "item", name = "yir_color_black", amount = 2},
+			{type = "item", name = "yir_color_blue", amount = 3},
+		},
+		results = {
+			{type = "item", name = "y_loco_desw_blue", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "y_loco_ses_std",
+		category = "yir_rc_wsl",
+		enabled = false,
+		energy_required = 5,
+		ingredients = {
+			{type = "item", name = "yir_frame_loco_steam", amount = 1},
+			{type = "item", name = "yir_color_black", amount = 4},
+			{type = "item", name = "yir_color_white", amount = 1},
+			{type = "item", name = "yir_radsatz_locos", amount = 3},
+			{type = "item", name = "yir_coin", amount = 1},
+		},
+		results = {
+			{type = "item", name = "y_loco_ses_std", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "y_loco_ses_red",
+		category = "yir_rc_wsl",
+		enabled = false,
+		energy_required = 5,
+		ingredients = {
+			{type = "item", name = "yir_frame_loco_steam", amount = 1},
+			{type = "item", name = "yir_color_red", amount = 5},
+			{type = "item", name = "yir_radsatz_locos", amount = 3},
+			{type = "item", name = "yir_coin", amount = 1},
+		},
+		results = {
+			{type = "item", name = "y_loco_ses_red", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "y_loco_emd1500black_v2",
+		category = "yir_rc_wsl",
+		enabled = false,
+		energy_required = 10,
+		ingredients = {
+			{type = "item", name = "yir_diesel_coin", amount = 1},
+			{type = "item", name = "yir_frame_loco_diesel", amount = 1},
+			{type = "item", name = "yir_radsatz_waggon", amount = 2},
+			{type = "item", name = "yir_color_blue", amount = 4},
+			{type = "item", name = "yir_color_green", amount = 4},
+		},
+		results = {
+			{type = "item", name = "y_loco_emd1500black_v2", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "y_loco_emd1500blue_v2",
+		category = "yir_rc_wsl",
+		enabled = false,
+		energy_required = 10,
+		ingredients = {
+			{type = "item", name = "yir_diesel_coin", amount = 1},
+			{type = "item", name = "yir_frame_loco_diesel", amount = 1},
+			{type = "item", name = "yir_radsatz_waggon", amount = 2},
+			{type = "item", name = "yir_color_blue", amount = 8},
+		},
+		results = {
+			{type = "item", name = "y_loco_emd1500blue_v2", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_loco_del_mk1400",
+		category = "yir_rc_wsl",
+		enabled = false,
+		energy_required = 10,
+		ingredients = {
+			{type = "item", name = "yir_diesel_coin", amount = 5},
+			{type = "item", name = "yir_frame_loco_diesel", amount = 2},
+			{type = "item", name = "yir_radsatz_waggon", amount = 2},
+			{type = "item", name = "yir_color_red", amount = 4},
+			{type = "item", name = "yir_color_green", amount = 4},
+		},
+		results = {
+			{type = "item", name = "yir_loco_del_mk1400", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_loco_sel_blue",
+		category = "yir_rc_wsl",
+		enabled = false,
+		energy_required = 10,
+		ingredients = {
+			{type = "item", name = "yir_frame_loco_steam", amount = 2},
+			{type = "item", name = "yir_radsatz_locos", amount = 3},
+			{type = "item", name = "yir_radsatz_waggon", amount = 1},
+			{type = "item", name = "yir_color_blue", amount = 8},
+			{type = "item", name = "yir_coin", amount = 5},
+		},
+		results = {
+			{type = "item", name = "yir_loco_sel_blue", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_loco_de_bluegray",
+		category = "yir_rc_wsl",
+		enabled = false,
+		energy_required = 10,
+		ingredients = {
+			{type = "item", name = "yir_diesel_coin", amount = 5},
+			{type = "item", name = "yir_frame_loco_diesel", amount = 2},
+			{type = "item", name = "yir_radsatz_waggon", amount = 6},
+			{type = "item", name = "yir_color_blue", amount = 6},
+			{type = "item", name = "yir_color_red", amount = 2},
+		},
+		results = {
+			{type = "item", name = "yir_loco_de_bluegray", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "y_loco_fs_steam_green",
+		category = "yir_rc_wsl",
+		enabled = false,
+		energy_required = 10,
+		ingredients = {
+			{type = "item", name = "yir_coin", amount = 5},
+			{type = "item", name = "yir_frame_loco_steam", amount = 2},
+			{type = "item", name = "yir_color_green", amount = 8},
+			{type = "item", name = "yir_radsatz_locos", amount = 3},
+			{type = "item", name = "yir_radsatz_waggon", amount = 1},
+		},
+		results = {
+			{type = "item", name = "y_loco_fs_steam_green", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "y_loco_emd3000_white",
+		category = "yir_rc_wsl",
+		enabled = false,
+		energy_required = 10,
+		ingredients = {
+			{type = "item", name = "yir_diesel_coin", amount = 5},
+			{type = "item", name = "yir_frame_loco_diesel", amount = 2},
+			{type = "item", name = "yir_radsatz_waggon", amount = 2},
+			{type = "item", name = "yir_color_white", amount = 8},
+		},
+		results = {
+			{type = "item", name = "y_loco_emd3000_white", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "y_loco_emd1500blue",
+		category = "yir_rc_wsl",
+		enabled = false,
+		energy_required = 10,
+		ingredients = {
+			{type = "item", name = "yir_diesel_coin", amount = 1},
+			{type = "item", name = "yir_frame_loco_diesel", amount = 1},
+			{type = "item", name = "yir_radsatz_waggon", amount = 2},
+			{type = "item", name = "yir_color_blue", amount = 8},
+		},
+		results = {
+			{type = "item", name = "y_loco_emd1500blue", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "y_loco_emd1500black",
+		category = "yir_rc_wsl",
+		enabled = false,
+		energy_required = 10,
+		ingredients = {
+			{type = "item", name = "yir_frame_loco_diesel", amount = 1},
+			{type = "item", name = "yir_radsatz_waggon", amount = 2},
+			{type = "item", name = "yir_color_black", amount = 8},
+			{type = "item", name = "yir_diesel_coin", amount = 1},
+		},
+		results = {
+			{type = "item", name = "y_loco_emd1500black", amount = 1},
+		},
+	},
+})
+--buildings
+data:extend({
 	{
 		type = "recipe",
 		name = "yir_future_monument",
@@ -194,20 +479,9 @@ data:extend({
 			{type = "item", name = "production-science-pack", amount = 20},
 			{type = "item", name = "utility-science-pack", amount = 10},
 		},
-		results = {{type = "item",name = "yir_future_monument", amount = 1}},
-	},
-	{
-		type = "recipe",
-		name = "yir_factory_chemical",
-		energy_required = 20,
-		ingredients = {
-			{type = "item", name = "iron-plate", amount = 8},
-			{type = "item", name = "steel-plate", amount = 2},
-			{type = "item", name = "iron-gear-wheel", amount = 2},
-			{type = "item", name = "yir_brick1_tile", amount = 34}
+		results = {
+			{type = "item", name = "yir_future_monument", amount = 1},
 		},
-		results = {{type = "item", name = "yir_factory_chemical", amount = 1}},
-		enabled = false,
 	},
 	{
 		type = "recipe",
@@ -224,9 +498,104 @@ data:extend({
 		results = {
 			{type = "item", name = "yir_diesel_monument", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/yir_diesel_monument_icon.png",
-		icon_size = 64,
 	},
+	{
+		type = "recipe",
+		name = "yir_factory_chemical",
+		enabled = false,
+		energy_required = 20,
+		ingredients = {
+			{type = "item", name = "iron-plate", amount = 10},
+			{type = "item", name = "steel-plate", amount = 10},
+			{type = "item", name = "iron-gear-wheel", amount = 10},
+			{type = "item", name = "yir_brick1_tile", amount = 35}
+		},
+		results = {
+			{type = "item", name = "yir_factory_chemical", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_factory_loco",
+		category = "crafting",
+		enabled = false,
+		energy_required = 20,
+		ingredients = {
+			{type = "item", name = "assembling-machine-2", amount = 10},
+			{type = "item", name = "steel-plate", amount = 75},
+			{type = "item", name = "steel-furnace", amount = 5},
+			{type = "item", name = "stone-brick", amount = 100},
+		},
+		results = {
+			{type = "item", name = "yir_factory_loco", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_factory_wagon",
+		category = "crafting",
+		enabled = false,
+		energy_required = 20,
+		ingredients = {
+			{type = "item", name = "assembling-machine-2", amount = 10},
+			{type = "item", name = "steel-plate", amount = 75},
+			{type = "item", name = "steel-furnace", amount = 5},
+			{type = "item", name = "stone-brick", amount = 100},
+		},
+		results = {
+			{type = "item", name = "yir_factory_wagon", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_factory_tiles",
+		category = "crafting",
+		enabled = false,
+		energy_required = 5,
+		ingredients = {
+			{type = "item", name = "stone-brick", amount = 30},
+			{type = "item", name = "stone-furnace", amount = 5},
+			{type = "item", name = "steel-plate", amount = 20},
+			{type = "item", name = "transport-belt", amount = 10},
+		},
+		results = {
+			{type = "item", name = "yir_factory_tiles", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_factory_material",
+		category = "crafting",
+		enabled = false,
+		energy_required = 20,
+		ingredients = {
+			{type = "item", name = "engine-unit", amount = 5},
+			{type = "item", name = "stone-brick", amount = 30},
+			{type = "item", name = "steel-plate", amount = 25},
+			{type = "item", name = "steel-furnace", amount = 5},
+		},
+		results = {
+			{type = "item", name = "yir_factory_material", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_factory_stuff",
+		category = "crafting",
+		enabled = false,
+		energy_required = 20,
+		ingredients = {
+			{type = "item", name = "boiler", amount = 10},
+			{type = "item", name = "steam-engine", amount = 5},
+			{type = "item", name = "stone-brick", amount = 50},
+			{type = "item", name = "steel-plate", amount = 20},
+		},
+		results = {
+			{type = "item", name = "yir_factory_stuff", amount = 1},
+		},
+	},
+})
+data:extend({
 	{
 		type = "recipe",
 		name = "yir_fuel_fluid_u3",
@@ -239,8 +608,6 @@ data:extend({
 		results = {
 			{type = "item", name = "yir_fuel_fluid_u2", amount = 100},
 		},
-		icon = "__yi_railway__/graphics/icons/fuel_light_1.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -254,8 +621,6 @@ data:extend({
 		results = {
 			{type = "item", name = "yir_fuel_fluid_u2", amount = 100},
 		},
-		icon = "__yi_railway__/graphics/icons/fuel_light_2.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -269,8 +634,6 @@ data:extend({
 		results = {
 			{type = "item", name = "yir_fuel_fluid_u2", amount = 100},
 		},
-		icon = "__yi_railway__/graphics/icons/fuel_light_3.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -282,8 +645,21 @@ data:extend({
 		results = {
 			{type = "item", name = "yir_fuel_energy_u1", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/fuel_energy.png",
-		icon_size = 64,
+	},
+	{
+		type = "recipe",
+		name = "yir_coin",
+		category = "yir_rc_stuff",
+		enabled = false,
+		energy_required = 300,
+		ingredients = {
+			{type = "item", name = "logistic-science-pack", amount = 50},
+			{type = "item", name = "automation-science-pack", amount = 50},
+			{type = "item", name = "yir_fuel_coks", amount = 50},
+		},
+		results = {
+			{type = "item", name = "yir_coin", amount = 1},
+		},
 	},
 	{
 		type = "recipe",
@@ -299,8 +675,6 @@ data:extend({
 		results = {
 			{type = "item", name = "yir_lamp_clock", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/yir_clock_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -315,8 +689,6 @@ data:extend({
 		results = {
 			{type = "item", name = "yir_lamp_old1", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/yir_lamp_old1_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -331,8 +703,6 @@ data:extend({
 		results = {
 			{type = "item", name = "yir_lamp_modern", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/yir_lamp_modern_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -341,14 +711,12 @@ data:extend({
 		enabled = false,
 		energy_required = 300,
 		ingredients = {
-			{type = "item", name = "chemical-science-pack", amount = 50},
+			{type = "item", name = "utility-science-pack", amount = 50},
 			{type = "item", name = "plastic-bar", amount = 50},
 		},
 		results = {
 			{type = "item", name = "yir_future_coin", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/future_coin_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -357,33 +725,288 @@ data:extend({
 		enabled = false,
 		energy_required = 300,
 		ingredients = {
-			{type = "item", name = "logistic-science-pack", amount = 50},
+			{type = "item", name = "chemical-science-pack", amount = 50},
 			{type = "fluid", name = "light-oil", amount = 50},
 		},
 		results = {
 			{type = "item", name = "yir_diesel_coin", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/diesel_coin_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
-		name = "yir_loco_del_KR",
-		category = "yir_rc_wsl",
+		name = "yir_fuel_diesel",
+		category = "chemistry",
+		energy_required = 60,
+		hidden = true,
+		ingredients = {
+			{type = "fluid", name = "petroleum-gas", amount = 1},
+			{type = "fluid", name = "light-oil", amount = 1},
+			{type = "item", name = "iron-plate", amount = 2},
+		},
+		results = {
+			{type = "item", name = "yir_fuel_diesel", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_fuel_coks",
+		category = "chemistry",
+		enabled = false,
+		energy_required = 5,
+		ingredients = {
+			{type = "item", name = "coal", amount = 4},
+		},
+		results = {
+			{type = "item", name = "yir_fuel_coks", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_frame_loco_future",
+		category = "yir_rc_material",
+		enabled = false,
+		energy_required = 45,
+		ingredients = {
+			{type = "item", name = "processing-unit", amount = 15},
+			{type = "item", name = "electric-engine-unit", amount = 10},
+			{type = "item", name = "iron-plate", amount = 25},
+			{type = "item", name = "steel-plate", amount = 15},
+			{type = "item", name = "copper-cable", amount = 80},
+		},
+		results = {
+			{type = "item", name = "yir_frame_loco_future", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_frame_loco_diesel",
+		category = "yir_rc_material",
+		enabled = false,
+		energy_required = 30,
+		ingredients = {
+			{type = "item", name = "storage-tank", amount = 1},
+			{type = "item", name = "steel-plate", amount = 10},
+			{type = "item", name = "engine-unit", amount = 10},
+			{type = "item", name = "iron-plate", amount = 20},
+			{type = "item", name = "iron-gear-wheel", amount = 10},
+			{type = "item", name = "electronic-circuit", amount = 10},
+		},
+		results = {
+			{type = "item", name = "yir_frame_loco_diesel", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_frame_loco_steam",
+		category = "yir_rc_material",
+		enabled = false,
+		energy_required = 15,
+		ingredients = {
+			{type = "item", name = "boiler", amount = 2},
+			{type = "item", name = "iron-plate", amount = 15},
+			{type = "item", name = "steel-plate", amount = 5},
+			{type = "item", name = "storage-tank", amount = 1},
+			{type = "item", name = "steam-engine", amount = 2},
+		},
+		results = {
+			{type = "item", name = "yir_frame_loco_steam", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_frame_waggon",
+		category = "yir_rc_material",
+		enabled = false,
+		energy_required = 15,
+		ingredients = {
+			{type = "item", name = "steel-plate", amount = 15},
+			{type = "item", name = "iron-plate", amount = 15},
+			{type = "item", name = "wood", amount = 10},
+		},
+		results = {
+			{type = "item", name = "yir_frame_waggon", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_radsatz_locos",
+		category = "yir_rc_material",
+		enabled = false,
+		energy_required = 30,
+		ingredients = {
+			{type = "item", name = "yir_color_red", amount = 10},
+			{type = "item", name = "steel-plate", amount = 15},
+		},
+		results = {
+			{type = "item", name = "yir_radsatz_locos", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_radsatz_waggon",
+		category = "yir_rc_material",
+		enabled = false,
+		energy_required = 30,
+		ingredients = {
+			{type = "item", name = "yir_color_black", amount = 10},
+			{type = "item", name = "steel-plate", amount = 40},
+		},
+		results = {
+			{type = "item", name = "yir_radsatz_waggon", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_color_white",
+		category = "yir_rc_material",
+		enabled = false,
+		energy_required = 5,
+		ingredients = {
+			{type = "item", name = "stone", amount = 10},
+		},
+		results = {
+			{type = "item", name = "yir_color_white", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_color_green",
+		category = "yir_rc_material",
+		enabled = false,
+		energy_required = 5,
+		ingredients = {
+			{type = "item", name = "wood", amount = 10},
+		},
+		results = {
+			{type = "item", name = "yir_color_green", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_color_black",
+		category = "yir_rc_material",
+		enabled = false,
+		energy_required = 5,
+		ingredients = {
+			{type = "item", name = "coal", amount = 10},
+		},
+		results = {
+			{type = "item", name = "yir_color_black", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_color_blue",
+		category = "yir_rc_material",
+		enabled = false,
+		energy_required = 5,
+		ingredients = {
+			{type = "item", name = "iron-ore", amount = 10},
+		},
+		results = {
+			{type = "item", name = "yir_color_blue", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_color_red",
+		category = "yir_rc_material",
+		enabled = false,
+		energy_required = 5,
+		ingredients = {
+			{type = "item", name = "copper-ore", amount = 10},
+		},
+		results = {
+			{type = "item", name = "yir_color_red", amount = 1},
+		},
+	},
+})
+--wagons
+data:extend({
+	{
+		type = "recipe",
+		name = "yir_4acw_vc",
+		category = "yir_rc_wsw",
+		enabled = false,
+		energy_required = 20,
+		ingredients = {
+			{type = "item", name = "steel-plate", amount = 16},
+			{type = "item", name = "yir_frame_waggon", amount = 2},
+			{type = "item", name = "yir_radsatz_waggon", amount = 2},
+			{type = "item", name = "yir_color_green", amount = 8},
+			{type = "item", name = "yir_future_coin", amount = 15},
+		},
+		results = {
+			{type = "item", name = "yir_4acw_vc", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_fw4_vc",
+		category = "yir_rc_wsw",
+		enabled = false,
+		energy_required = 20,
+		ingredients = {
+			{type = "item", name = "storage-tank", amount = 1},
+			{type = "item", name = "yir_frame_waggon", amount = 2},
+			{type = "item", name = "yir_radsatz_waggon", amount = 2},
+			{type = "item", name = "yir_color_green", amount = 4},
+			{type = "item", name = "yir_future_coin", amount = 15},
+		},
+		results = {
+			{type = "item", name = "yir_fw4_vc", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_fw4a_tank_oil",
+		category = "yir_rc_wsw",
 		enabled = false,
 		energy_required = 10,
 		ingredients = {
-			{type = "item", name = "yir_diesel_coin", amount = 1},
-			{type = "item", name = "yir_frame_loco_diesel", amount = 2},
-			{type = "item", name = "yir_radsatz_locos", amount = 6},
-			{type = "item", name = "yir_color_blue", amount = 8},
-			{type = "item", name = "yir_color_white", amount = 4},
+			{type = "item", name = "storage-tank", amount = 1},
+			{type = "item", name = "yir_frame_waggon", amount = 1},
+			{type = "item", name = "yir_radsatz_waggon", amount = 2},
+			{type = "item", name = "yir_color_red", amount = 4},
+			{type = "item", name = "yir_color_green", amount = 4},
 		},
 		results = {
-			{type = "item", name = "yir_loco_del_KR", amount = 1},
+			{type = "item", name = "yir_fw4a_tank_oil", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/kurts_icon.png",
-		icon_size = 64,
+	},
+	{
+		type = "recipe",
+		name = "yir_wagon_tank_orange_small",
+		category = "yir_rc_wsw",
+		enabled = false,
+		energy_required = 10,
+		ingredients = {
+			{type = "item", name = "yir_color_red", amount = 3},
+			{type = "item", name = "yir_color_white", amount = 2},
+			{type = "item", name = "yir_frame_waggon", amount = 1},
+			{type = "item", name = "yir_radsatz_waggon", amount = 2},
+			{type = "item", name = "storage-tank", amount = 1},
+		},
+		results = {
+			{type = "item", name = "yir_wagon_tank_orange_small", amount = 1},
+		},
+	},
+	{
+		type = "recipe",
+		name = "yir_wagon_tank_blue_small",
+		category = "yir_rc_wsw",
+		enabled = false,
+		energy_required = 10,
+		ingredients = {
+			{type = "item", name = "yir_color_blue", amount = 3},
+			{type = "item", name = "yir_color_white", amount = 2},
+			{type = "item", name = "yir_frame_waggon", amount = 1},
+			{type = "item", name = "yir_radsatz_waggon", amount = 2},
+			{type = "item", name = "storage-tank", amount = 1},
+		},
+		results = {
+			{type = "item", name = "yir_wagon_tank_blue_small", amount = 1},
+		},
 	},
 	{
 		type = "recipe",
@@ -400,8 +1023,6 @@ data:extend({
 		results = {
 			{type = "item", name = "yir_4acw_tf", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/4aw_cargo_tf_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -412,14 +1033,11 @@ data:extend({
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
-			{type = "item", name = "yir_color_white", amount = 4},
-			{type = "item", name = "steel-plate", amount = 4},
+			{type = "item", name = "concrete", amount = 20},
 		},
 		results = {
 			{type = "item", name = "yir_4acw_mun", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/4aw_cargo_mun_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -436,8 +1054,6 @@ data:extend({
 		results = {
 			{type = "item", name = "yir_4acw_gold", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/4aw_cargo_gold_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -454,8 +1070,6 @@ data:extend({
 		results = {
 			{type = "item", name = "yir_4acw_closed", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/4aw_cargo_closed_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -466,13 +1080,11 @@ data:extend({
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
-			{type = "item", name = "wood", amount = 1},
+			{type = "item", name = "wood", amount = 16},
 		},
 		results = {
 			{type = "item", name = "yir_4acw_wood", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/4aw_cargo_wood_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -483,14 +1095,11 @@ data:extend({
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
-			{type = "item", name = "iron-plate", amount = 12},
-			{type = "item", name = "stone", amount = 1},
+			{type = "item", name = "stone", amount = 16},
 		},
 		results = {
 			{type = "item", name = "yir_4acw_stone", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/4aw_cw_stone_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -501,14 +1110,11 @@ data:extend({
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
-			{type = "item", name = "copper-ore", amount = 1},
-			{type = "item", name = "iron-plate", amount = 12},
+			{type = "item", name = "copper-ore", amount = 16},
 		},
 		results = {
 			{type = "item", name = "yir_4acw_copper", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/4aw_cw_copper_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -519,14 +1125,11 @@ data:extend({
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
-			{type = "item", name = "iron-ore", amount = 1},
-			{type = "item", name = "iron-plate", amount = 12},
+			{type = "item", name = "iron-ore", amount = 16},
 		},
 		results = {
 			{type = "item", name = "yir_4acw_iron", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/4aw_cw_iron_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -537,245 +1140,11 @@ data:extend({
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
-			{type = "item", name = "iron-plate", amount = 12},
-			{type = "item", name = "coal", amount = 1},
+			{type = "item", name = "coal", amount = 16},
 		},
 		results = {
 			{type = "item", name = "yir_4acw_coal", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/4aw_cw_coal_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_fuel_diesel",
-		category = "chemistry",
-		energy_required = 60,
-		hidden = true,
-		ingredients = {
-			{type = "fluid", name = "petroleum-gas", amount = 1},
-			{type = "fluid", name = "light-oil", amount = 1},
-			{type = "item", name = "iron-plate", amount = 2},
-		},
-		results = {
-			{type = "item", name = "yir_fuel_diesel", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/diesel.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_fuel_coks",
-		category = "chemistry",
-		enabled = false,
-		energy_required = 5,
-		ingredients = {
-			{type = "item", name = "coal", amount = 4},
-		},
-		results = {
-			{type = "item", name = "yir_fuel_coks", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/coks.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_frame_loco_future",
-		category = "yir_rc_material",
-		enabled = false,
-		energy_required = 45,
-		ingredients = {
-			{type = "item", name = "processing-unit", amount = 12},
-			{type = "item", name = "electric-engine-unit", amount = 10},
-			{type = "item", name = "iron-plate", amount = 22},
-			{type = "item", name = "steel-plate", amount = 14},
-			{type = "item", name = "copper-cable", amount = 78},
-		},
-		results = {
-			{type = "item", name = "yir_frame_loco_future", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/frame_future.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_frame_loco_diesel",
-		category = "yir_rc_material",
-		enabled = false,
-		energy_required = 30,
-		ingredients = {
-			{type = "item", name = "storage-tank", amount = 1},
-			{type = "item", name = "steel-plate", amount = 6},
-			{type = "item", name = "engine-unit", amount = 10},
-			{type = "item", name = "iron-plate", amount = 18},
-			{type = "item", name = "iron-gear-wheel", amount = 8},
-			{type = "item", name = "electronic-circuit", amount = 10},
-		},
-		results = {
-			{type = "item", name = "yir_frame_loco_diesel", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/frame_diesel.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_frame_loco_steam",
-		category = "yir_rc_material",
-		enabled = false,
-		energy_required = 15,
-		ingredients = {
-			{type = "item", name = "boiler", amount = 2},
-			{type = "item", name = "iron-plate", amount = 12},
-			{type = "item", name = "steel-plate", amount = 4},
-			{type = "item", name = "storage-tank", amount = 1},
-			{type = "item", name = "steam-engine", amount = 2},
-		},
-		results = {
-			{type = "item", name = "yir_frame_loco_steam", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/frame_steam.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_frame_waggon",
-		category = "yir_rc_material",
-		enabled = false,
-		energy_required = 15,
-		ingredients = {
-			{type = "item", name = "steel-plate", amount = 15},
-			{type = "item", name = "iron-plate", amount = 15},
-			{type = "item", name = "wood", amount = 10},
-		},
-		results = {
-			{type = "item", name = "yir_frame_waggon", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/frame_wagon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_radsatz_locos",
-		category = "yir_rc_material",
-		enabled = false,
-		energy_required = 30,
-		ingredients = {
-			{type = "item", name = "yir_color_red", amount = 10},
-			{type = "item", name = "steel-plate", amount = 20},
-		},
-		results = {
-			{type = "item", name = "yir_radsatz_locos", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/radsatz_locomotive.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_radsatz_waggon",
-		category = "yir_rc_material",
-		enabled = false,
-		energy_required = 30,
-		ingredients = {
-			{type = "item", name = "yir_color_black", amount = 10},
-			{type = "item", name = "steel-plate", amount = 20},
-		},
-		results = {
-			{type = "item", name = "yir_radsatz_waggon", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/radsatz_waggon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_color_white",
-		category = "yir_rc_material",
-		enabled = false,
-		energy_required = 5,
-		ingredients = {
-			{type = "item", name = "stone", amount = 10},
-		},
-		results = {
-			{type = "item", name = "yir_color_white", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/paint_white.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_color_green",
-		category = "yir_rc_material",
-		enabled = false,
-		energy_required = 5,
-		ingredients = {
-			{type = "item", name = "wood", amount = 10},
-		},
-		results = {
-			{type = "item", name = "yir_color_green", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/paint_green.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_color_black",
-		category = "yir_rc_material",
-		enabled = false,
-		energy_required = 5,
-		ingredients = {
-			{type = "item", name = "coal", amount = 10},
-		},
-		results = {
-			{type = "item", name = "yir_color_black", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/paint_black.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_color_blue",
-		category = "yir_rc_material",
-		enabled = false,
-		energy_required = 5,
-		ingredients = {
-			{type = "item", name = "iron-ore", amount = 10},
-		},
-		results = {
-			{type = "item", name = "yir_color_blue", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/paint_blue.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_color_red",
-		category = "yir_rc_material",
-		enabled = false,
-		energy_required = 5,
-		ingredients = {
-			{type = "item", name = "copper-ore", amount = 10},
-		},
-		results = {
-			{type = "item", name = "yir_color_red", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/paint_red.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_loco_fesw_op",
-		category = "yir_rc_wsl",
-		enabled = false,
-		energy_required = 20,
-		ingredients = {
-			{type = "item", name = "yir_future_coin", amount = 4},
-			{type = "item", name = "yir_frame_loco_future", amount = 1},
-			{type = "item", name = "yir_radsatz_locos", amount = 2},
-		},
-		results = {
-			{type = "item", name = "yir_loco_fesw_op", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/railway/DESW90-OP-icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -784,15 +1153,13 @@ data:extend({
 		enabled = false,
 		energy_required = 5,
 		ingredients = {
-			{type = "item", name = "wood", amount = 1},
+			{type = "item", name = "wood", amount = 8},
 			{type = "item", name = "yir_frame_waggon", amount = 1},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
 		},
 		results = {
 			{type = "item", name = "yir_2acw_wood", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/cws_wood-icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -801,108 +1168,13 @@ data:extend({
 		enabled = false,
 		energy_required = 5,
 		ingredients = {
-			{type = "item", name = "yir_coin", amount = 1},
+			{type = "item", name = "concrete", amount = 10},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
 			{type = "item", name = "yir_frame_waggon", amount = 1},
 		},
 		results = {
 			{type = "item", name = "yir_2acw_3blocks", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/2a_cws_tf1-icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "y_loco_desw",
-		category = "yir_rc_wsl",
-		enabled = false,
-		energy_required = 10,
-		ingredients = {
-			{type = "item", name = "yir_frame_loco_diesel", amount = 1},
-			{type = "item", name = "yir_radsatz_locos", amount = 1},
-			{type = "item", name = "yir_color_green", amount = 1},
-			{type = "item", name = "yir_diesel_coin", amount = 1},
-		},
-		results = {
-			{type = "item", name = "y_loco_desw", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/railway/des_green_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "y_loco_desw_orange",
-		category = "yir_rc_wsl",
-		enabled = false,
-		energy_required = 10,
-		ingredients = {
-			{type = "item", name = "yir_frame_loco_diesel", amount = 1},
-			{type = "item", name = "yir_diesel_coin", amount = 1},
-			{type = "item", name = "yir_color_red", amount = 3},
-			{type = "item", name = "yir_color_green", amount = 1},
-			{type = "item", name = "yir_radsatz_locos", amount = 1},
-		},
-		results = {
-			{type = "item", name = "y_loco_desw_orange", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/railway/des_orange_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "y_loco_desw_blue",
-		category = "yir_rc_wsl",
-		enabled = false,
-		energy_required = 10,
-		ingredients = {
-			{type = "item", name = "yir_diesel_coin", amount = 1},
-			{type = "item", name = "yir_color_blue", amount = 3},
-			{type = "item", name = "yir_frame_loco_diesel", amount = 1},
-			{type = "item", name = "yir_radsatz_locos", amount = 1},
-			{type = "item", name = "yir_color_black", amount = 1},
-		},
-		results = {
-			{type = "item", name = "y_loco_desw_blue", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/railway/des_blue_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "y_loco_ses_std",
-		category = "yir_rc_wsl",
-		enabled = false,
-		energy_required = 5,
-		ingredients = {
-			{type = "item", name = "yir_frame_loco_steam", amount = 1},
-			{type = "item", name = "yir_color_black", amount = 3},
-			{type = "item", name = "yir_color_white", amount = 1},
-			{type = "item", name = "yir_radsatz_locos", amount = 1},
-			{type = "item", name = "yir_coin", amount = 1},
-		},
-		results = {
-			{type = "item", name = "y_loco_ses_std", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/railway/sea-ss-icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "y_loco_ses_red",
-		category = "yir_rc_wsl",
-		enabled = false,
-		energy_required = 5,
-		ingredients = {
-			{type = "item", name = "yir_frame_loco_steam", amount = 1},
-			{type = "item", name = "yir_color_red", amount = 5},
-			{type = "item", name = "yir_radsatz_locos", amount = 1},
-			{type = "item", name = "yir_coin", amount = 1},
-		},
-		results = {
-			{type = "item", name = "y_loco_ses_red", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/railway/sea-sr-icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -911,15 +1183,13 @@ data:extend({
 		enabled = false,
 		energy_required = 5,
 		ingredients = {
-			{type = "item", name = "yir_coin", amount = 1},
+			{type = "item", name = "concrete", amount = 10},
 			{type = "item", name = "yir_frame_waggon", amount = 1},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
 		},
 		results = {
 			{type = "item", name = "y_wagon_trans", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/cws_trans_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -928,16 +1198,13 @@ data:extend({
 		enabled = false,
 		energy_required = 5,
 		ingredients = {
-			{type = "item", name = "coal", amount = 1},
+			{type = "item", name = "coal", amount = 8},
 			{type = "item", name = "yir_frame_waggon", amount = 1},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
-			{type = "item", name = "iron-plate", amount = 8},
 		},
 		results = {
 			{type = "item", name = "y_wagon_coal", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/cws_rcoal_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -946,16 +1213,13 @@ data:extend({
 		enabled = false,
 		energy_required = 5,
 		ingredients = {
-			{type = "item", name = "copper-ore", amount = 1},
-			{type = "item", name = "iron-plate", amount = 8},
+			{type = "item", name = "copper-ore", amount = 8},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
 			{type = "item", name = "yir_frame_waggon", amount = 1},
 		},
 		results = {
 			{type = "item", name = "y_wagon_copper", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/cws_rcopper_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -964,16 +1228,13 @@ data:extend({
 		enabled = false,
 		energy_required = 5,
 		ingredients = {
-			{type = "item", name = "iron-ore", amount = 1},
+			{type = "item", name = "iron-ore", amount = 8},
 			{type = "item", name = "yir_frame_waggon", amount = 1},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
-			{type = "item", name = "iron-plate", amount = 8},
 		},
 		results = {
 			{type = "item", name = "y_wagon_iron", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/cws_riron_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -982,286 +1243,13 @@ data:extend({
 		enabled = false,
 		energy_required = 5,
 		ingredients = {
-			{type = "item", name = "stone", amount = 1},
+			{type = "item", name = "stone", amount = 8},
 			{type = "item", name = "yir_frame_waggon", amount = 1},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
-			{type = "item", name = "iron-plate", amount = 8},
 		},
 		results = {
 			{type = "item", name = "y_wagon_stone", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/cws_rstone_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_factory_loco",
-		category = "crafting",
-		enabled = false,
-		energy_required = 20,
-		ingredients = {
-			{type = "item", name = "assembling-machine-2", amount = 4},
-			{type = "item", name = "steel-plate", amount = 100},
-			{type = "item", name = "steel-furnace", amount = 4},
-			{type = "item", name = "stone-brick", amount = 100},
-		},
-		results = {
-			{type = "item", name = "yir_factory_loco", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/factories/yir_fac_loco_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_factory_wagon",
-		category = "crafting",
-		enabled = false,
-		energy_required = 20,
-		ingredients = {
-			{type = "item", name = "steel-furnace", amount = 3},
-			{type = "item", name = "steel-plate", amount = 24},
-			{type = "item", name = "stone-brick", amount = 48},
-		},
-		results = {
-			{type = "item", name = "yir_factory_wagon", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/factories/yir_fac_waggon_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_factory_tiles",
-		category = "crafting",
-		enabled = false,
-		energy_required = 5,
-		ingredients = {
-			{type = "item", name = "stone-brick", amount = 28},
-			{type = "item", name = "stone-furnace", amount = 4},
-			{type = "item", name = "steel-plate", amount = 18},
-			{type = "item", name = "transport-belt", amount = 8},
-		},
-		results = {
-			{type = "item", name = "yir_factory_tiles", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/factories/yir_fac_tiles_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_factory_material",
-		category = "crafting",
-		enabled = false,
-		energy_required = 20,
-		ingredients = {
-			{type = "item", name = "engine-unit", amount = 4},
-			{type = "item", name = "stone-brick", amount = 32},
-			{type = "item", name = "steel-plate", amount = 24},
-			{type = "item", name = "steel-furnace", amount = 2},
-		},
-		results = {
-			{type = "item", name = "yir_factory_material", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/factories/yir_fac_parts_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_factory_stuff",
-		category = "crafting",
-		enabled = false,
-		energy_required = 20,
-		ingredients = {
-			{type = "item", name = "boiler", amount = 8},
-			{type = "item", name = "steam-engine", amount = 4},
-			{type = "item", name = "stone-brick", amount = 50},
-			{type = "item", name = "steel-plate", amount = 20},
-		},
-		results = {
-			{type = "item", name = "yir_factory_stuff", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/factories/yir_fab_coins_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_coin",
-		category = "yir_rc_stuff",
-		enabled = false,
-		energy_required = 300,
-		ingredients = {
-			{type = "item", name = "logistic-science-pack", amount = 50},
-			{type = "item", name = "automation-science-pack", amount = 50},
-			{type = "item", name = "yir_fuel_coks", amount = 50},
-		},
-		results = {
-			{type = "item", name = "yir_coin", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/yir-coin-icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "y_path_labor",
-		category = "yir_rc_tiles",
-		enabled = false,
-		energy_required = 20,
-		ingredients = {
-			{type = "item", name = "iron-plate", amount = 4},
-		},
-		results = {
-			{type = "item", name = "y_path_labor", amount = 12},
-		},
-		icon = "__yi_railway__/graphics/path_tiles/floor004_icon.png",
-		icon_size = 32,
-	},
-	{
-		type = "recipe",
-		name = "y_path_science",
-		category = "yir_rc_tiles",
-		enabled = false,
-		energy_required = 20,
-		ingredients = {
-			{type = "item", name = "iron-stick", amount = 8},
-		},
-		results = {
-			{type = "item", name = "y_path_science", amount = 2},
-		},
-		icon = "__yi_railway__/graphics/path_tiles/vent_icon.png",
-		icon_size = 32,
-	},
-	{
-		type = "recipe",
-		name = "y_tring",
-		category = "yir_rc_tiles",
-		enabled = false,
-		energy_required = 20,
-		ingredients = {
-			{type = "item", name = "yir_color_white", amount = 1},
-			{type = "item", name = "iron-plate", amount = 4},
-		},
-		results = {
-			{type = "item", name = "y_tring", amount = 4},
-		},
-		icon = "__yi_railway__/graphics/path_tiles/stripes.png",
-		icon_size = 32,
-	},
-	{
-		type = "recipe",
-		name = "y_path_checker",
-		category = "yir_rc_tiles",
-		enabled = false,
-		energy_required = 20,
-		ingredients = {
-			{type = "item", name = "iron-plate", amount = 4},
-			{type = "item", name = "coal", amount = 2},
-		},
-		results = {
-			{type = "item", name = "y_path_checker", amount = 8},
-		},
-		icon = "__yi_railway__/graphics/path_tiles/labor_icon.png",
-		icon_size = 32,
-	},
-	{
-		type = "recipe",
-		name = "y_tgb",
-		category = "yir_rc_tiles",
-		enabled = false,
-		energy_required = 20,
-		ingredients = {
-			{type = "item", name = "yir_color_white", amount = 1},
-			{type = "item", name = "steel-plate", amount = 1},
-		},
-		results = {
-			{type = "item", name = "y_tgb", amount = 8},
-		},
-		icon = "__yi_railway__/graphics/path_tiles/floor_tplate.png",
-		icon_size = 32,
-	},
-	{
-		type = "recipe",
-		name = "y_loco_emd1500black_v2",
-		category = "yir_rc_wsl",
-		enabled = false,
-		energy_required = 10,
-		ingredients = {
-			{type = "item", name = "y_loco_emd1500black", amount = 1},
-			{type = "item", name = "yir_diesel_coin", amount = 1},
-		},
-		results = {
-			{type = "item", name = "y_loco_emd1500black_v2", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/railway/DESW90-BL-icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "y_loco_emd1500blue_v2",
-		category = "yir_rc_wsl",
-		enabled = false,
-		energy_required = 10,
-		ingredients = {
-			{type = "item", name = "y_loco_emd1500blue", amount = 1},
-			{type = "item", name = "yir_diesel_coin", amount = 1},
-		},
-		results = {
-			{type = "item", name = "y_loco_emd1500blue_v2", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/railway/emd-1500_blue2_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_loco_del_mk1400",
-		category = "yir_rc_wsl",
-		enabled = false,
-		energy_required = 10,
-		ingredients = {
-			{type = "item", name = "yir_diesel_coin", amount = 1},
-			{type = "item", name = "yir_frame_loco_diesel", amount = 2},
-			{type = "item", name = "yir_radsatz_locos", amount = 2},
-			{type = "item", name = "yir_color_red", amount = 4},
-			{type = "item", name = "yir_color_green", amount = 4},
-		},
-		results = {
-			{type = "item", name = "yir_loco_del_mk1400", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/railway/emd-gp_orange_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_loco_sel_blue",
-		category = "yir_rc_wsl",
-		enabled = false,
-		energy_required = 10,
-		ingredients = {
-			{type = "item", name = "yir_frame_loco_steam", amount = 2},
-			{type = "item", name = "yir_radsatz_locos", amount = 2},
-			{type = "item", name = "yir_color_blue", amount = 8},
-			{type = "item", name = "yir_color_white", amount = 1},
-			{type = "item", name = "yir_coin", amount = 5},
-		},
-		results = {
-			{type = "item", name = "yir_loco_sel_blue", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/railway/rsea_blue_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "yir_loco_de_bluegray",
-		category = "yir_rc_wsl",
-		enabled = false,
-		energy_required = 10,
-		ingredients = {
-			{type = "item", name = "y_loco_emd3000_white", amount = 1},
-			{type = "item", name = "yir_diesel_coin", amount = 1},
-		},
-		results = {
-			{type = "item", name = "yir_loco_de_bluegray", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/railway/emd-gp_bluegray_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -1270,14 +1258,17 @@ data:extend({
 		enabled = false,
 		energy_required = 20,
 		ingredients = {
-			{type = "item", name = "yir_wagon2a_closed", amount = 1},
-			{type = "item", name = "yir_future_coin", amount = 30},
+			{type = "item", name = "steel-plate", amount = 16},
+			{type = "item", name = "yir_frame_waggon", amount = 2},
+			{type = "item", name = "yir_radsatz_waggon", amount = 2},
+			{type = "item", name = "yir_color_red", amount = 2},
+			{type = "item", name = "yir_color_blue", amount = 2},
+			{type = "item", name = "yir_color_black", amount = 4},
+			{type = "item", name = "yir_future_coin", amount = 15},
 		},
 		results = {
 			{type = "item", name = "yir_4acw_purple", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/4a-kw-s1-icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -1286,14 +1277,14 @@ data:extend({
 		enabled = false,
 		energy_required = 10,
 		ingredients = {
-			{type = "item", name = "yir_wagon2a_closed", amount = 1},
-			{type = "item", name = "yir_coin", amount = 1},
+			{type = "item", name = "iron-plate", amount = 16},
+			{type = "item", name = "yir_frame_waggon", amount = 2},
+			{type = "item", name = "yir_radsatz_waggon", amount = 2},
+			{type = "item", name = "yir_color_blue", amount = 6},
 		},
 		results = {
 			{type = "item", name = "yir_4acw_oceanblue", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/4a-bw-s2-icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -1302,14 +1293,14 @@ data:extend({
 		enabled = false,
 		energy_required = 10,
 		ingredients = {
-			{type = "item", name = "yir_wagon2a_closed", amount = 1},
-			{type = "item", name = "yir_coin", amount = 1},
+			{type = "item", name = "iron-plate", amount = 16},
+			{type = "item", name = "yir_frame_waggon", amount = 2},
+			{type = "item", name = "yir_radsatz_waggon", amount = 2},
+			{type = "item", name = "yir_color_black", amount = 8},
 		},
 		results = {
 			{type = "item", name = "yir_4acw_grey", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/4a-tw-s3-icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -1318,15 +1309,13 @@ data:extend({
 		enabled = false,
 		energy_required = 10,
 		ingredients = {
-			{type = "item", name = "yir_frame_waggon", amount = 1},
+			{type = "item", name = "yir_frame_waggon", amount = 2},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
 			{type = "item", name = "storage-tank", amount = 1},
 		},
 		results = {
 			{type = "item", name = "y_wagon_tank_fm2", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/4atw_fm2_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -1335,49 +1324,13 @@ data:extend({
 		enabled = false,
 		energy_required = 10,
 		ingredients = {
-			{type = "item", name = "yir_frame_waggon", amount = 1},
+			{type = "item", name = "yir_frame_waggon", amount = 2},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
 			{type = "item", name = "storage-tank", amount = 1},
 		},
 		results = {
 			{type = "item", name = "y_wagon_tank_fm1", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/4atw_fm1_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "y_loco_fs_steam_green",
-		category = "yir_rc_wsl",
-		enabled = false,
-		energy_required = 10,
-		ingredients = {
-			{type = "item", name = "yir_coin", amount = 5},
-			{type = "item", name = "yir_frame_loco_steam", amount = 2},
-			{type = "item", name = "yir_color_green", amount = 8},
-			{type = "item", name = "yir_radsatz_locos", amount = 2},
-		},
-		results = {
-			{type = "item", name = "y_loco_fs_steam_green", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/railway/rsea_green_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "y_loco_emd3000_white",
-		category = "yir_rc_wsl",
-		enabled = false,
-		energy_required = 10,
-		ingredients = {
-			{type = "item", name = "y_loco_emd1500blue", amount = 2},
-			{type = "item", name = "yir_diesel_coin", amount = 1},
-		},
-		results = {
-			{type = "item", name = "y_loco_emd3000_white", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/railway/emd_gp_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -1394,8 +1347,6 @@ data:extend({
 		results = {
 			{type = "item", name = "y_wagon_tender_green", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/rtender_green_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -1412,8 +1363,6 @@ data:extend({
 		results = {
 			{type = "item", name = "y_wagon_tender_black", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/rtender_black_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -1422,7 +1371,7 @@ data:extend({
 		enabled = false,
 		energy_required = 5,
 		ingredients = {
-			{type = "item", name = "iron-plate", amount = 10},
+			{type = "item", name = "iron-plate", amount = 8},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
 			{type = "item", name = "yir_frame_waggon", amount = 1},
 			{type = "item", name = "yir_color_green", amount = 1},
@@ -1431,8 +1380,6 @@ data:extend({
 		results = {
 			{type = "item", name = "y_wagon_hopper_yellow", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/2a_hooper_y_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -1450,8 +1397,6 @@ data:extend({
 		results = {
 			{type = "item", name = "y_wagon_corn_blue", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/2a_corn_blue_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -1460,16 +1405,14 @@ data:extend({
 		enabled = false,
 		energy_required = 5,
 		ingredients = {
+			{type = "item", name = "iron-plate", amount = 8},
 			{type = "item", name = "yir_frame_waggon", amount = 1},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
 			{type = "item", name = "yir_color_green", amount = 4},
-			{type = "item", name = "iron-plate", amount = 8},
 		},
 		results = {
 			{type = "item", name = "y_wagon_corn_green", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/2a_corn_green_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -1487,8 +1430,6 @@ data:extend({
 		results = {
 			{type = "item", name = "y_wagon_zement_white", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/cws64_zement_white_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -1506,46 +1447,6 @@ data:extend({
 		results = {
 			{type = "item", name = "y_wagon_zement_gray", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/cws64_zement_gray_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "y_loco_emd1500blue",
-		category = "yir_rc_wsl",
-		enabled = false,
-		energy_required = 10,
-		ingredients = {
-			{type = "item", name = "yir_diesel_coin", amount = 1},
-			{type = "item", name = "yir_frame_loco_diesel", amount = 1},
-			{type = "item", name = "yir_radsatz_locos", amount = 2},
-			{type = "item", name = "yir_color_blue", amount = 3},
-			{type = "item", name = "yir_color_green", amount = 1},
-			{type = "item", name = "yir_color_red", amount = 1},
-		},
-		results = {
-			{type = "item", name = "y_loco_emd1500blue", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/railway/emd-1500_blue_icon.png",
-		icon_size = 64,
-	},
-	{
-		type = "recipe",
-		name = "y_loco_emd1500black",
-		category = "yir_rc_wsl",
-		enabled = false,
-		energy_required = 10,
-		ingredients = {
-			{type = "item", name = "yir_frame_loco_diesel", amount = 1},
-			{type = "item", name = "yir_radsatz_locos", amount = 2},
-			{type = "item", name = "yir_color_black", amount = 4},
-			{type = "item", name = "yir_diesel_coin", amount = 1},
-		},
-		results = {
-			{type = "item", name = "y_loco_emd1500black", amount = 1},
-		},
-		icon = "__yi_railway__/graphics/icons/railway/emd-1500_black_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -1556,15 +1457,13 @@ data:extend({
 		ingredients = {
 			{type = "item", name = "yir_frame_waggon", amount = 2},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
-			{type = "item", name = "yir_color_red", amount = 2},
-			{type = "item", name = "yir_color_green", amount = 1},
+			{type = "item", name = "yir_color_red", amount = 4},
+			{type = "item", name = "yir_color_green", amount = 4},
 			{type = "item", name = "storage-tank", amount = 1},
 		},
 		results = {
 			{type = "item", name = "yir_wagon_tank_orange", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/wcs_tank_orange_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -1573,8 +1472,8 @@ data:extend({
 		enabled = false,
 		energy_required = 10,
 		ingredients = {
-			{type = "item", name = "yir_color_blue", amount = 1},
-			{type = "item", name = "yir_color_white", amount = 1},
+			{type = "item", name = "yir_color_blue", amount = 5},
+			{type = "item", name = "yir_color_white", amount = 3},
 			{type = "item", name = "yir_frame_waggon", amount = 2},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
 			{type = "item", name = "storage-tank", amount = 1},
@@ -1582,8 +1481,6 @@ data:extend({
 		results = {
 			{type = "item", name = "yir_wagon_tank_blue", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/wcs_tank_blue_icon.png",
-		icon_size = 64,
 	},
 	{
 		type = "recipe",
@@ -1592,14 +1489,12 @@ data:extend({
 		enabled = false,
 		energy_required = 5,
 		ingredients = {
-			{type = "item", name = "iron-plate", amount = 10},
+			{type = "item", name = "iron-plate", amount = 8},
 			{type = "item", name = "yir_frame_waggon", amount = 1},
 			{type = "item", name = "yir_radsatz_waggon", amount = 2},
 		},
 		results = {
 			{type = "item", name = "yir_wagon2a_closed", amount = 1},
 		},
-		icon = "__yi_railway__/graphics/icons/railway/wcs_closed_icon.png",
-		icon_size = 64,
 	},
 })
