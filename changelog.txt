@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.0
-Date: 12.10.2025
+Date: 29.11.2025
   Major Features:
     - TheKingJo: upscaled sprites, separated shadow from base sprite
     - TheKingJo: added item sounds, modernized vehicle sounds
@@ -10,6 +10,7 @@ Date: 12.10.2025
     - TheKingJo: refactor of a lot of code
     - TheKingJo: hid unused items
     - TheKingJo: quality of life improvements
+    - TheKingJo: added setting that vanilla loco gets nerfed in comparison to modded locos
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.1
 Date: 13. 4. 2025
