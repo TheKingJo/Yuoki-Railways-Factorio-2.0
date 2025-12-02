@@ -10,14 +10,14 @@ data:extend({
 		corpse = "small-remnants",
 		collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
 		selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-		energy_source =
+		energy_source  = 
 		{
 			type = "electric",
 			usage_priority = "secondary-input"
 		},
 		energy_usage_per_tick = "25kW",
 		light = {intensity = 0.9, size = 150},
-		picture_off =
+		picture_off  = 
 		{
 			layers = {
 				{
@@ -28,16 +28,16 @@ data:extend({
 					shift = {0, -3.5},
 				},
 				{
-					filename = "__yi_railway__/graphics/entity/yir_lamp_modern_off_shadow.png",
-					width = 512,
+					filename = "__yi_railway__/graphics/entity/yir_lamp_modern_shadow.png",
+					width = 576,
 					height = 512,
 					scale = 0.5,
-					shift = {0, -3.5},
+					shift = {0.5, -3.5},
 					draw_as_shadow = true,
 				},
 			}
 		},
-		picture_on =
+		picture_on  = 
 		{
 			layers = {
 				{
@@ -48,11 +48,11 @@ data:extend({
 					shift = {0, -3.5},
 				},
 				{
-					filename = "__yi_railway__/graphics/entity/yir_lamp_modern_on_shadow.png",
-					width = 512,
+					filename = "__yi_railway__/graphics/entity/yir_lamp_modern_shadow.png",
+					width = 576,
 					height = 512,
 					scale = 0.5,
-					shift = {0, -3.5},
+					shift = {0.5, -3.5},
 					draw_as_shadow = true,
 				},
 			}
@@ -70,15 +70,15 @@ data:extend({
 		corpse = "small-remnants",
 		collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
 		selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-		energy_source =
+		energy_source  = 
 		{
 			type = "electric",
 			usage_priority = "secondary-input"
 		},
 		energy_usage_per_tick = "10kW",
 		light = {intensity = 0.9, size = 100},
-		tint = {r=1.0, g=1.0, b=0.6, a=0.8},
-		picture_off =
+		tint = {r = 1.0, g = 1.0, b = 0.6, a = 0.8},
+		picture_off  = 
 		{
 			layers = {
 				{
@@ -89,8 +89,8 @@ data:extend({
 					shift = {0.5, -1.5},
 				},
 				{
-					filename = "__yi_railway__/graphics/entity/yir_lamp_old1_off_shadow.png",
-					width = 256,
+					filename = "__yi_railway__/graphics/entity/yir_lamp_old1_shadow.png",
+					width = 320,
 					height = 256,
 					scale = 0.5,
 					shift = {0.5, -1.5},
@@ -98,7 +98,7 @@ data:extend({
 				},
 			}
 		},
-		picture_on =
+		picture_on  = 
 		{
 			layers = {
 				{
@@ -109,8 +109,8 @@ data:extend({
 					shift = {0.5, -1.5},
 				},
 				{
-					filename = "__yi_railway__/graphics/entity/yir_lamp_old1_on_shadow.png",
-					width = 256,
+					filename = "__yi_railway__/graphics/entity/yir_lamp_old1_shadow.png",
+					width = 320,
 					height = 256,
 					scale = 0.5,
 					shift = {0.5, -1.5},
@@ -131,15 +131,15 @@ data:extend({
 		corpse = "small-remnants",
 		collision_box = {{-0.1, -0.1}, {0.1, 0.1}},
 		selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-		energy_source =
+		energy_source  =
 		{
 			type = "electric",
 			usage_priority = "secondary-input"
 		},
 		energy_usage_per_tick = "20kW",
 		light = {intensity = 0.9, size = 70},
-		tint = {r=1.0, g=1.0, b=0.6, a=0.8},
-		picture_off =
+		tint = {r = 1.0, g = 1.0, b = 0.6, a = 0.8},
+		picture_off  = 
 		{
 			layers = {
 				{
@@ -147,19 +147,19 @@ data:extend({
 					width = 256,
 					height = 256,
 					scale = 0.5,
-					shift = {0.5, -1.5},
+					shift = {1.5, -1.5},
 				},
 				{
-					filename = "__yi_railway__/graphics/entity/yir_clock_off_shadow.png",
-					width = 256,
+					filename = "__yi_railway__/graphics/entity/yir_clock_shadow.png",
+					width = 320,
 					height = 256,
 					scale = 0.5,
-					shift = {0.5, -1.5},
+					shift = {2, -1.5},
 					draw_as_shadow = true,
 				},
 			}
 		},
-		picture_on =
+		picture_on  =
 		{
 			layers = {
 				{
@@ -167,14 +167,14 @@ data:extend({
 					width = 256,
 					height = 256,
 					scale = 0.5,
-					shift = {0.5, -1.5},
+					shift = {1.5, -1.5},
 				},
 				{
-					filename = "__yi_railway__/graphics/entity/yir_clock_on_shadow.png",
-					width = 256,
+					filename = "__yi_railway__/graphics/entity/yir_clock_shadow.png",
+					width = 320,
 					height = 256,
 					scale = 0.5,
-					shift = {0.5, -1.5},
+					shift = {2, -1.5},
 					draw_as_shadow = true,
 				},
 			}
